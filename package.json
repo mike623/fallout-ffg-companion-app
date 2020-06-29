@@ -1,11 +1,14 @@
 {
-  "name": "react-app-template",
+  "name": "fallout-ffg-companion-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.13.1",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.5.0",
+    "firebase": "^7.15.5",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

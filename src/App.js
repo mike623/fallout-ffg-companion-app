@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import * as FirestoreService from './services/firestore';
+
 import './App.css';
 
 function App() {
