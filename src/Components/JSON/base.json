@@ -86,7 +86,7 @@
       {
         "optionText": "FORCED if you are <em>Idolized</em>",
         "result": "Jackpot! This place is filled with stuff. Maybe good deeds really do come around!",
-        "aftermath": "[Loot] x [Wasteland] &bull; [Wasteland] +1 Caps",
+        "aftermath": "[Loot] x [Wasteland] &bull; [Wasteland] + 1 Caps",
         "trash": false,
         "add": false
       },{
@@ -99,14 +99,12 @@
         "optionText": "Search for useful equipment &bull; [P] [L] 4",
         "result": [
           {
-            "title": "Succeed",
-            "result": "You find some items, but you feel like you're missing something.",
+            "result": "<strong>Succeed:</strong>You find some items, but you feel like you're missing something.",
             "aftermath": "[Loot] x [Wasteland]",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "You hear voices drifting through the ruins as you search. There's someone here!",
+            "result": "<strong>Fail:</strong>You hear voices drifting through the ruins as you search. There's someone here!",
             "aftermath": "[Loot] &bull; Draw and fight [Human]",
             "trash": false,
             "add": false
@@ -124,14 +122,12 @@
         "optionText": "Approach Margaret and tell her about the dead man in the wasteland &bull; [C] 3",
         "result": [
           {
-            "title": "Succeed",
-            "result": "As you tell Margaret about the man, you can see she has been expecting this news for some time. 'That's my brother. We came out here to search for our father. When my brother didn't return, I feared the worst. I suppose my father likely met the same fate out there somewhere.' She thanks you for the information as she idly grasps a bird pendant around her neck.",
+            "result": "<strong>Succeed:</strong>As you tell Margaret about the man, you can see she has been expecting this news for some time. 'That's my brother. We came out here to search for our father. When my brother didn't return, I feared the worst. I suppose my father likely met the same fate out there somewhere.' She thanks you for the information as she idly grasps a bird pendant around her neck.",
             "aftermath": "3 Caps &bull; 3 XP",
             "trash": true,
             "add": [6]
           },{
-            "title": "Fail",
-            "result": "Margaret wants nothing to do with you. She disappears into the crowd",
+            "result": "<strong>Fail:</strong>Margaret wants nothing to do with you. She disappears into the crowd",
             "aftermath": "Shop once",
             "trash": false,
             "add": false
@@ -155,14 +151,12 @@
         "optionText": "That symbol looks familiar; follow it &bull; [P] [I] 4",
         "result": [
           {
-            "title": "Succeed",
-            "result": "Following the trail from the symbol, you uncover a skeleton in combat gear. It looks like Margaret's father died a long time ago. His arm rests against an old minigun.",
+            "result": "<strong>Succeed:</strong>Following the trail from the symbol, you uncover a skeleton in combat gear. It looks like Margaret's father died a long time ago. His arm rests against an old minigun.",
             "aftermath": "Gain the 'Minigun' unique asset",
             "trash": true,
             "add": false
           },{
-            "title": "Fail",
-            "result": "You search for a while but find only some scraps.",
+            "result": "<strong>Fail:</strong>You search for a while but find only some scraps.",
             "aftermath": "[Loot]",
             "trash": false,
             "add": false
@@ -172,14 +166,12 @@
         "optionText": "Ignore the symbol and scavenge &bull; [P] 3",
         "result": [
           {
-            "title": "Succeed",
-            "result": "No time for a scavener hunt. You need useful gear, now.",
+            "result": "<strong>Succeed:</strong>No time for a scavener hunt. You need useful gear, now.",
             "aftermath": "[Loot] x [Wasteland]",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "As you search you hear the metallic chunk of robotic feet.",
+            "result": "<strong>Fail:</strong>As you search you hear the metallic chunk of robotic feet.",
             "aftermath": "Draw and fight [Robot]",
             "trash": false,
             "add": false
@@ -235,14 +227,12 @@
         "optionText": "Try to steal an item from a display &bull; [A] [L] 5",
         "result": [
           {
-            "title": "Succeed",
-            "result": "Despite the tighter security, you manage to grab something without notice.",
+            "result": "<strong>Succeed:</strong>Despite the tighter security, you manage to grab something without notice.",
             "aftermath": "Choose 1 item from the shop",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "The guards leap on you in seconds. They rough you up before kicking you out.",
+            "result": "<strong>Fail:</strong>The guards leap on you in seconds. They rough you up before kicking you out.",
             "aftermath": "Suffer 4 damage &bull; Move 1 space",
             "trash": false,
             "add": false
@@ -305,7 +295,7 @@
       {
         "optionText": "FORCED if you are <em>Vilified</em> or <em>Synth</em>",
         "result": "'Psst, over here!' A young man gestures at you from the shadows. 'I've set up a shop back here for people like you who support my kind. Follow Me!'",
-        "aftermath": "Shop [Settlement] +1; but items for 2 less",
+        "aftermath": "Shop [Settlement] + 1; but items for 2 less",
         "trash": false,
         "add": false
       },{
@@ -325,7 +315,7 @@
       {
         "optionText": "Make a deal and share &bull; <em>Super Mutant</em>",
         "result": "Seeing a fellow super mutant, he is happy to make a deal and split the contents of the locker.",
-        "aftermath": "[Loot] x [Wasteland] +1",
+        "aftermath": "[Loot] x [Wasteland] + 1",
         "trash": true,
         "add": false
       },{
@@ -338,14 +328,12 @@
         "optionText": "Grab something and run! &bull; [E] [A] 4",
         "result": [
           {
-            "title": "Succeed",
-            "result": "You get away, clutching several items",
+            "result": "<strong>Succeed:</strong>You get away, clutching several items",
             "aftermath": "[Loot] x [Wasteland]",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "Just as you think you've gotten away, a giant hand closes around your shoulder like a vice.",
+            "result": "<strong>Fail:</strong>Just as you think you've gotten away, a giant hand closes around your shoulder like a vice.",
             "aftermath": "Draw and fight [Super Mutant]",
             "trash": true,
             "add": false
@@ -369,14 +357,12 @@
         "optionText": "Attempt to befriend the dog &bull; [C] 4",
         "result": [
           {
-            "title": "Succeed",
-            "result": "While timid at first, the dog warms to you and begins following closely at your heels.",
+            "result": "<strong>Succeed:</strong>While timid at first, the dog warms to you and begins following closely at your heels.",
             "aftermath": "Gain the 'Dogmeat' unique asset",
             "trash": true,
             "add": false
           },{
-            "title": "Fail",
-            "result": "After chasing the dog around the crowd for a while, you lose him, and most of your opportunity to shop.",
+            "result": "<strong>Fail:</strong>After chasing the dog around the crowd for a while, you lose him, and most of your opportunity to shop.",
             "aftermath": "Shop once",
             "trash": true,
             "add": [13]
@@ -397,15 +383,15 @@
     "text": "Many dangers lurk in this new wasteland ahead of you, but the one you have heard the most about is the dreaded 'synth.' Said to look, sound, and smell just like humans, they are robots who have infiltrated the very society of the Commonwealth.",
     "options": [
       {
-        "optionText": "Kill a suspected synth that no one will miss to find out the truth.<br/><br/><strong>Kill any [Human]</strong>",
+        "optionText": "Kill a suspected synth that no one will miss to find out the truth.<br><br><strong>Kill any [Human]</strong>",
         "result": "",
-        "aftermath": "[Shield] +<br/>[Loot] x 2",
+        "aftermath": "[Shield] +<br>[Loot] x 2",
         "trash": true,
         "add": [15,134]
       },{
-        "optionText": "This all sounds a bit overblown. Head to Diamon City to discreetly dig up some information.<br/><br/><strong>[Quest] Diamond City</strong>",
+        "optionText": "This all sounds a bit overblown. Head to Diamon City to discreetly dig up some information.<br><br><strong>[Quest] Diamond City</strong>",
         "result": "",
-        "aftermath": "[Star] +<br/>[Loot] x 2",
+        "aftermath": "[Star] +<br>[Loot] x 2",
         "trash": true,
         "add": [17]
       }
@@ -417,15 +403,15 @@
     "text": "You tear the person apart, but they look to be flesh and blood. Messy. Among their effects, however, is a transponder marked with the Vitruvian man, the words 'The Institute,' and coordinates to the old ruins of the Commonwealth Institute of Technology.",
     "options": [
       {
-        "optionText": "Follow the coordinates and explore the C.I.T. ruins to find the Institute.<br/><br/><strong>[Quest] C.I.T. Ruins &bull; [E] [I] 4</strong>",
+        "optionText": "Follow the coordinates and explore the C.I.T. ruins to find the Institute.<br><br><strong>[Quest] C.I.T. Ruins &bull; [E] [I] 4</strong>",
         "result": "",
-        "aftermath": "[Shield] +<br/>3 Caps",
+        "aftermath": "[Shield] +<br>3 Caps",
         "trash": true,
         "add": [18,67]
       },{
-        "optionText": "You have heard only bad things about the Institute. At Diamond City, Caps may quickly get you the information you need.<br/><br/><strong>[Quest] Diamond City &bull; Spend 4 Caps</strong>",
+        "optionText": "You have heard only bad things about the Institute. At Diamond City, Caps may quickly get you the information you need.<br><br><strong>[Quest] Diamond City &bull; Spend 4 Caps</strong>",
         "result": "",
-        "aftermath": "[Star] +<br/>[Loot] x 2",
+        "aftermath": "[Star] +<br>[Loot] x 2",
         "trash": true,
         "add": [19,67]
       }
@@ -434,18 +420,18 @@
     "id": 16,
     "location": "Quest",
     "title": "All Aboard!",
-    "text": "After asking around in Diamond City, you are approached by a man calling himself 'Drummer Boy.' He explains that the synths are actually the work of an organization known as 'The Institute,' and he asks for your help in freeing them.<br/><br/><strong>Place [Shield] on Downtown Boston</strong>",
+    "text": "After asking around in Diamond City, you are approached by a man calling himself 'Drummer Boy.' He explains that the synths are actually the work of an organization known as 'The Institute,' and he asks for your help in freeing them.<br><br><strong>Place [Shield] on Downtown Boston</strong>",
     "options": [
       {
-        "optionText": "Warn The Institute about these Railroad agents and get them to deploy more synth soldiers (contact the Institute at [Wasteland] locations).<br/><br/><strong>Place the third [Shield] on the map</strong>",
+        "optionText": "Warn The Institute about these Railroad agents and get them to deploy more synth soldiers (contact the Institute at [Wasteland] locations).<br><br><strong>Place the third [Shield] on the map</strong>",
         "result": "",
-        "aftermath": "[Shield] +<br/>3 Caps",
+        "aftermath": "[Shield] +<br>3 Caps",
         "trash": true,
         "add": [19,94]
       },{
-        "optionText": "Locate and Convince them to cast off their bonds.<br/><br/><strong>[Quest] Adjacent to a [Shield]</strong>",
+        "optionText": "Locate and Convince them to cast off their bonds.<br><br><strong>[Quest] Adjacent to a [Shield]</strong>",
         "result": "",
-        "aftermath": "[Star] +<br/>3 Caps",
+        "aftermath": "[Star] +<br>3 Caps",
         "trash": true,
         "add": [20,134]
       }
@@ -455,7 +441,7 @@
     "if/then": ["[!16]","trash=true"],
     "location": "Wasteland",
     "title": "",
-    "text": "<strong>If 'All Aboard!' is no longer staged, trash this card and encounter the next card.</strong><br/><br/>You see a figure moving through the ruins wearing a black trench coat and sunglasses.",
+    "text": "<strong>If 'All Aboard!' is no longer staged, trash this card and encounter the next card.</strong><br><br>You see a figure moving through the ruins wearing a black trench coat and sunglasses.",
     "options": [
       {
         "optionText": "FORCED if you are a <em>Synth</em>",
@@ -473,14 +459,12 @@
         "optionText": "Sounds like bad news. Hide from him and go about searching &bull; [P] [A] 4",
         "result": [
           {
-            "title": "Succeed",
-            "result": "No way he'd spot you through sunglasses.",
+            "result": "<strong>Succeed:</strong>No way he'd spot you through sunglasses.",
             "aftermath": "[Loot] x [Wasteland]",
             "trash": true,
             "add": [17]
           },{
-            "title": "Fail",
-            "result": "'Take this one out,' he says into a microphone. A synth soldier appears out of thin air!",
+            "result": "<strong>Fail:</strong>'Take this one out,' he says into a microphone. A synth soldier appears out of thin air!",
             "aftermath": "Place [Shield] on your space and fight it",
             "trash": true,
             "add": [17]
@@ -495,15 +479,15 @@
     "text": "Impressed by your resourcefulness and persistence, the Institute brings you into their trust. They are developing the most advanced technology ever conceived but are threatened by criminals calling themselves the 'Railroad.'",
     "options": [
       {
-        "optionText": "Hunt down and eliminate these criminal Railroad agents.<br/><br/><strong>Kill the last [Star] on the map</strong>",
+        "optionText": "Hunt down and eliminate these criminal Railroad agents.<br><br><strong>Kill the last [Star] on the map</strong>",
         "result": "",
-        "aftermath": "[Shield] +<br/>3 XP",
+        "aftermath": "[Shield] +<br>3 XP",
         "trash": true,
         "add": [24,130]
       },{
-        "optionText": "Locate the Railroad headquarters to give them support<br/><br/><strong>[Quest] The Railroad</strong>",
+        "optionText": "Locate the Railroad headquarters to give them support<br><br><strong>[Quest] The Railroad</strong>",
         "result": "",
-        "aftermath": "[Star] ++<br/>3 XP",
+        "aftermath": "[Star] + +<br>3 XP",
         "trash": true,
         "add": [21,125]
       }
@@ -512,18 +496,18 @@
     "id": 19,
     "location": "Quest",
     "title": "All Hell",
-    "text": "Chaos erupts in the Commonwealth! Stirred up by newcomers asking too many questions, the Institute accelerates their mysterious plans, and the Railroad responds in kind, Fights break out across the wasteland!<br/><br/><strong>Place [Star] equal to survivors. Each on [Settlement], 1 per [Settlement], starting with the highest level. Place [Shield] at each [Star].</strong>",
+    "text": "Chaos erupts in the Commonwealth! Stirred up by newcomers asking too many questions, the Institute accelerates their mysterious plans, and the Railroad responds in kind, Fights break out across the wasteland!<br><br><strong>Place [Star] equal to survivors. Each on [Settlement], 1 per [Settlement], starting with the highest level. Place [Shield] at each [Star].</strong>",
     "options": [
       {
-        "optionText": "Wipe out the Railroad's agents in the wasteland.<br/><br/><strong>Kill the last [Star] on the map</strong>",
+        "optionText": "Wipe out the Railroad's agents in the wasteland.<br><br><strong>Kill the last [Star] on the map</strong>",
         "result": "",
-        "aftermath": "[Shield] ++<br/>3 XP",
+        "aftermath": "[Shield] + +<br>3 XP",
         "trash": true,
         "add": [21,22,150]
       },{
-        "optionText": "Eliminate all the militarized synths; you have no other choice.<br/><br/><strong>Kill the last [Shield] on the map</strong>",
+        "optionText": "Eliminate all the militarized synths; you have no other choice.<br><br><strong>Kill the last [Shield] on the map</strong>",
         "result": "",
-        "aftermath": "[Star] ++<br/>3 XP",
+        "aftermath": "[Star] + +<br>3 XP",
         "trash": true,
         "add": [23,150]
       }
@@ -535,15 +519,15 @@
     "text": "From the freed synths, you learn all about the Institute's hidden, underground factory where they develop the synths. The only way you are going to be able to get in there is by posing as a member.",
     "options": [
       {
-        "optionText": "Warn the Institute of the infiltrators. You'll need circuitry to build a radio capable of reaching them.<br/><br/><strong>Kill any [Robot]</strong>",
+        "optionText": "Warn the Institute of the infiltrators. You'll need circuitry to build a radio capable of reaching them.<br><br><strong>Kill any [Robot]</strong>",
         "result": "",
-        "aftermath": "[Shield] ++<br/>3 XP",
+        "aftermath": "[Shield] + +<br>3 XP",
         "trash": true,
         "add": [23,107]
       },{
-        "optionText": "The Railroad headquarters will have everything you'd need to pose as an Institute scientist.<br/><br/><strong>[Quest] The Railroad &bull; [P] [E] [A] 4</strong>",
+        "optionText": "The Railroad headquarters will have everything you'd need to pose as an Institute scientist.<br><br><strong>[Quest] The Railroad &bull; [P] [E] [A] 4</strong>",
         "result": "",
-        "aftermath": "[Star] +<br/>3 XP",
+        "aftermath": "[Star] +<br>3 XP",
         "trash": true,
         "add": [28,148]
       }
@@ -555,38 +539,36 @@
     "text": "With the Institute's agents hunting Railroad members in the field, the Railroad has managed to free a large group of synths, and they are looking for a way out of the Commonwealth.",
     "options": [
       {
-        "optionText": "Locate the synth's safe house before they escape.<br/><br/><strong>Encounter level-3 or higher [Wasteland] until you locate the synths</strong>",
+        "optionText": "Locate the synth's safe house before they escape.<br><br><strong>Encounter level-3 or higher [Wasteland] until you locate the synths</strong>",
         "result": "",
-        "aftermath": "[Shield] ++",
+        "aftermath": "[Shield] + +",
         "trash": true,
         "add": [24,157]
       },{
-        "optionText": "Find the synths and get them to safety.<br/><br/><strong>Encounter level-3 or higher [Wasteland] until you save the synths</strong>",
+        "optionText": "Find the synths and get them to safety.<br><br><strong>Encounter level-3 or higher [Wasteland] until you save the synths</strong>",
         "result": "",
-        "aftermath": "[Star] ++",
+        "aftermath": "[Star] + +",
         "trash": true,
         "add": [25,26,27,148]
       }
     ]
   },{
     "id": 22,
-    "if/then": ["[Wasteland] <= level-2","trash=true,add=22"],
+    "if/then": ["[Wasteland] <= level-2","trash=true","add=22"],
     "location": "Wasteland",
     "title": "",
-    "text": "<strong>If at a level-2 or lower [Wasteland], encounter the next card. Then, add this card.</strong><br/><br/>You are caught in the middle of a firefight! Synth soldiers are systematically advancing on a small band of Railroad members defending a group of huddling people.",
+    "text": "<strong>If at a level-2 or lower [Wasteland], encounter the next card. Then, add this card.</strong><br><br>You are caught in the middle of a firefight! Synth soldiers are systematically advancing on a small band of Railroad members defending a group of huddling people.",
     "options": [
       {
         "optionText": "Help the Institute &bull; Draw and fight [Star]",
         "result": [
           {
-            "title": "Succeed",
-            "result": "You easily eliminate the rebels and 'decommission' the escaped synths.",
+            "result": "<strong>Succeed:</strong>You easily eliminate the rebels and 'decommission' the escaped synths.",
             "aftermath": "Complete objective 1 of 'Bunker Hill'",
             "trash": true,
             "add": false
           },{
-            "title": "Fail",
-            "result": "You fall back, but the fight rages on.",
+            "result": "<strong>Fail:</strong>You fall back, but the fight rages on.",
             "aftermath": "",
             "trash": true,
             "add": [22]
@@ -596,14 +578,12 @@
         "optionText": "Help the Railroad &bull; Draw and fight [Shield]",
         "result": [
           {
-            "title": "Succeed",
-            "result": "You repel the Institute soldiers!",
+            "result": "<strong>Succeed:</strong>You repel the Institute soldiers!",
             "aftermath": "Complete objective 2 of 'Bunker Hill'",
             "trash": true,
             "add": false
           },{
-            "title": "Fail",
-            "result": "You fall back, but the fight rages on.",
+            "result": "<strong>Fail:</strong>You fall back, but the fight rages on.",
             "aftermath": "",
             "trash": true,
             "add": [22]
@@ -621,18 +601,18 @@
     "id": 23,
     "location": "Quest",
     "title": "The Molecular Level",
-    "text": "With the Institute fully aware of their actions, the Railroad's only hope of getting to the Institute is by using their own technology against them. The Railroad has begun work on a signal interceptor to teleport themselves into the Institute.<br/><br/><strong>Place a quest marker 3 spaces away from your current space. This is the Signal Interceptor.</strong>",
+    "text": "With the Institute fully aware of their actions, the Railroad's only hope of getting to the Institute is by using their own technology against them. The Railroad has begun work on a signal interceptor to teleport themselves into the Institute.<br><br><strong>Place a quest marker 3 spaces away from your current space. This is the Signal Interceptor.</strong>",
     "options": [
       {
-        "optionText": "Destroy the interceptor before it's complete<br/><br/><strong>[Quest] Signal Interceptor &bull; [S] [I] [A] 5</strong>",
+        "optionText": "Destroy the interceptor before it's complete<br><br><strong>[Quest] Signal Interceptor &bull; [S] [I] [A] 5</strong>",
         "result": "",
-        "aftermath": "[Shield] +++",
+        "aftermath": "[Shield] + + +",
         "trash": true,
         "add": [25,26,27,130]
       },{
-        "optionText": "Acquire the needed circuitry to finish the interceptor<br/><br/>When a [Robot] is killed, place 1 Cap on this card.<br/><br/><strong>Place the third Cap on this card</strong>",
+        "optionText": "Acquire the needed circuitry to finish the interceptor<br><br>When a [Robot] is killed, place 1 Cap on this card.<br><br><strong>Place the third Cap on this card</strong>",
         "result": "",
-        "aftermath": "[Star]++",
+        "aftermath": "[Star]+ +",
         "trash": true,
         "add": [28,157]
       }
@@ -641,18 +621,18 @@
     "id": 24,
     "location": "Quest",
     "title": "Derailed",
-    "text": "With the Railroad weakened by it's recent defeat, the Institute has deployed one of its dreaded Coursers to deal with them once and for all.<br/><br/><strong>Place a quest marker at C.I.T. Ruins. This is an Institute Courser. [Star] move toward the Courser instead of survivors.<br/><br/>At the end of each round, remove [Star] from the Courser's space. If there are no [Star] in the Courser's space, move it 1 space toward the Railroad instead.</strong>",
+    "text": "With the Railroad weakened by it's recent defeat, the Institute has deployed one of its dreaded Coursers to deal with them once and for all.<br><br><strong>Place a quest marker at C.I.T. Ruins. This is an Institute Courser. [Star] move toward the Courser instead of survivors.<br><br>At the end of each round, remove [Star] from the Courser's space. If there are no [Star] in the Courser's space, move it 1 space toward the Railroad instead.</strong>",
     "options": [
       {
-        "optionText": "Lead the Courser straight to the Railroad headquarters.<br/><br/><strong>The Courser is at the Railroad</strong>",
+        "optionText": "Lead the Courser straight to the Railroad headquarters.<br><br><strong>The Courser is at the Railroad</strong>",
         "result": "",
-        "aftermath": "[Shield] ++++",
+        "aftermath": "[Shield] + + + +",
         "trash": true,
         "add": false
       },{
-        "optionText": "Things are falling apart. Pay to smuggle out as many synths as you can before the end.<br/><br/><strong>[Quest] Any [Settlement] &bull; Spend 8 Caps</strong>",
+        "optionText": "Things are falling apart. Pay to smuggle out as many synths as you can before the end.<br><br><strong>[Quest] Any [Settlement] &bull; Spend 8 Caps</strong>",
         "result": "",
-        "aftermath": "[Star] +<br/>Place [Star] in your space",
+        "aftermath": "[Star] +<br>Place [Star] in your space",
         "trash": false,
         "add": false
       }
@@ -661,18 +641,18 @@
     "id": 25,
     "location": "Quest",
     "title": "The Minutemen",
-    "text": "The conflict has thrown the Commonwealth into chaos and attracted the attention of its self appointed defenders: the Minutemen.<br/><br/><strong>Place a quest marker at Diamond City. This is the Minutement militia.<br/><br/>Survivors in the same space as the Minutemen can perform the follwing action:</strong> Test [C] [I] 2 &bull; Move the Minutemen a number of spaces equal to the number of [Hits] by which you exceeded the test.",
+    "text": "The conflict has thrown the Commonwealth into chaos and attracted the attention of its self appointed defenders: the Minutemen.<br><br><strong>Place a quest marker at Diamond City. This is the Minutement militia.<br><br>Survivors in the same space as the Minutemen can perform the follwing action:</strong> Test [C] [I] 2 &bull; Move the Minutemen a number of spaces equal to the number of [Hits] by which you exceeded the test.",
     "options": [
       {
-        "optionText": "Manipulate the Minutemen forces into attacking the Railroad<br/><br/><strong>The Minutemen are at the Railroad</strong>",
+        "optionText": "Manipulate the Minutemen forces into attacking the Railroad<br><br><strong>The Minutemen are at the Railroad</strong>",
         "result": "",
-        "aftermath": "[Shield] +++",
+        "aftermath": "[Shield] + + +",
         "trash": true,
         "add": false
       },{
-        "optionText": "Convince the Minutemen to attack the Institute.<br/><br/><strong>The Minutemen are at the C.I.T. Ruins</strong>",
+        "optionText": "Convince the Minutemen to attack the Institute.<br><br><strong>The Minutemen are at the C.I.T. Ruins</strong>",
         "result": "",
-        "aftermath": "[Star] +++",
+        "aftermath": "[Star] + + +",
         "trash": true,
         "add": false
       }
@@ -733,18 +713,18 @@
     "id": 28,
     "location": "Quest",
     "title": "The Nuclear Option",
-    "text": "The Railroad has infiltrated the Institute and has incited a mass revolt! They now plan to finish off the Institute once and for all.<br/><br/><strong>Place [Star] and a quest marker at the Railroad. This quest marker is the reactor blueprint.<br/><br/>A survivor in the same space as the blueprint can move the blueprint with his or her figure. When doing this, treat all spaces as difficult terrain.</strong>",
+    "text": "The Railroad has infiltrated the Institute and has incited a mass revolt! They now plan to finish off the Institute once and for all.<br><br><strong>Place [Star] and a quest marker at the Railroad. This quest marker is the reactor blueprint.<br><br>A survivor in the same space as the blueprint can move the blueprint with his or her figure. When doing this, treat all spaces as difficult terrain.</strong>",
     "options": [
       {
-        "optionText": "Take out as many of the rebels as possible; synths and Railroad alike.<br/><br/><strong>Kill any [Star] or [Shield]</strong>",
+        "optionText": "Take out as many of the rebels as possible; synths and Railroad alike.<br><br><strong>Kill any [Star] or [Shield]</strong>",
         "result": "",
-        "aftermath": "[Shield] +<br/>Place a [Star] at the blueprint",
+        "aftermath": "[Shield] +<br>Place a [Star] at the blueprint",
         "trash": false,
         "add": false
       },{
-        "optionText": "The Railroad has blueprints of the Institute's reactor. If they can get the blueprints there, they can set it to blow and end this forever.<br/><br/><strong>The blueprint is at the C.I.T. Ruins</strong>",
+        "optionText": "The Railroad has blueprints of the Institute's reactor. If they can get the blueprints there, they can set it to blow and end this forever.<br><br><strong>The blueprint is at the C.I.T. Ruins</strong>",
         "result": "",
-        "aftermath": "[Star] ++++",
+        "aftermath": "[Star] + + + +",
         "trash": true,
         "add": false
       }
@@ -756,15 +736,15 @@
     "text": "A sickly-green fog has spread across much of this island. Every structure you pass has been abandoned, but you see dangerous-looking shapes moving in the mists.",
     "options": [
       {
-        "optionText": "The fog calls to you. Travel into the mists, let it embrace you.<br/><br/><strong>Suffer 2 [Radiation] during the same turn</strong>",
+        "optionText": "The fog calls to you. Travel into the mists, let it embrace you.<br><br><strong>Suffer 2 [Radiation] during the same turn</strong>",
         "result": "",
-        "aftermath": "[Shield] +<br/>[Loot] x 2",
+        "aftermath": "[Shield] +<br>[Loot] x 2",
         "trash": true,
         "add": [32,94]
       },{
-        "optionText": "The strange machines are the only sign of civilization left on this island. Investigate them.<br/><br/><strong>Place a [Star]</strong>",
+        "optionText": "The strange machines are the only sign of civilization left on this island. Investigate them.<br><br><strong>Place a [Star]</strong>",
         "result": "",
-        "aftermath": "[Star] +<br/>[Loot] x 2",
+        "aftermath": "[Star] +<br>[Loot] x 2",
         "trash": true,
         "add": [33,67]
       }
@@ -776,13 +756,13 @@
     "text": "Bizarre devices dot the terrain around certain locations on the island. Most seem broken from wear or sabotage, but look easy enough to fix.",
     "options": [
       {
-        "optionText": "Once running, these machines stop Atom's fog! Unacceptable! Smash them.<br/><br/><stron>[Quest] Any [Star] &bull; [S] 3</strong>",
+        "optionText": "Once running, these machines stop Atom's fog! Unacceptable! Smash them.<br><br><stron>[Quest] Any [Star] &bull; [S] 3</strong>",
         "result": "",
         "aftermath": "2 XP &bull; Discard this [Star]",
         "trash": false,
         "add": false
       },{
-        "optionText": "Attempt to communicate with the aliens and make a deal.<br/><br/><strong>[Quest] any [Wasteland] or [Settlement] without [Star] &bull; [E] [I] 4</strong>",
+        "optionText": "Attempt to communicate with the aliens and make a deal.<br><br><strong>[Quest] any [Wasteland] or [Settlement] without [Star] &bull; [E] [I] 4</strong>",
         "result": "",
         "aftermath": "2 XP &bull; Place [Star] in this space",
         "trash": false,
@@ -799,14 +779,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -816,68 +794,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -907,14 +829,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -924,68 +844,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1015,14 +879,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1032,68 +894,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1123,14 +929,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1140,68 +944,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1231,14 +979,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1248,68 +994,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1339,14 +1029,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1356,68 +1044,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1447,14 +1079,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1464,68 +1094,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1555,14 +1129,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1572,68 +1144,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1663,14 +1179,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1680,68 +1194,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "title": "Succeed",
-            "result": "",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1771,14 +1229,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1788,14 +1244,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1825,14 +1279,12 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
@@ -1842,14 +1294,462 @@
         "optionText": "",
         "result": [
           {
-            "title": "Succeed",
-            "result": "",
+            "result": "<strong>Succeed:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false
           },{
-            "title": "Fail",
-            "result": "",
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
             "aftermath": "",
             "trash": false,
             "add": false

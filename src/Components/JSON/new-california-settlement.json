@@ -1,0 +1,192 @@
+[ 
+  {
+    "id": "s9",
+    "location": "settlement",
+    "title": "",
+    "text": "With a spring in your step, you enter the marketplace, ready to find the best deals that this rundown heap of metal and filth has to offer.",
+    "options": [
+      {
+        "optionText": "Browse what is available",
+        "result": "You're a master of money, and the myriad minions of merchantry melt at your might",
+        "aftermath": "Shop [Settlement] + 1",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "None of this is any good; go elsewhere",
+        "result": "You move on to greener pastures.",
+        "aftermath": "Discard each card from the shop and draw replacements, then shop once",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": "s10",
+    "location": "settlement",
+    "title": "",
+    "text": "A drunken man begins to rifle through your things as you look on in confusion. You watch for a moment before you stop him. 'I'll take it all!' he says, and begins to count out Caps from his pockets.",
+    "options": [
+      {
+        "optionText": "Walk away",
+        "result": "You give the man a quizzical look and go about your business.",
+        "aftermath": "Shop [Settlement]",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Sell your belongings",
+        "result": "You take advantage of the man's drunken state and sell some stuff you were going to get rid of anyway.",
+        "aftermath": "Sell any number of your item cards; for each item, gain Caps equal to its value increased by 1 instead",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": "s11",
+    "location": "settlement",
+    "title": "",
+    "text": "A handsome young man winks at you. 'What do you say? Want to sample some of the wares?' He extends his hand, and in his palm is a syringe.",
+    "options": [
+      {
+        "optionText": "Try the chems &bull; [E] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> Free samples! You're as giddy as a gecko in a gas station",
+            "aftermath": "2 XP<br>Take each <em>Drug</em> in the shop",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> He grins. 'Once a customer, always a customer.'",
+            "aftermath": "Become <em>Addicted</em><br>Take each <em>Drug</em> in the shop",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "Turn him down",
+        "result": "He shrugs and goes looking for his next potential customer.",
+        "aftermath": "Shop [Settlement]",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": "s12",
+    "location": "settlement",
+    "title": "",
+    "text": "Two friends are arguing about how to develop their business. The man wishes to make and sell armor and apparel, while the woman wishes to provide the settlement with arms.",
+    "options": [
+      {
+        "optionText": "Support the man",
+        "result": "Seeing that you, a potential customer, are interested in buying armor and clothing, the woman acquiesces.",
+        "aftermath": "Shop",
+        "trash": true,
+        "add": [164]
+      },{
+        "optionText": "Support the woman",
+        "result": "Seeing that you, a potential customer, are interested in buying weapons, the man acquiesces.",
+        "aftermath": "Shop",
+        "trash": true,
+        "add": [165]
+      }
+    ]
+  },{
+    "id": "s13",
+    "location": "settlement",
+    "title": "",
+    "text": "You find yourself sorely lacking funds, and you look around for any available work.",
+    "options": [
+      {
+        "optionText": "Perform hard labor &bull; Test [S] [E] [A] [L]",
+        "result": "You find some work helping the local militia move crates from their warehouse.",
+        "aftermath": "Gain 1 Cap for each [Hits] &bull; [Settlement] - 1 XP",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Find a job with some finesse &bull Test [P] [C] [I] [L]",
+        "result": "You work an iguana bits stand while the proprietor takes a break.You make easy work of the distracted citizens.",
+        "aftermath": "Gain 1 Cap for each [Hits] &bull; [Settlement] - 1 XP",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Go shopping",
+        "result": "Work is for people who don't have any Caps to spend!You make easy work of the distracted citizens.",
+        "aftermath": "Shop [Settlement]",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": "s14",
+    "location": "settlement",
+    "title": "",
+    "text": "As you browse the market, a boisterous man in bright clothing approaches you, gesticulating dramatically. He tells you of your imminent fame and fortune -- you need only purchase from him the deed for a local gold mine. Absolutely safe, he claims, and ripe for profit. A mere one thousand Caps and you'll be rich!",
+    "options": [
+      {
+        "optionText": "That's not going to happen",
+        "result": "Incredulous, you go about your business. At least the bizarre occurrence seems to have drummed up activity in the marketplace.",
+        "aftermath": "Shop [Settlement] + 1",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Buy the deed &bull; Spend 1000 Caps",
+        "result": "Wow! A gold mine!",
+        "aftermath": "Keep this card; it is a gold mine",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": "s15",
+    "location": "settlement",
+    "title": "",
+    "text": "A carnival has come to the settlement, and people have gathered around to witness the spectacle.",
+    "options": [
+      {
+        "optionText": "Join up and make some Caps<br>Test [S] [P] [E] [C] [I] [A] [L]",
+        "result": "You put on a decent show and make some Caps. Good job, you're pretty weird.",
+        "aftermath": "Gain 1 Cap, plus 1 Cap for each [Hits]",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "There is a big crowd with pockets waiting to be picked &bull; Test [P]",
+        "result": "You make easy work of the distracted citizens.",
+        "aftermath": "Gain 2 Caps for each [Hits]",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Not interested; go shopping",
+        "result": "The carnival isn't your thing. You have better things to spend your time doing",
+        "aftermath": "Shop [Settlement]",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },
+  {
+    "id": "s16",
+    "location": "settlement",
+    "title": "",
+    "text": "You find yourself sorely lacking funds, and you look around for any available work.",
+    "options": [
+      {
+        "optionText": "Perform hard labor &bull; Test [S] [E] [A] [L]",
+        "result": "You find some work collecting debt around the settlement.",
+        "aftermath": "Gain 1 XP for each [Hits] &bull; [Settlement] - 1 Caps",
+        "trash": false,
+        "add": false
+      },{
+      },{
+        "optionText": "Find a job with some finesse &bull Test [P] [C] [I] [L]",
+        "result": "You help the settlement's elder take inventory of their supplies",
+        "aftermath": "Gain 1 XP for each [Hits] &bull; [Settlement] - 1 Caps",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Go shopping",
+        "result": "You consider for a moment putting some hard work in. But work is hard, so you don't",
+        "aftermath": "Shop [Settlement]",
+        "trash": false,
+        "add": false
+      }
+    ]
+  }
+]
