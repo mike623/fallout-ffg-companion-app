@@ -3,407 +3,244 @@
     "id": "w009",
     "location": "wasteland",
     "title": "",
-    "text": "",
+    "text": "Radiation permeates the wasteland here. Raiders seem to stay away from it, and you drool at the thought of the unspoiled riches it might hold. The deeper you go, however, the more dangerous it will be.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Play it safe on the outskirts",
+        "result": "Oh boy, a single Cap. Truly this is the greatest of days.",
+        "aftermath": "Suffer 1 [Radiation] &bull; 1 Cap",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Explore some of the moderately irradiated areas",
+        "result": "You find a trove of objects hidden by someone who 'expired' shortly thereafter and whose body is lying several feet away.",
+        "aftermath": "Suffer 2 [Radiation] &bull; [Loot] x [Wasteland]",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Head to where the radiation is the most deadly. The best stuff will be there.",
+        "result": "Naturally, you find only a malfunctioning robot that immediately attempts to kill you.",
+        "aftermath": "Suffer 3 [Radiation] &bull; Draw and fight [Robot]",
         "trash": false,
         "add": false
       }
     ]
-  },
-  {
+  },{
     "id": "w010",
     "location": "wasteland",
     "title": "",
-    "text": "",
+    "text": "Radiation permeates the wasteland here. Raiders seem to stay away from it, and you drool at the thought of the unspoiled riches it might hold. The deeper you go, however, the more dangerous it will be.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Play it safe on the outskirts",
+        "result": "Ooh! Caps! You find a stash of Caps before even setting foot near the irradiated area and call it a day.",
+        "aftermath": "[Wasteland] Caps",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Explore some of the moderately irradiated areas",
+        "result": "You find some stuff, but nothing worth the trouble. And you're beginning to feel a little bit ill...",
+        "aftermath": "Suffer 2 [Radiation] &bull; [Loot]",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Head to where the radiation is the most deadly. The best stuff will be there.",
+        "result": "Jackpot! You find something amazing. Hopefully you won't grow any extra toes or anything.",
+        "aftermath": "Suffer 3 [Radiation] &bull; Choose 1 item from the shop<br>[Loot] x 2 &bull; 3 Caps",
         "trash": false,
         "add": false
       }
     ]
-  },
-  {
+  },{
     "id": "w011",
     "location": "wasteland",
     "title": "",
-    "text": "",
+    "text": "You come across a herd of wild Brahmin. You feel there is something wrong. A voice drifts toward you from the herd's direction. 'Moo.' You pause. It comes again. 'Moo, I say!'",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Walk away quickly",
+        "result": "Brahmin don't speak. You pick up and leave with what is left of your sanity.",
+        "aftermath": "1 XP",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Investigate the Brahmin &bull; [P] [L] 4",
+        "result": [
+          {
+            "result": "<strong>Success:</strong> As you approach the herd, you question the events in your life that led to this moment, and decide to leave them alone.",
+            "aftermath": "2 XP",
+            "trash": true,
+            "add": [214]
+          },{
+            "result": "<strong>Fail:</strong> The Brahmin move toward you with increasing speed. After the first Brahmin explodes, you realize that you have erred. One by one, the Brahmin detonate, leaving craters in the dirt.",
+            "aftermath": "Suffer 3 damage",
+            "trash": true,
+            "add": [214]
+          }
+        ]
       }
     ]
-  },
-  {
+  },{
     "id": "w012",
     "location": "wasteland",
     "title": "",
-    "text": "",
+    "text": "A caravan of traders is being attacked by a horrific mutated creature!",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Provide covering fire<br><em>Weapon with [Ranged] &bull; [P] 4",
         "result": [
           {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
+            "result": "<strong>Success:</strong> The grateful traders escape their fate and reward you in Caps.",
+            "aftermath": "[Wilderness] Caps &bull; 2 XP",
             "trash": false,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
+            "result": "<strong>Fail:</strong> The creature kills the traders and chases you across the wastes.",
+            "aftermath": "Suffer 1 damage &bull; Move 1 space",
             "trash": false,
             "add": false
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Wait for it to finish them off",
+        "result": "Within a few minutes, all of the traders are dead.",
+        "aftermath": "[Loot] &bull; 2 Caps",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Fight the beast yourself",
+        "result": "Heroically, you stand alone against the monster, and all who witness your battle are in awe.",
+        "aftermath": "Draw and fight [Monster] &bull; Become <em>Idolized</em>",
+        "trash": true,
+        "add": [161]
       }
     ]
-  },
-  {
+  },{
     "id": "w013",
     "location": "wasteland",
     "title": "",
-    "text": "",
+    "text": "You hear the cries of someone in extreme agony and discover a man bleeding out at the foot of a dead tree.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Relieve him of his possessions",
+        "result": "You help yourself to the man's things. It's not like he'll be needing them.",
+        "aftermath": "[Loot] &bull; 6 Caps &bull; Become <em>Vilified</em>",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Try to stop the bleeding &bull; [P] [I] [L] 4",
         "result": [
           {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Success:</strong> You manage to save his life, you help him to his feet, and he hobbles back toward town.",
+            "aftermath": "2 XP &bull; Become <em>Idolized</em>",
+            "trash": true,
+            "add": [163]
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> Unfortunately, you are too late. The man breathes his final breath and dies.",
             "aftermath": "",
-            "trash": false,
+            "trash": true,
             "add": false
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Stabilize him with chems &bull; Discard an <em>Aid</em> or <em>Drug</em> item",
+        "result": "You manage to keep him concious with the help of some stims. You help him to his feet, and he hobbles back toward town.",
+        "aftermath": "2 XP &bull; Become <em>Idolized</em>",
+        "trash": true,
+        "add": [163]
       }
     ]
-  },
-  {
+  },{
     "id": "w014",
     "location": "wasteland",
     "title": "",
-    "text": "",
+    "text": "A dilapidated Nuka-Cola truck lies on its side here, spilling its contents out onto the dirt.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Search for Caps &bull [l] 5",
         "result": [
           {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Success:</strong> You find a crate filled to the brim with Caps! Today is your lucky day.",
+            "aftermath": "[Wilderness] x 5 Caps",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Fail:</strong> Your clumsy bumbling attracts the attention of nearby looters.",
+            "aftermath": "Draw and fight [Human]",
+            "trash": true,
             "add": false
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Hang back, something isn't right",
+        "result": "Sure enough, after a few minutes of watching the truck, a group of raiders reveals itself from the surrounding foliage, gives the truck a quick once-over, and heads off into the wasteland.",
+        "aftermath": "1 XP",
+        "trash": true,
+        "add": [160]
       }
     ]
-  },
-  {
+  },{
     "id": "w015",
     "location": "wasteland",
     "title": "",
-    "text": "",
+    "text": "You come across a herd of wild Brahmin. You feel there is something wrong. A voice drifts toward you from the herd's direction. 'Moo.' You pause. It comes again. 'Moo, I say!'",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Walk away quickly",
+        "result": "Brahmin don't speak. You quickly pick up and leave with what is left of your sanity.",
+        "aftermath": "1 XP",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Investigate the Brahmin &bull; [P] [L] 4",
         "result": [
           {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Success:</strong> You study each of the Brahmin with an accusatory glare. Eventually, you settle on the culprit, jabbing it triumphantly in the forehead with your pointer finger. Ha! It stares at you blankly.",
+            "aftermath": "[Wilderness] + 1 XP",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
+            "result": "<strong>Fail:</strong> The Brahmin regqrd you with a look that can only be described as bloodlust... or just regular lust. Either way, time to go.",
+            "aftermath": "Move 1 space",
             "trash": false,
             "add": false
           }
         ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
       }
     ]
-  },
-  {
+  },{
     "id": "w016",
     "location": "wasteland",
     "title": "",
-    "text": "",
+    "text": "You come across a den that belongs to one of the wsteland's skittering inhabitants. It probably has got some good loot inside",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Raid the den",
+        "result": "You enter the den, weapon at the ready",
+        "aftermath": "Draw and fight [Bug] &bull; Suffer 1 [Radiation] &bull; [Loot] x [Wilderness]",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Sneak inside &bull; [A] 3",
         "result": [
           {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
+            "result": "<strong>Success:</strong> You are in and out of the den in a flash, and the creatures within are none the wiser.",
+            "aftermath": "[Loot] x [Wilderness] &bull; [Wilderness] XP",
             "trash": false,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
+            "result": "<strong>Fail:</strong> Your footsteps fall heavy, drawing the attention of the den's inhabitants, who proceed to chase you from their home.",
+            "aftermath": "Draw and fight [Bug] &bull; Suffer 3 [Radiation]",
             "trash": false,
             "add": false
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Success:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Toss a grenade &bull; Discard a <em>Grenade</em> item",
+        "result": "The explosion rocks the earth, sending a geyser of dirt and stone into the air. Easy pickings. A few moments later, a tremor shakes the earth a second time. Probably nothing.",
+        "aftermath": "[Loot] x [Wilderness] &bull; 2 XP",
+        "trash": true,
+        "add": [162]
       }
     ]
   }
