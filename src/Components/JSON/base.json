@@ -554,7 +554,7 @@
     ]
   },{
     "id": 22,
-    "if/then": ["[Wasteland] <= level-2","trash=true","add=22"],
+    "if/then": ["[Wasteland] <= level-2","trash=true","add=[22]"],
     "location": "Wasteland",
     "title": "",
     "text": "<strong>If at a level-2 or lower [Wasteland], encounter the next card. Then, add this card.</strong><br><br>You are caught in the middle of a firefight! Synth soldiers are systematically advancing on a small band of Railroad members defending a group of huddling people.",
@@ -771,406 +771,197 @@
     ]
   },{
     "id": 31,
-    "location": "",
+    "if/then": ["[Star]","trash=true","add=[31]"],
+    "location": "Settlement",
     "title": "",
-    "text": "",
+    "text": "<strong>If there is [Star] on this space, encounter the next card. Then, add this card</strong><br><br>Without the protection of the fog condensers, the people in this settlement have fled the concoming fog. You walk through a ghost town.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Fix up the fog condensor &bull; [E] [I] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Succeed:</strong> The machine whirs to life.",
+            "aftermath": "Place [Star] in this space",
+            "trash": true,
+            "add": [31]
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> You manage only to frustrate yourself banging away on the machine.",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [31]
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
+        "optionText": "Praise Atom! Await the fog",
+        "result": "You watch as the fog swirls around the buildings.",
+        "aftermath": "If there is no [Shield] in this space, place [Shield]",
+        "trash": true,
+        "add": [31]
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Steal some stuff. No one is here to stop you",
+        "result": "The traders took their wares with them, but you find some odds and ends.",
+        "aftermath": "[Loot] x [Settlement]",
+        "trash": true,
+        "add": [31]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 32,
+    "location": "Quest",
+    "title": "Embrace the Glow",
+    "text": "As you camp in the fog, you are approached by a robed figure. She is from the Church of the Children of Atom, and they want help spreading the fog.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Time for some missionary work! Spread Atom's love to more of the island.<br><br><strong>When a [Shield] is placed on the map when there is already at least 1 [Shield] on the map</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] +<br>3 XP",
+        "trash": true,
+        "add": [34,67]
       },{
-        "optionText": "",
+        "optionText": "Warn the local town of Far Harbor of the fanatical cult's plans.<br><br><strong>[Quest] Far Harbor</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "3 XP",
+        "trash": true,
+        "add": [34,67]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 33,
+    "location": "Quest",
+    "title": "The Last Bastion",
+    "text": "You find a break in the fog and people still alive on this island! They say that there are several pockets of civiliation left in the fog, but most people are either members of the Church of the Children of the Atom or holed up at the port town of Far Harbor",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Still the fog calls. Help it spread its tendrils out into the island.<br><br><strong>When a [Shield] is placed on the map</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] +<br>3 XP",
+        "trash": true,
+        "add": [34,117]
       },{
-        "optionText": "",
+        "optionText": "Reach Far Harbor to find out what is really happening on the island.<br><br><strong>[Quest] Far Harbor</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] +<br>3 XP",
+        "trash": true,
+        "add": [34,101]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 34,
+    "location": "Quest",
+    "title": "Choking Fog",
+    "text": "As the fog continues to consume the island, Far Harbor has begun to erect mechanical devices called 'Fog Condensers' that stop the fog from consuming certain areas.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Continue to help the church bring Atom's grace to the island.<br><br><strong>When a [Shield] is placed on the map when there are already at least 3 [Shield] on the map</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] +<br>3 XP",
+        "trash": true,
+        "add": [38,35,37,141]
       },{
-        "optionText": "",
+        "optionText": "Help erect condensers to help slow the spread of fog.<br><br><strong>When a [Star] is placed on the map when there is already at least 1 [Star] on the map</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] +<br>3 XP",
+        "trash": true,
+        "add": [38,36,37,134]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 35,
+    "location": "Quest",
+    "title": "Initiation",
+    "text": "The fog that now covers much of the island has mutated and enraged the creatures, and now they threaten Far Harbor! Meanwhile, the Church is safe in its cave base at the Nucleus.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Go to the Nucleus to join the Children of Atom<br><br><strong>[Quest] The Nucleus</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] +<br>3 XP",
+        "trash": true,
+        "add": [39,150]
       },{
-        "optionText": "",
+        "optionText": "Kill the creature that threatens Far Harbor<br><br><strong>Kill any [Monster]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] + +<br>3 XP",
+        "trash": true,
+        "add": [40,112]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 36,
+    "location": "Quest",
+    "title": "Infiltration",
+    "text": "With some condensers up and running, Far Harbor has earned enough breathing room to figure out what is really going on here.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "You need the proper knowledge of how these condensers work. Study similar technology.<br><br><strong>Kill any [Robot]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] + +<br>3 XP",
+        "trash": true,
+        "add": [39,112]
       },{
-        "optionText": "",
+        "optionText": "Head to the Nucleus to infiltrate the Children of Atom for information<br><br><strong>[Quest] The Nucleus</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] +<br>3 XP",
+        "trash": true,
+        "add": [40,150]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 37,
+    "location": "Quest",
+    "title": "Acadia In Need",
+    "text": "Caught in the middle of everything involving the fog is the hideout of Acadia, run by the synth DiMa. Ambivalent to the conflict between Far Harbor or the Church, he has one goal: to help as many escaped synths as possible.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Convince the synths to avoid Acadia and stay to help the island.<br><br><strong>Encounter any [Settlement] until you locate the synth</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [157]
       },{
-        "optionText": "",
+        "optionText": "Guide the synths to the refuge of Acadia<br><br><strong>Encounter any [Settlement] until you locate the synth</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "5 Caps",
+        "trash": true,
+        "add": [41]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 38,
+    "location": "Settlement",
     "title": "",
-    "text": "",
+    "text": "As you pass through the people gathered to trade, you spot someone who matches he description of the synth DiMa was looking for.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Leverage your knowledge of the synth to get her to help you &bull; [S] [C] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> Angered that you know her secret, she nevertheless agrees to help.",
+            "aftermath": "Complete objective 1 of 'Acadia in Need'",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Fail:</strong> Outraged by your threat, she hits you and flees into the crowd.",
+            "aftermath": "Suffer 2 damage",
+            "trash": true,
+            "add": [38]
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Quietly tell the synth about Acadia",
+        "result": "She thanks you and heads off in the direction of Acadia, promising that she won't forget this.",
+        "aftermath": "Complete objective 2 of 'Acadia in Need'<br>Become <em>Idolized</em>",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Ignore the synth and go shopping",
+        "result": "The synth continues about her day none the wiser",
+        "aftermath": "Shop [Settlement]",
+        "trash": true,
+        "add": [38]
       }
     ]
   },{
-    "id": 0,
+    "id": 39,
     "location": "",
     "title": "",
     "text": "",
