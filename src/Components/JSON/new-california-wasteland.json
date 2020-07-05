@@ -217,7 +217,7 @@
       {
         "optionText": "Raid the den",
         "result": "You enter the den, weapon at the ready",
-        "aftermath": "Draw and fight [Bug] &bull; Suffer 1 [Radiation] &bull; [Loot] x [Wilderness]",
+        "aftermath": "Draw and fight [Critter] &bull; Suffer 1 [Radiation] &bull; [Loot] x [Wilderness]",
         "trash": false,
         "add": false
       },{
@@ -230,7 +230,7 @@
             "add": false
           },{
             "result": "<strong>Fail:</strong> Your footsteps fall heavy, drawing the attention of the den's inhabitants, who proceed to chase you from their home.",
-            "aftermath": "Draw and fight [Bug] &bull; Suffer 3 [Radiation]",
+            "aftermath": "Draw and fight [Critter] &bull; Suffer 3 [Radiation]",
             "trash": false,
             "add": false
           }

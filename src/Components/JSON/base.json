@@ -962,6 +962,4231 @@
     ]
   },{
     "id": 39,
+    "location": "Quest",
+    "title": "Converts to the Church",
+    "text": "Even with its recent gains, the Church still needs more members to fill its ranks.",
+    "options": [
+      {
+        "optionText": "Perhaps the synths of Acadia can be convinced to see the light of Atom's glow.<br><br><strong>[Quest] Acadia &bull; Any companion &bull; [E] [C] 4</strong>",
+        "result": "",
+        "aftermath": "[Shield] + +",
+        "trash": true,
+        "add": [42,148]
+      },{
+        "optionText": "Use the church's need of members to infiltrate their organization.<br><br><strong>[Quest] Nucleus &bull; [C] [A] [L] 4</strong>",
+        "result": "",
+        "aftermath": "[Star] + +",
+        "trash": true,
+        "add": [43]
+      }
+    ]
+  },{
+    "id": 40,
+    "location": "Quest",
+    "title": "Rebuild",
+    "text": "Far Harbor can now breathe a bit easier, but the wider danger of the fog still looms on the island. They suspect the church will continue to try to sabotage the condensers, and they need a supply of circuitry to ensure they can fix them.",
+    "options": [
+      {
+        "optionText": "Go to the Nucleus to join the Church.<br><br><strong>[Quest] Nucleus &bull; [S] [C] 4</strong>",
+        "result": "",
+        "aftermath": "[Shield] + +",
+        "trash": true,
+        "add": [42]
+      },{
+        "optionText": "Scavenge circuitry to ensure enough condensers to keep Far Harbor safe.<br><br><strong>[Quest] Robco Factory &bull; [S] [P] [I] 4</strong>",
+        "result": "",
+        "aftermath": "[Star] + +",
+        "trash": true,
+        "add": [43,148]
+      }
+    ]
+  },{
+    "id": 41,
+    "location": "Quest",
+    "title": "Pulling the Strings",
+    "text": "With everything you have done for Acadia, you have earned the trust of DiMa. He has revealed that he has the ability to replace one of the faction leaders with a synth.<br><br><strong>Place a quest marker at Arcadia. This is the replacement synth.<br><br>A survivor in the same space as the replacement can move it with his or her figure. When doing this, treat all spaces as difficult terrain.</strong>",
+    "options": [
+      {
+        "optionText": "Replace Captain Avery with a synth.<br><br><strong>Replacement at Far Harbor</strong>",
+        "result": "",
+        "aftermath": "[Shield] + +",
+        "trash": true,
+        "add": [130]
+      },{
+        "optionText": "Replace High Confessor Tektus with a synth<br><br><strong>Replacement at The Nucleus</strong>",
+        "result": "",
+        "aftermath": "[Star] + +",
+        "trash": true,
+        "add": [130]
+      }
+    ]
+  },{
+    "id": 42,
+    "location": "Quest",
+    "title": "The Last Defense",
+    "text": "With its new members, the Church now has the strength to bring Atom's grace to Far Harbor and finally claim all of this island.",
+    "options": [
+      {
+        "optionText": "Smash the remaining condensers near Far Harbor and let the fog consume them.<br><br><strong>When a [Shield] is placed on the map when there are no [Star] within 4 spaces of Far Harbor</strong>",
+        "result": "",
+        "aftermath": "[Shield] + + +",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Evacuate as many people as possible to safety before the fog overtakes the island.<br><br><strong>[Quest] Far Harbor &bull; Discard a companion</strong>",
+        "result": "",
+        "aftermath": "[Star] +",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 43,
+    "location": "Quest",
+    "title": "Embrace This!",
+    "text": "It's time to take the fight back to the Church. Their base at the Nucleus is an old nuclear submarine. You could overload its reactor... if you can get inside, that is.",
+    "options": [
+      {
+        "optionText": "Smash as many of the condensers as possible.<br><br><strong>Discard 1 [Star]</strong>",
+        "result": "",
+        "aftermath": "[Shield] +",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "They will let only the truly devout that deep into their inner sanctum. Show your devotion, then blow them sky high!<br><br><strong>[Quest] The Nucleus &bull; Have 6 or fewer remaining HP &bull; [C] [I] [L] 5</strong>",
+        "result": "",
+        "aftermath": "[Star] + + +",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 44,
+    "location": "Quest",
+    "title": "Welcome to Capital Wasteland",
+    "text": "The mountains around you shake suddenly, fire and rubble spewing violently into the sky. Eyes wide, you watch as a fleet of vertibirds scrambles from its peak to clear the violent blasts. The straggler of the group begins to emit a trail of smoke as the rest disappear over the eastern horizon, then abruptly drops out of sight with a dull explosion that echoes up from the capital wasteland.",
+    "options": [
+      {
+        "optionText": "Look for survivors.<br><br><strong>[Quest] The wreck</strong>",
+        "result": "",
+        "aftermath": "[Shield] +<br>Place [Shield] on Project Purity<br>[Loot] x 2",
+        "trash": true,
+        "add": [45,101,46]
+      },{
+        "optionText": "Find someone who knows what the hell just happened.<br><br><strong>[Quest] Megaton</strong>",
+        "result": "",
+        "aftermath": "[Star] +<br>Place [Shield] on Project Purity<br>[Loot] x 2",
+        "trash": true,
+        "add": [48,67]
+      }
+    ]
+  },{
+    "id": 45,
+    "location": "Quest",
+    "title": "National Treasures",
+    "text": "Most of the crew has survived, but all are injured, many severely. Unwilling to trust a stranger, they require proof of your loyalty. They disclose the locations of some nearby caches, in which are supplies and protocols for this kind of situation.",
+    "options": [
+      {
+        "optionText": "Locate the survival gear for the wounded.<br><br><strong>Encounter any [Wasteland] until you locate the cache</strong>",
+        "result": "",
+        "aftermath": "[Shield] +<br>3 XP",
+        "trash": true,
+        "add": [49,67]
+      },{
+        "optionText": "Demand an explanation in exchange for the contents of the caches.<br><br><strong>Encounter any [Wasteland] until you locate the cache</strong>",
+        "result": "",
+        "aftermath": "[Star] +<br>3 XP",
+        "trash": true,
+        "add": [49,67]
+      }
+    ]
+  },{
+    "id": 46,
+    "location": "Wasteland",
+    "title": "",
+    "text": "A few faint scratches on an old wall indicate an Enclave cache. Pushing a rusted cabinet aside, you expose the hole in the floor and drop down. Inside, a hooded figure dozes.",
+    "options": [
+      {
+        "optionText": "Back out and look elsewhere",
+        "result": "You slide the cabinet back into place.",
+        "aftermath": "[Loot] x [Wasteland]",
+        "trash": true,
+        "add": [46]
+      },{
+        "optionText": "Drive her off",
+        "result": "After a scuffle, she runs back up through the hole. The cache is empty, and outside, she waits.",
+        "aftermath": "Draw and fight [Human]",
+        "trash": true,
+        "add": [47]
+      },{
+        "optionText": "Ask what happened here &bull; [C] 3",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> She explains that this cache was empty when found it and points you toward another.",
+            "aftermath": "Encounter the next card",
+            "trash": true,
+            "add": [47]
+          },{
+            "result": "<strong>Fail:</strong> She flees. After a long chase, you emerge in the daylight, but she is gone.",
+            "aftermath": "Move 1 space",
+            "trash": true,
+            "add": [47]
+          }
+        ]
+      }
+    ]
+  },{
+    "id": 47,
+    "location": "Wasteland",
+    "title": "",
+    "text": "More scratches on the wall indicate a second cache. Inside, it is clear that almost everything is still in place here. This is what the survivors are looking for.",
+    "options": [
+      {
+        "optionText": "Gather what they need, but hide the rest for yourself to retrieve later &bull; [P] [I] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You return for the haul later.",
+            "aftermath": "Complete either 'National Treasures' objective<br>[Loot] x [Wasteland]",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> When you return, everything is gone except for a single armed land mine.",
+            "aftermath": "Complete either 'National Treasueres' objective<br>Suffer 3 damage",
+            "trash": true,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "Gather it and return to the crash site",
+        "result": "You deliver more than they need, and they are quite thankful.",
+        "aftermath": "Complete either 'National Treasures' objective<br>Become <em>Idolized</em>",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Forget them, and take it all for yourself",
+        "result": "Unfortunately, only a few items prove useful.",
+        "aftermath": "[Loot] x [Wasteland]",
+        "trash": true,
+        "add": [47]
+      }
+    ]
+  },{
+    "id": 48,
+    "location": "Quest",
+    "title": "A Shaky Lead",
+    "text": "The Enclave was long believed to be dead and gone, so their vertibirds soaring over the capital wasteland has set Megaton abuzz. You get a lead, but it's shaky: an intelligent super mutant appeared in the city around the same time. He spoke of a personal quest to ensure the safety and survival of all, then disappeared into the hills.",
+    "options": [
+      {
+        "optionText": "A super mutant? Nope. Go help any Enclave survivors instead.<br><br><strong>[Quest] The wreck</strong>",
+        "result": "",
+        "aftermath": "[Shield] +<br>Place [Shield] at Project Purity<br>3 XP",
+        "trash": true,
+        "add": [49,112]
+      },{
+        "optionText": "Track down and assist this super mutant.<br><br><strong>[Quest] Vault 84</strong>",
+        "result": "",
+        "aftermath": "[Star] +<br>",
+        "trash": true,
+        "add": [50,117]
+      }
+    ]
+  },{
+    "id": 49,
+    "location": "Quest",
+    "title": "One More Silver Dollar",
+    "text": "The survivors explain that they are mostly scientists critical to the Enclave's current mission: retake the wasteland for humankind. In order to continue their work, they need someone to make contact with the Enclave to request a medevac.",
+    "options": [
+      {
+        "optionText": "Report their location to Enclave soldiers.<br><br><strong>[Quest] Project Purity or space with [Shield] &bull; [P]] [I] 4</strong>",
+        "result": "",
+        "aftermath": "[Shield] +<br>Place [Shield] at Project Purity<br>3 XP",
+        "trash": true,
+        "add": [51,94]
+      },{
+        "optionText": "Report the Enclave's emergence and this looming threat to the Brotherhood of Steel.<br><br><strong>[Quest] The Tower</strong>",
+        "result": "",
+        "aftermath": "[Star] +<br>Place [Shield] at Project Purity<br>Place [Star] at Megaton and the Tower<br>3 XP",
+        "trash": true,
+        "add": [52,141,53]
+      }
+    ]
+  },{
+    "id": 50,
+    "location": "Quest",
+    "title": "What The Fawkes?",
+    "text": "The rumored super mutant can talk! His name is Fawkes, and you find him fruitlessly searching outside Vault 84 on some personal mission. He'll give you the information on the Brotherhood and Enclave if you help him locate the next vault on his list.",
+    "options": [
+      {
+        "optionText": "This Fawkes is everything the Enclave has been working against. Plant the right evidence to get some local super mutants to deal with their 'brother.'<br><br><strong>[Quest] Super Mutant Camp &bull; [S] [E] [C] 5</strong>",
+        "result": "",
+        "aftermath": "[Shield] + +<br>3 XP",
+        "trash": true,
+        "add": [51,141]
+      },{
+        "optionText": "Locate the next vault Fawkes wants to research.<br><br><strong>[Quest] Vault 109 &bull; [P] [I] [L] 5</strong>",
+        "result": "",
+        "aftermath": "[Star] +<br>3 XP",
+        "trash": true,
+        "add": [52,94,53]
+      }
+    ]
+  },{
+    "id": 51,
+    "location": "Quest",
+    "title": "Give Me Liberty",
+    "text": "The Brotherhood of Steel is working on a secret weapon to take on the Enclave. Meanwhile, the Enclave continues to build up its forces at what used to be the Jefferson Memorial.",
+    "options": [
+      {
+        "optionText": "Pay off some local criminals to sabotage the Brotherhood's project.<br><br><strong>[Quest] The Tower &bull; [P] [C] 5 &bull; Spend 4 Caps</strong>",
+        "result": "",
+        "aftermath": "[Shield] +",
+        "trash": true,
+        "add": [54,157]
+      },{
+        "optionText": "The Brotherhood is recovering equipment from the old Robco junkyard. Bring them some more supplies.<br><br><strong>[Quest] Robco Factory &bull; Discard <em>Robot</em> companion</strong>",
+        "result": "",
+        "aftermath": "[Star] + +<br>Place 2 [Shield] at Project Purity",
+        "trash": true,
+        "add": [55,148]
+      }
+    ]
+  },{
+    "id": 52,
+    "location": "Quest",
+    "title": "The Sleeping Giant",
+    "text": "The Enclave has a big plan for Project Purity, and no one is exactly sure what that is. But first they have to clear out the super mutants that have cropped up. Meanwhile, the Brotherhood hunts for an answer.",
+    "options": [
+      {
+        "optionText": "Deal with the super mutants that continue to threaten Project Purity.<br><br><strong>[Quest] The Mall &bull; Draw and fight [Super Mutant]</strong>",
+        "result": "",
+        "aftermath": "[Shield] + +",
+        "trash": true,
+        "add": [54,148]
+      },{
+        "optionText": "Help the Brotherhood find the solution they've been searching for.<br><br><strong>Encounter at Robco Factory until you locate the prototype</strong>",
+        "result": "",
+        "aftermath": "[Star] +",
+        "trash": true,
+        "add": [55,130]
+      }
+    ]
+  },{
+    "id": 53,
+    "if/then": ["!RobcoFactory","trash=true","add=[53]"],
+    "location": "Wasteland",
+    "title": "",
+    "text": "<strong>If not at Robco Factory, encounter the next card. Then add this card.</strong><br><br>'Threat analysis: green,' three mechanical voices boom in unison. You duck out of the doorway.",
+    "options": [
+      {
+        "optionText": "Grab a little loot and leave",
+        "result": "Despite your haste, you find something.",
+        "aftermath": "[Loot]",
+        "trash": true,
+        "add": [53]
+      },{
+        "optionText": "Search the room for more loot &bull; [P] [A] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> The room is a treasure trove!",
+            "aftermath": "2 Caps &bull; [Loot] x [Wasteland]",
+            "trash": true,
+            "add": [53]
+          },{
+            "result": "<strong>Fail:</strong> All hell breaks loose.",
+            "aftermath": "Suffer 3 damage",
+            "trash": true,
+            "add": [53]
+          }
+        ]
+      },{
+        "optionText": "Retrieve the energy source for the Brotherhood of Steel &bull; [P] [I] [L] 5",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> Through a combination of hacking, stealth, and timing, you succeed.",
+            "aftermath": "Complete 'The Sleeping Giant'",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> 'Hostile detected!' the security bots boom. One of them pursues you out of the factory.",
+            "aftermath": "Draw and fight [Robot]",
+            "trash": true,
+            "add": [53]
+          }
+        ]
+      }
+    ]
+  },{
+    "id": 54,
+    "location": "Quest",
+    "title": "...Or Give Me Death",
+    "text": "The Enclave has begun their work on Project Purity. Their intention, however, is quite dissimilar to the original intention of the water purifier. Soon, they will introduce a solution into the water that will cleanse every mutation from the capital wasteland, making room for a new age for mankind.",
+    "options": [
+      {
+        "optionText": "Recruit help from the wasteland for the Enclave's work at Project Purity<br><br><strong>[Quest] any [Settlement] &bull; Spend 10 Caps</strong>",
+        "result": "",
+        "aftermath": "[Shield] +<br>Place [Shield] in your space",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "The Brotherhood is close to activating their weapon and taking the war directly to the Enclave!<br><br><strong>[Quest] The Tower &bull; Discard <em>Robot</em> companion</strong>",
+        "result": "",
+        "aftermath": "[Star] + +",
+        "trash": true,
+        "add": [55]
+      }
+    ]
+  },{
+    "id": 55,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
+    "location": "",
+    "title": "",
+    "text": "",
+    "options": [
+      {
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "",
+        "result": "",
+        "aftermath": "",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 0,
     "location": "",
     "title": "",
     "text": "",

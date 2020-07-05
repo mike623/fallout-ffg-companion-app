@@ -107,13 +107,13 @@
       {
         "optionText": "Rush in and kill the critters",
         "result": "You step into the den and get ready to clear out the creatures for the good of everyone.",
-        "aftermath": "Draw and fight [Bug] &bull; [Loot] x [Wilderness]<br>Become <em>Idolized</em>",
+        "aftermath": "Draw and fight [Critter] &bull; [Loot] x [Wilderness]<br>Become <em>Idolized</em>",
         "trash": true,
         "add": [4]
       },{
         "optionText": "Send them after somone else &bull; Adjacent survivor",
         "result": "You make sounds to draw the creatures away and toward someone else.",
-        "aftermath": "That survivor draws and fights [Bug]<br>Become <em>Vilified</em>",
+        "aftermath": "That survivor draws and fights [Critter]<br>Become <em>Vilified</em>",
         "trash": true,
         "add": [4]
       },{
@@ -140,7 +140,7 @@
             "add": false
           },{
             "result": "<strong>Fail:</strong> The computer emits a loud alarm. The sound attracts something outside the building. Guess you're not alone. You grab a Cap lying under the register.",
-            "aftermath": "1 Cap &bull; Draw and fight [Bug]",
+            "aftermath": "1 Cap &bull; Draw and fight [Critter]",
             "trash": false,
             "add": false
           }
@@ -155,7 +155,7 @@
             "add": [1]
           },{
             "result": "<strong>Fail:</strong> You're reading markings on the wall when something springs from the shadows!",
-            "aftermath": "Draw and fight [Bug]",
+            "aftermath": "Draw and fight [Critter]",
             "trash": false,
             "add": false
           }
@@ -219,7 +219,7 @@
             "add": false
           },{
             "result": "<strong>Fail:</strong> You hear scuttling as you search. The corpse must have drawn scavengers.",
-            "aftermath": "Draw and fight [Bug]",
+            "aftermath": "Draw and fight [Critter]",
             "trash": false,
             "add": false
           }
