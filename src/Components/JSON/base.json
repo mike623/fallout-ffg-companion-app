@@ -1337,456 +1337,210 @@
     ]
   },{
     "id": 55,
-    "location": "",
-    "title": "",
-    "text": "",
+    "location": "Quest",
+    "title": "...And Justice For All",
+    "text": "'BETTER RED THAN DEAD,' a mechanical voice booms across the wastelands as the Brotherhood gets Liberty Prime back online.<br><br><strong>Place a quest marker on the Tower; this is Liberty Prime. [Shield] move toward Liberty Prime instead of survivors.<br><br>At the end of the round, remove [Shield] from Liberty Prime's space. If there are no [Shield] in its space, it moves 1 space toward Project Purity instead.</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Recruit help from the wasteland for the Enclave's work at Project Purity.<br><br><strong>[Quest] Any [Settlement] &bull; Spend 10 or more Caps</strong>",
         "result": "",
-        "aftermath": "",
+        "aftermath": "[Shield] + per 10 Caps spent<br>Place [Shield] in your space",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
+        "optionText": "End this.<br><br><strong>Liberty Prime is at Project Purity</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "[Star] + + + +",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 56,
+    "location": "Quest",
+    "title": "Into The Pitt",
+    "text": "You happen upon a man fleeing this new wasteland. 'Please,' he says, 'if you see my friends, tell them I made it -- that there is a way out. And whatever you do, don't let the slavers know I've come this way.'",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Report the escaped slave.<br><br><strong>[Quest] any [Settlement]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] +<br>Place [Shield] in your space<br>[Loot] x 2",
+        "trash": true,
+        "add": [57,67]
       },{
-        "optionText": "",
+        "optionText": "Infrom the man's friends.<br><br><strong>[Quest] any [Wasteland]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] +<br>Place [Star] in your space<br>[Loot] x 2",
+        "trash": true,
+        "add": [58,67]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 57,
+    "location": "Quest",
+    "title": "On The Trail",
+    "text": "You report the escaped slave, but no one seems to care. 'He carrying a child? No? Then forget it! Ashur's kid is missing, find a lead on her, that'll be worthy news. Who's Asher? The boss, of course! What ruck you been sleeping under?'",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Investigate where the child was last seen.<br><br><strong>[Quest] Red Rocket Station &bull; [P] [C] 4</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] +<br>3 XP",
+        "trash": true,
+        "add": [59,101]
       },{
-        "optionText": "",
+        "optionText": "Fight off those who are in pursuit of the child.<br><br><strong>[Quest] any [Wasteland] &bull; Draw and fight [Human]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] +<br>3 XP",
+        "trash": true,
+        "add": [60,112]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 58,
+    "location": "Quest",
+    "title": "On The Eve Of War",
+    "text": "It turns out that the slave who escaped was part of a resistance group. Without his aid in Ashbury, their upcoming assault on Haven will need to be scrapped.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Gather intelligence on this resistance.<br><br><strong>[Quest] any [Settlement] &bull; [C] 3</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] +<br>3 XP",
+        "trash": true,
+        "add": [60,141]
       },{
-        "optionText": "",
+        "optionText": "Provide another individual to take the place of the deserter.<br><br><strong>[Quest] Ashbury Road &bull; Any companion</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] +<br>3 XP",
+        "trash": true,
+        "add": [61,117]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 59,
+    "location": "Quest",
+    "title": "Up The Chain",
+    "text": "A small group of slaves is hiding out in Red Rocket Station, defending Ashur's kidnapped child. If this information makes it back to Haven, a larger force will be sent to break the defenses and recover the child.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Report the baby's location to Ashur.<br><br><strong>[Quest] Haven</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] +<br>Place 2 [Shield] at The Bridge<br>Place [Star] at the Red Rocket Station<br>3 XP",
+        "trash": true,
+        "add": [62,94,63]
       },{
-        "optionText": "",
+        "optionText": "Incite an uprising and capture the bridge, cutting off the slavers from the wasteland.<br><br><strong>[Quest] The Bridge</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] + +<br>Place 2 [Shield] at Haven<br>Place 2 [Star] at The Bridge<br>3 XP",
+        "trash": true,
+        "add": [65,157]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 60,
+    "location": "Quest",
+    "title": "Fires Of Revolution",
+    "text": "Recent killings have caused a backlash, and the wasteland is on the verge of war. Regardless of the outcome, many lives will be lost, and those who do not prepare now will surely be among the dead.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Assist the construction of Haven's fortifications.<br><br><strong>[Quest] The Bridge &bull; [I] [L] 4</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] + +<br>Place [Shield] at The Bridge<br>Place 2 [Star] at The Mill<br>3 XP",
+        "trash": true,
+        "add": [65,107]
       },{
-        "optionText": "",
+        "optionText": "Reinforce the slaves at their stronghold.<br><br><strong>[Quest] The Mill</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] + +<br>Place [Shield] at The Mill<br>Place 2 [Star] at Haven<br>3 XP",
+        "trash": true,
+        "add": [65,125]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 61,
+    "location": "Quest",
+    "title": "Break The Chains",
+    "text": "Ashur is living on borrowed time. His lieutenants are missing and his compound is compromised. There is little hope remaining for the slaver overlord.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Join the watch and try to spot the assassins.<br><br><strong>[Quest] Haven &bull; [P] [E] [L] 5</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] + +<br>Place [Shield] at The Mill<br>3 XP",
+        "trash": true,
+        "add": [65,150]
       },{
-        "optionText": "",
+        "optionText": "Ensure the job is completed.<br><br><strong>[Quest] Haven &bull; Draw and fight [Human];<br>apply +1 to its level</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] +<br>Place [Shield] at The Bridge<br>3 XP",
+        "trash": true,
+        "add": [64,157]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 62,
+    "location": "Quest",
+    "title": "Child Of The Pitt",
+    "text": "Midea, unofficial matriarch of the rebels, discloses that she has the baby. Until the slaves are freed, whe will keep the child as leverage, moving to a new, secret location each day. Even so, it is only a matter of time.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Intercept Midea and take the child.<br><br><strong>Encounter any [Wasteland] until you locate Midea</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] +<br>Choose 1 [Item] from the discard pile",
+        "trash": true,
+        "add": [65,148]
       },{
-        "optionText": "",
+        "optionText": "Ensure that Ashur is no longer a threat.<br><br><strong>[Quest] Haven &bull; Draw and fight [Human];<br>apply +1 to its level</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] + +<br>Choose 1 item from the shop",
+        "trash": true,
+        "add": [64,150]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 63,
+    "location": "Wasteland",
     "title": "",
-    "text": "",
+    "text": "You open the door to a musty basement -- the dark eyes of a cloaked figure stare back at you. A small bundle is in her arms. You have stumbled upon Midea, the kidnapper!",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Ignore them and walk away",
+        "result": "You close the door and walk away",
+        "aftermath": "[Loot] x [Wasteland]",
+        "trash": true,
+        "add": [63]
+      },{
+        "optionText": "Fight the guardian to return the child<br><em style='font-weight:400;'>She sets the child down before hurling herself at you.</em><br>Draw and fight [Human]; apply +1 to its level",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> Withing the hour, your return the child.",
+            "aftermath": "Complete the 'Child of the Pitt' quest",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> She spits on you as she walks away",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [63]
           }
         ]
       },{
-        "optionText": "",
+        "optionText": "Convince her that you can help &bull; [C] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
+            "result": "<strong>Succeed:</strong>You take them both to a safe house.",
+            "aftermath": "2 Caps &bull; Move 3 spaces",
             "trash": false,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> She flees as soon as your back is turned.",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [63]
           }
         ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
       }
     ]
   },{
-    "id": 0,
+    "id": 64,
     "location": "",
     "title": "",
     "text": "",
