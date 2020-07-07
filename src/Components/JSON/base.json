@@ -1713,7 +1713,7 @@
     "if/then": ["Vault84.length===0","add=[80]"],
     "location": "Vault84",
     "title": "",
-    "text": "A woman in a labcoat inspects you as you enter the vault lab. 'I heard outsiders had been let in. And so soon before the vote!' She sees you eying her Pip-Boy. 'You can have one if you let me run some tests on you. You will be exposed to very little radiation...relatively.'<br><br><strong>If this is the last card in the [Vault 84] deck, add 080.</strong>",
+    "text": "A woman in a labcoat inspects you as you enter the vault lab. 'I heard outsiders had been let in. And so soon before the vote!' She sees you eying her Pip-Boy. 'You can have one if you let me run some tests on you. You will be exposed to very little radiation...relatively.'",
     "options": [
       {
         "optionText": "Agree to the tests",
@@ -1740,37 +1740,200 @@
     ]
   },{
     "id": 73,
-    "location": "",
+    "if/then": ["Vault84.length===0","add=[80]"],
+    "location": "Vault84",
     "title": "",
-    "text": "",
+    "text": "You pass a mechanic as you walk through the confined halls of the vault. He grumbles as he works on a section of the wall. 'If you ask me, the damn overseer is the traitor for bringing these outsiders in here. We should vote her out! We don't want to meet the same fate as Vault 109.'",
     "options": [
       {
-        "optionText": "",
+        "optionText": "What was that about Vault 109",
+        "result": "'Don't know exactly, but the maintenance records whow we used to swap supplies. They had some serious hardware before we lost contact.'",
+        "aftermath": "4 XP",
+        "trash": true,
+        "add": [83]
+      },{
+        "optionText": "Show him he has nothing to fear by helping him with his work &bull; [E] [E] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> He warms to you as you help and promises he won't be voting for you",
+            "aftermath": "Keep this card; it is an endorsement",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> You only make things worse. 'If I didn't know better, I would think you were trying to sabotage us,' he says with a glare.",
             "aftermath": "",
-            "trash": false,
+            "trash": true,
             "add": false
           }
         ]
+      }
+    ]
+  },{
+    "id": 74,
+    "if/then": ["Vault84.length===0","add=[80]"],
+    "location": "Vault84",
+    "title": "",
+    "text": "A middle-aged woman in a vault jumpsuit greets you. 'Again, welcome to Vault 84. Your arrival was timely, otherwise you would have never been allowed inside. We need some fresh perspectives around here.'",
+    "options": [
+      {
+        "optionText": "Wait until she's distracted and sneak a peek at her computer",
+        "result": "Log: 'The concept of 'the traitor' is a pre-war fabrication perpetuated for psychological study. I thought this tradition harmless until this year when suspicion fell on me. Perhaps some fresh blood would help.'",
+        "aftermath": "4 XP &bull; Keep this card. If 080 would be added, or was added by this card), add 081 instead.",
+        "trash": true,
+        "add": false
       },{
-        "optionText": "",
+        "optionText": "Convince her to back you in the coming vote &bull [C] [C] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> She happily claps her hand on your back. 'Don't worry, you have my endorsement!'",
+            "aftermath": "Keep this card; it is an endorsement",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> 'I'll do what I can, but you're on your own.'",
             "aftermath": "",
-            "trash": false,
+            "trash": true,
+            "add": false
+          }
+        ]
+      }
+    ]
+  },{
+    "id": 75,
+    "if/then": ["Vault84.length===0","add=[80]"],
+    "location": "Vault84",
+    "title": "",
+    "text": "A rough-looking man in security gear approaches you. 'I'm not sure what your goal is, outsider, but I don't like you being here, especially so soon before the vote. This feels like a plot.'",
+    "options": [
+      {
+        "optionText": "Ask him about all the gear he has",
+        "result": "'Oh yeah, our vault is actually fairly well supplied. As an honorary resident, you have access to the supply stock. Though we'll be watching.'",
+        "aftermath": "Choose 1 item from the shop",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Offer to help with security &bull; [S] [S} 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> He looks you up and down. 'Alright, you look the type, and I wouldn't mind keeping you outsiders close to make sure you don't try to pull anything.'",
+            "aftermath": "Keep this card; it is an endorsement",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> He scoffs. 'Like I'd trust an outsider!'",
+            "aftermath": "",
+            "trash": true,
+            "add": false
+          }
+        ]
+      }
+    ]
+  },{
+    "id": 76,
+    "if/then": ["Vault84.length===0","add=[80]"],
+    "location": "Vault84",
+    "title": "",
+    "text": "You are stopped in the hallway by a well-dressed woman. She eyes you up and down. 'Goodness, you're a frightful sight! I run a charity here that helps the exiles we send out each year. It looks like you could use the help yourself!'",
+    "options": [
+      {
+        "optionText": "Accept her charity",
+        "result": "'Here you go darling. Hopefully you can at least get started cleaning yourself up!'",
+        "aftermath": "6 Caps",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Make a donation to her fund &bull; Spend 4 Caps",
+        "result": "'Oh, looks can be deceiving! Thank you for your generous gift. I will remember this.'",
+        "aftermath": "Keep this card; it is an endorsement",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 77,
+    "if/then": ["Vault84.length===0","add=[80]"],
+    "location": "Vault84",
+    "title": "",
+    "text": "You step into a room filled with computers, microphones, and broadcasting equipment. A weedy man shakes your hand vigorously. 'You have no idea how exciting it is to meet you! My only interaction with the outside world is through these machines, and the other vault fell silent long before I was born!'",
+    "options": [
+      {
+        "optionText": "Ask him about this 'other vault.'",
+        "result": "'That was long before my time, but we used to be in contact with another vault. There's still a signal, but it's just broadcasting garbage these days.'",
+        "aftermath": "4 XP",
+        "trash": true,
+        "add": [85]
+      },{
+        "optionText": "You notice something on his instruments &bull; [P] [P] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You isolate a frequency it seems he was missing. A new signal breaks through the static. 'How did you do that? This is fantastic! You are welcome here any time!'",
+            "aftermath": "Keep this card; it is an endorsement",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> 'What the hell are you doing?! Get out!'",
+            "aftermath": "",
+            "trash": true,
+            "add": false
+          }
+        ]
+      }
+    ]
+  },{
+    "id": 78,
+    "if/then": ["Vault84.length===0","add=[80]"],
+    "location": "Vault84",
+    "title": "",
+    "text": "You enter what is clearly a medical bay and jump at the sight of a multi-limbed robot wielding syringes, scalpels, and other medical implements. The robot tuts at the sight of you. 'You have taken such poor care of your body! I can fix that for you!'",
+    "options": [
+      {
+        "optionText": "Let the robot fix you up",
+        "result": "As it works on you, it makes small talk. 'Your radiation damage reminds me of the case data sent over from the other location...'",
+        "aftermath": "Recover all HP and [Radiation]",
+        "trash": true,
+        "add": [84]
+      },{
+        "optionText": "Ask the robot if it is involved in this whole 'vote' thing &bull; [L] [L] 4",
+        "result": [
+          {
+            "result": "'Yes, I get a vote. But don't you worry! After this full analysis of your physiology, I have decided you do not have the biology of a traitor.'",
+            "aftermath": "Keep this card; it is an endorsement",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>'Oh heavens, no.'",
+            "aftermath": "",
+            "trash": true,
+            "add": false
+          }
+        ]
+      }
+    ]
+  },{
+    "id": 79,
+    "if/then": ["Vault84.length===0","add=[80]"],
+    "location": "Vault84",
+    "title": "",
+    "text": "You round a corner, and a small kid slams into you at full sprint, which knocks a book out of her hands. 'Hey! Watch where you're going!' You pick the book up and hand it to her. It looks like it was once some kind of manual with '109' on the front, but now it's covered in drawings.",
+    "options": [
+      {
+        "optionText": "Ask her if you can see her book.",
+        "result": "She gives you a defiant look. 'Okay, but don't ruin any of my pictures!'",
+        "aftermath": "4 XP",
+        "trash": true,
+        "add": [82]
+      },{
+        "optionText": "Offer to play with her &bull; [A] [A] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You keep up with her even as she weaves through the confines of the vault. 'You're fun! I'm gonna tell Mommy all about the fun we had!'",
+            "aftermath": "Keep this card; it is an endorsement",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> 'If you can keep up!'... you can't.",
+            "aftermath": "",
+            "trash": true,
             "add": false
           }
         ]
@@ -1789,407 +1952,35 @@
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 80,
+    "location": "Vault84",
     "title": "",
-    "text": "",
+    "text": "The time for the vote has come! Everyone in Vault 84 gathers in the main hall and begins casting votes into a large metal box. Many people glare at the outsiders present. This is not looking good for you...",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Participate in the vote",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "The survivor on Vault 84 with the most endorsements draws [Agenda Card] x 2<br><br>Each survivor on Vault 84 with the fewest endorsements suffers 3 damage and moves 1 space<br><br>If more than one survivor on Vault 84 is tied for the most endorsements, each draws [Agenda Card]",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 81,
+    "location": "Vault84",
     "title": "",
-    "text": "",
+    "text": "The time for the vote has come! But as everyone in Vault 84 gathers in the main hall, a projector flickers on, displaying the Overseer's documentation. The traitor, the vote, the exiles, it has all been a lie all this time. They have been sending innocent people out to their doom! The crowd turns angrily to Overseer Hayes.<br><br>In the end, she is given the same fate to which she doomed all the others: she is exiled to the wasteland with nothing but the vault suit on her back. All of the vault is grateful to you for exposing the truth.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Accept the vault's thanks",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "The survivor with card 074 draws [Agenda Card] x 2<br><br>All other survivors on Vault 84 draw [Agenda Card]<br><br>All survivors discard all endorsements",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
+    "id": 82,
     "location": "",
     "title": "",
     "text": "",
