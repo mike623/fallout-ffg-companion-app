@@ -1541,456 +1541,205 @@
     ]
   },{
     "id": 64,
-    "location": "",
-    "title": "",
-    "text": "",
+    "location": "Quest",
+    "title": "Bear With Me",
+    "text": "The price of teddy bears is on the rise -- yes, you heard that right. Despite Ashur's death, the slavers have not disbanded. At their head, Sandra, a scientist of some repute, is offering competitive price for bears. For some reason, this has rallied the slavers.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Bring a collection of bears to Sandra<br><br><strong>[Quest] Haven &bull; Discard 2 Junk cards</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "[Shield] + +<br>6 Caps",
+        "trash": true,
+        "add": [66,130]
+      },{
+        "optionText": "Whatever she's looking for, you can't let her find it -- purchase and hide several teddy bears.<br><br><strong>[Quest] any [Settlement] &bull; Spend any number of Caps and place them on this card<br><br>Place the tenth Cap on this card</strong>",
+        "result": "",
+        "aftermath": "[Star] +",
+        "trash": true,
+        "add": [66,148]
+      }
+    ]
+  },{
+    "id": 65,
+    "location": "Quest",
+    "title": "War!",
+    "text": "The system is collapsing. The peace and security that the slavers have enjoyed for years is crumbling. Everywhere, the oppressed are rising up.<br><br><strong>Each survivor takes 1 [Shield] and 1 [Star]. Starting with the first player, place a [Shield] at a [Settlement] and the [Star] at a [Wasteland]. No two survivors can be placed in the same space.</strong>",
+    "options": [
+      {
+        "optionText": "Squash the rebellion.<br><br><strong>Kill the last [Star]</strong>",
+        "result": "",
+        "aftermath": "[Shield] + + +",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
+        "optionText": "Secure freedom fo all.<<br><br><strong>Kill the last [Shield]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "[Star] + + +",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 66,
+    "location": "Quest",
+    "title": "Painful Solutions",
+    "text": "Despite the efforts of those who oppose her, Sandra has located the bear she was looking for and the disk that was hidden with in it. Testing has begun to cure the plague that haunts the Pitt -- unfortunately, there are a few slighty deadly side effects...",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Administer the new vaccine.<br><br><strong>[Quest] any [Settlement] without a Cap &bull; [I] 3</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "Place 1 Cap on that [Settlement]<Br>If all [Settlement] have Caps: [Shield] + + +",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
+        "optionText": "Destroy the harmful research.<br><br><strong>[Quest] Haven &bull; [P] [I] 5</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "[Star] + + + +<br>Discard all Caps from the map",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 67,
+    "location": "Quest",
+    "title": "Vault Rumors",
+    "text": "Every year, new unfortunates appear out of the wasteland, claiming to have been banished from an underground bunker made before the war by a company called 'Vault-Tec.' Perhaps it is worth investigating.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Many of the vault exiles are caught by raiders. You might be able to get something off of one of them.<br><br><strong>Kill any [Human]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [68]
       },{
-        "optionText": "",
+        "optionText": "See if you can find an old exile who will sell you information.<br><br><strong>[Quest] any [Settlement] &bull; Spend 4 Caps</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [69]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 68,
+    "location": "Quest",
+    "title": "Signs Of Life",
+    "text": "The raiders had one of the vault dwellers' wrist mounted computers on them. With this, you should be able to contact the people on the inside of the vault or interact with its computer.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "There are some supposed exiles from the vault around town. One of them might be able to show you how to use the Pip-Boy.<br><br><strong>[Quest] any [Settlement] &bull; [I] [L] 4</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [71]
       },{
-        "optionText": "",
+        "optionText": "The Pip-Boy should be able to interface directly with the vault enterance, but you'll need an extra set of hands there.<br><br><strong>[Quest] Vault 84 &bull; Any companion</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "4 XP",
+        "trash": true,
+        "add": [71]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 69,
+    "location": "Quest",
+    "title": "Crack It Open!",
+    "text": "The information around town says that there are people locked away inside the vault, but they are somewhat (very) hostile to outsiders. Perhaps you can break in?",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Crack open the giant metal door in the mountains.<br><br><strong>[Quest] Vault 84 &bull; [S] [E] 4</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "4 XP",
+        "trash": true,
+        "add": [70]
       },{
-        "optionText": "",
+        "optionText": "Overload a nearby substation to force the door open.<br><br><strong>[Quest] Red Rocket Station &bull; [P] [I] 4</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [70]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 70,
+    "location": "Vault84",
     "title": "",
-    "text": "",
+    "text": "A line of armed guards stands behind the vault enterance that was forced open. 'What is the meaning of this!? If you think you are just going to force your way into this factory, you are sorely mistaken.'",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Convince them you are friendly &bull; [C] [L] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Succeed:</strong> After a lengthy conversation, you earn the trust of the captain, and he introduces you to the overseer. She agrees to give you access to the vault but warns you that you will be watched every step of the way and that 'the vote is coming.' Whatever that means.",
+            "aftermath": "Shuffle cards 072-079 and randomly add a number of them equal to survivors, and then trash the rest",
+            "trash": true,
+            "add": [72,73,74,75,76,77,78,79]
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Fail:</strong> You are violently led away.",
+            "aftermath": "Suffer 3 damage",
+            "trash": true,
+            "add": [70]
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
+        "optionText": "Walk away",
+        "result": "This seems like a bad idea. You turn around and walk away, leaving them in the broken doorway.",
         "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "trash": true,
+        "add": [70]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 71,
+    "location": "Vault84",
     "title": "",
-    "text": "",
+    "text": "A figure stands with open arms, and flanking guards, behind the door. 'Welcome to Vault 84. I'm Overseer Hayes, the leader of this vault. We haven't let in outsiders in over 100 years, so I hope you realize how exceptional this is. But after certain recent events... well, let's just say, when your stolen Pip-Boy connected, I saw an opportunity.'",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
+        "optionText": "Thank her and ask about the rules of this vault.",
+        "result": "'Don't start any trouble and you should be fine. However... we have an annual vote to exile dangerous people from the vault. Even with my blessing, you're not immune.'",
+        "aftermath": "Shuffle cards 072-079 and randomly add a number of them equal to survivors, and then trash the rest.",
+        "trash": true,
+        "add": [72,73,74,75,76,77,78,79]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
+        "optionText": "Walk away",
+        "result": "This seems like a bad idea. You turn around and walk away, leaving the overseer with a confused expression.",
         "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "trash": true,
+        "add": [71]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 72,
+    "if/then": ["Vault84.length===0","add=[80]"],
+    "location": "Vault84",
     "title": "",
-    "text": "",
+    "text": "A woman in a labcoat inspects you as you enter the vault lab. 'I heard outsiders had been let in. And so soon before the vote!' She sees you eying her Pip-Boy. 'You can have one if you let me run some tests on you. You will be exposed to very little radiation...relatively.'<br><br><strong>If this is the last card in the [Vault 84] deck, add 080.</strong>",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Agree to the tests",
+        "result": "Dr. Merkins straps you in with obvious glee. After she finishes, she gives you a Pip-Boy.",
+        "aftermath": "Gain the 'Pip-Boy' unique asset",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Ask about the technicalities of the annual 'vote' &bull; [I] [I] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> 'Once per year, we poll the entire vault for who they think is a 'traiter.' The person with the most votes is exiled, though getting any votes can leave you ostracized. For what it's worth, I think you're alright.'",
+            "aftermath": "Keep this card; it is an endorsement",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> She looks over her glasses at you. 'I'm not sure I should trust you with that information.'",
             "aftermath": "",
-            "trash": false,
+            "trash": true,
             "add": false
           }
         ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
+    "id": 73,
     "location": "",
     "title": "",
     "text": "",
