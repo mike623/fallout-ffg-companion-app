@@ -1981,606 +1981,273 @@
     ]
   },{
     "id": 82,
-    "location": "",
-    "title": "",
-    "text": "",
+    "location": "Quest",
+    "title": "Boom!!!",
+    "text": "A little girl at Vault 84 had a manual from Vault 109. One page stood out: the one that warned residents about use of the 'Fat Man' (accompanied by the girl's drawing of a large explosion with the word 'BOOM!')",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Do some research on this 'Fat Man' first.<br><br><strong>[Quest] Robco Factory &bull; [P] [I] [L] 5</strong>",
         "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [86,87]
+      },{
+        "optionText": "Go right to Vault 109 and start digging around.<br><br><strong>[Quest] Vault 109 &bull; Suffer 2 [Radiation]</strong>",
+        "result": "",
+        "aftermath": "[Loot] x 3 &bull; 3 XP",
+        "trash": true,
+        "add": [86,87]
+      }
+    ]
+  },{
+    "id": 83,
+    "location": "Quest",
+    "title": "Serious Hardware",
+    "text": "The mechanic mentioned that Vault 109 had some 'serious hardware.' If you can risk the radiation of the vault, maybe some of it is still down there?",
+    "options": [
+      {
+        "optionText": "The super mutants have been seen down there. Maybe some of them have already brought it up?<br><br><strong>Kill a Super Mutant Brute</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [88,89]
+      },{
+        "optionText": "A few rads have never scared you.<br><br><strong>[Quest] Vault 109 &bull; Suffer 2 [Radiation]</strong>",
+        "result": "",
+        "aftermath": "[Loot] x 3 &bull; 3 XP",
+        "trash": true,
+        "add": [88,89]
+      }
+    ]
+  },{
+    "id": 84,
+    "location": "Quest",
+    "title": "Hippocratic Oath",
+    "text": "The medical robot at Vault 84 let something slip about radiation cases at the 'other location.' Was it referring to Vault 109? And if so, this wasn't new case data, right?",
+    "options": [
+      {
+        "optionText": "If anyone would know about Vault 109 still being used for secret experiments, it would be some of those underground 'doctors' at the Tower.<br><br><strong>[Quest] The Tower &bull; [S] [C] [L] 5</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [92,93]
+      },{
+        "optionText": "Check it out directly.<br><br><strong>[Quest] Vault 109 &bull; Suffer 2 [Radiation]</strong>",
+        "result": "",
+        "aftermath": "[Loot] x 3 &bull; 3 XP",
+        "trash": true,
+        "add": [92,93]
+      }
+    ]
+  },{
+    "id": 85,
+    "location": "Quest",
+    "title": "Chasing Static",
+    "text": "You have a frequency from the Vault 84 radio tech that's supposedly from Vault 109. If you had the equipment to triangulate it, you could locate its radio equipment.",
+    "options": [
+      {
+        "optionText": "Extract the necessary equipment from a robot.<br><br><strong>Kill a Protectron</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [90,91]
+      },{
+        "optionText": "Just go directly to Vault 109 and look around.<br><br><strong>[Quest] Vault 109 &bull; Suffer 2 [Radiation]</strong>",
+        "result": "",
+        "aftermath": "[Loot] x 3 &bull; 3 XP",
+        "trash": true,
+        "add": [90,91]
+      }
+    ]
+  },{
+    "id": 86,
+    "location": "Vault109",
+    "title": "",
+    "text": "You enter a cavernous room. It is too dark to see, and you fumble around for some way to get more light. You find a panel and flip on the lights using the vault's reserve power. Only several of the old lights flicker on, but it is enough to see a... fashion runway? What was going on in this vault?<br><br>As the last light flickers on, it casts a long, monstrous shadow across the room. Looks like there is something living here!",
+    "options": [
+      {
+        "optionText": "Fight the creature &bull; Draw and fight [Monster]",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You snatch a victory from the jaws of defeat... and the jaws of the creature.",
+            "aftermath": "You may encouter the next card<br>At the end of your turn, add this card",
+            "trash": true,
+            "add": [86]
+          },{
+            "result": "<strong>Fail:</strong> It gets away before you can defeat it. You leave the vault, angry with your failure.",
+            "aftermath": "",
+            "trash": true,
+            "add": [86]
+          }
+        ]
+      },{
+        "optionText": "Sneak way before it notices you",
+        "result": "You step quickly and quietly toward the nearest door, fervently hoping you don't attract attention",
         "aftermath": "",
-        "trash": false,
+        "trash": true,
+        "add": [86]
+      }
+    ]
+  },{
+    "id": 87,
+    "location": "Vault109",
+    "title": "",
+    "text": "You enter a large room. Shelves loom around you in the haze. You realize with excitement that this used to be the vault's armory! The super mutants have made off with most of the weaponry, but there might be some things that were too small for their big, meaty fingers. There also looks to be a display case on the wall that they never managed to break open. Inside is what looks like some kind of oversized missile launcher.",
+    "options": [
+      {
+        "optionText": "Spend your time breaking into the display case",
+        "result": "It takes some time, but you get into the case. The missile launcher is massive!",
+        "aftermath": "Gain the 'Fat Man' unique asset",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Ignor the case. There are organizations that could use all this firepower.",
+        "result": "You manage to carry out a large amount of useful weapons and armor.",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 88,
+    "location": "Vault109",
     "title": "",
-    "text": "",
+    "text": "This hallway is mostly still intact. The various rooms along it have been made up like high-end fashion stores. You see signs for Mary Mary, Ticknor and Fields, Fallon's, and many others.<br><br>As you are looking at some of the merchandise, which has aged nearly to tatters, you hear someone! You see a super mutant working its way through one of the stores. Is it... wearing a vest? What the hell?<br><br>Either way, it's blocking your way forward.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Fight the oddly stylish super mutant &bull; Draw and fight [Super Mutant]",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Succeed:</strong> You defeat the well-dressed super mutant with a triumphant shout!",
+            "aftermath": "You may encounter the next card<br>At the end of your turn, add this card",
+            "trash": true,
+            "add": [88]
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> It gets away before you can defeat it. You leave to salvage your wounded pride.",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [88]
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
+        "optionText": "Sneak out of the vault",
+        "result": "This is all too weird. You'be had enough of this vault for now.",
         "aftermath": "",
-        "trash": false,
+        "trash": true,
+        "add": [88]
+      }
+    ]
+  },{
+    "id": 89,
+    "location": "Vault109",
+    "title": "",
+    "text": "You come upon a large lift that likely leads back to the surface. It is even independently powered by a fusion core and is still functional! But then you spot a looming shape in the back of this room -- a suit of power armor!",
+    "options": [
+      {
+        "optionText": "Take the fusion core from the lift to power the armor",
+        "result": "The armor comes online as you slide the fusion core into the socket.",
+        "aftermath": "Gain the 'T-60 Power Armor' unique asset",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
+        "optionText": "Leave the fusion core in the lift to bypass the threats of the vault",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "Search the [Vault 109] deck and trash 086, 088, 090, 092 if they are in it",
+        "trash": [86,88,89,90,92],
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 90,
+    "location": "Vault109",
     "title": "",
-    "text": "",
+    "text": "This area seems to have suffered a decent amount of structural damage from whatever destroyed this vault long ago. Charred fashion posters line the walls.<br><br>The floor creaks as you step forward. You're not sure it will hold your weight.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Risk the hallway to push onward &bull; [A] [L] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Succeed:</strong> The hallway wrenches apart as you cross. You deftly climb and make it to safety before you can be pulled down with the wreckage.",
+            "aftermath": "3 XP &bull; You may encounter the next card<br>At the end of your turn, add this card",
+            "trash": true,
+            "add": [90]
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Fail:</strong> The hallway wrenches apart as you cross, and you are pulled down with the wreckage. You awaken in a cavern beneath the vault. After some wandering, you find your way back out into the wasteland.",
+            "aftermath": "Suffer 4 damage &bull; Move 1 space",
+            "trash": true,
+            "add": [90]
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
+        "optionText": "Turn back and leave the vault",
+        "result": "You don't feel like dying today.",
         "aftermath": "",
-        "trash": false,
+        "trash": true,
+        "add": [90]
+      }
+    ]
+  },{
+    "id": 91,
+    "location": "Vaul109",
+    "title": "",
+    "text": "Jackpot! Up ahead you see a sign leading you to the overseer's office. There's got to be some good loot or information in there. To your surprise, the computer boots up on reserve power. This computer hooks into all sorts of communication and surveillance systems. This could be of massive use. The contents of this computer are invaluable!",
+    "options": [
+      {
+        "optionText": "Take all the information you can",
+        "result": "Loaded with decades of data you can put to good use, you head back to the wasteland",
+        "aftermath": "[Agenda Card] x 2",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
+        "optionText": "Smash the computer",
+        "result": "Why would you do that?!?",
         "aftermath": "",
-        "trash": false,
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 92,
+    "location": "Vault109",
     "title": "",
-    "text": "",
+    "text": "You open one of the heavy metal doors and are greeted by a blast of scalding green air. Your eyes and lungs burn as you back away from the billowing cloud.<br><strong>Suffer 2 damage and 1 [Radiation]</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
+        "optionText": "Take more radiation to push onward",
+        "result": "Well, that was just awful. You continue deeper into the vault.",
+        "aftermath": "Suffer 3 [Radiation]<br>3 XP &bull; You may encounter the next card<br>At the end of your turn, add this card",
+        "trash": true,
+        "add": [92]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
+        "optionText": "Turn back and leave the vault",
+        "result": "Whatever happened here, it was pretty bad. You're getting out of this place.",
         "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "trash": true,
+        "add": [92]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 93,
+    "location": "Vault109",
     "title": "",
-    "text": "",
+    "text": "You walk down a hallway lined with multiple small cells, each with a window looking into it. To your surprise, there are people inside! They are... very well dressed. They all wear elegant (if tattered) clothing. Many of them are even wearing make-up. They jump with excitement when they see you. 'Help us! Please!'",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Releasing them all would likely attract attention",
+        "result": "They thank you as they flee, but soon after, you hear loud footsteps.",
+        "aftermath": "Draw and fight [Super Mutant]<br>Become <em>Idolized</em> &bull; [Agenda Card]",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Releasing just one would be safer",
+        "result": "Going through, you choose the person that would look the most useful and leave the rest.",
+        "aftermath": "Reveal [Item] cards until you find a companion; take that card, ignoring its requirements; discard the rest",
+        "trash": true,
+        "add": [93]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
+    "id": 94,
     "location": "",
     "title": "",
     "text": "",
