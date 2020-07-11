@@ -2248,506 +2248,209 @@
     ]
   },{
     "id": 94,
-    "location": "",
-    "title": "",
-    "text": "",
+    "location": "Quest",
+    "title": "The Children of Atom",
+    "text": "A missionary stands in the street, preaching a new religion called the Children of Atom. Many followers gather at Hofmann farm, inviting all to 'embrace Atom's glow.'",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Bring a new recruit for their favor.<br><br><strong>[Quest] Hofmann Farm &bull; Discard a companion</strong>",
         "result": "",
-        "aftermath": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [95]
+      },{
+        "optionText": "The word of Atom calls you. Embrace the glow.<br><br><strong>[Quest] Irradiated space &bull; [E] 3</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]<br>Suffer 2 [Radiation]",
+        "trash": true,
+        "add": [96]
+      }
+    ]
+  },{
+    "id": 95,
+    "location": "Quest",
+    "title": "A Growing Following",
+    "text": "Under the command of a singular new recruit, the Church of the Children of Atom has gone from a couple meager missionaries to an entire organization in a very short time. Everywhere you go, you can hear the word of Atom being preached under their leadership of the Confessor.",
+    "options": [
+      {
+        "optionText": "Gather recruits to your side.<br><br><strong>[Quest] any [Settlement] &bull; Suffer 2 [Radiation]</strong>",
+        "result": "",
+        "aftermath": "Reveal [Item] cards until you find a companion; take that card, ignoring its requirements; discard the rest.",
+        "trash": true,
+        "add": [97]
+      },{
+        "optionText": "Local bounty hunters are too afraid to take bounties on the Confessor, but you have more convincing ways to get someone to agree to do the job...<br><br><strong>Kill a Bounty Hunter</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [98]
+      }
+    ]
+  },{
+    "id": 96,
+    "location": "Quest",
+    "title": "Joinnnn Usssssss!",
+    "text": "You see the light of Atom's glow. The only salvation for this forsaken wastelad is to spread the light to non-believers.",
+    "options": [
+      {
+        "optionText": "Convince everyone to band together under Atom's glow.<br><br><strong>[Quest] Irradiated space &bull; More than half of all survivors must be on irradiated spaces</strong>",
+        "result": "",
+        "aftermath": "Each survivor on and irradiated space: [Agenda Card]",
+        "trash": true,
+        "add": [97]
+      },{
+        "optionText": "Stop the cult before it gets completely out of hand.<br><br><strong>[Quest] Hofmann Farm &bull; Draw and fight [Human]; appy +1 to its level</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [98]
+      }
+    ]
+  },{
+    "id": 97,
+    "location": "Quest",
+    "title": "The Wasteland Glows",
+    "text": "The Church of the Children of Atom has grown to a huge size. The Confessor at its head leads his flock from one of the most opulent estates still left in the wasteland.<br><br><strong>At the end of the round, each survivor rolls 1 VATS die for each companion he or she has. For each [Body+Limbs 2 Hits], suffer 1 [Radiation]</strong>",
+    "options": [
+      {
+        "optionText": "Bring new devout to the Confessor.<br><br><strong>[Quest] Pendleton Estate &Bull; Discard a companion</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
+        "optionText": "End the Confessor's reign.<br><br><strong>[Quest] Pendleton Estate &bull; Draw and fight [Human]; apply +1 to its level</strong>",
         "result": "",
-        "aftermath": "",
+        "aftermath": "[Agenda Card]<br>Gain the 'Shishkebab' unique asset",
+        "trash": true,
+        "add": [99]
+      }
+    ]
+  },{
+    "id": 98,
+    "location": "Quest",
+    "title": "The Last Fanatics",
+    "text": "The Children of Atom begin to dwindle, but several members make a final stand with one of their warheads.<br><br><strong>Place a quest marker at the highest-level [Settlement]<br>At the end of each round, place 1 Cap on this card. When there are 3 Caps on this card, automatically resolve objective 2 (no one gets [Agenda Card]</strong>",
+    "options": [
+      {
+        "optionText": "Approach the bom to defuse it.<br><br><strong>[Quest] The bomb &bull; [P] [I] [A] [L] 5</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [99]
+      },{
+        "optionText": "Embrace Atom's glow: detonate the bomb!<br><br><strong>[Quest] The bomb</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]<br>Each survivor adn enemy withing 2 spaces of the bomb is killed",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 99,
+    "location": "Quest",
+    "title": "Remnants Of The Cult",
+    "text": "There is an ongoing bounty on remaining members of the Children of the Atom. Many of them have fled to the irradiated corners of the wasteland.",
+    "options": [
+      {
+        "optionText": "Explore areas to which they might have fled.<br><br><strong>Explore an unexplored tile</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]<br>Suffer 2 [Radiation]",
         "trash": false,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 100,
+    "location": "Random",
     "title": "",
-    "text": "",
+    "text": "The gravel crunches under your feet as you enter the... hey, what are you doing reading this card?! You know you're spoiling your own fun by reading stuff in the card library right?",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Choose to keep spoiling everything",
+        "result": "Fine, I see there's no stopping you. Go on then.",
+        "aftermath": "Continue reading spoilers",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Stop reading the card library",
+        "result": "Good choice! If you can't wait, there are some solo-play rules to play the game by yourself. Then you can read all these cards as you play through the game!",
+        "aftermath": "Put down the card library",
         "trash": false,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 101,
+    "location": "Quest",
+    "title": "I'm Not Saying It Was Aliens...",
+    "text": "Brahmin habe been disappearing from Hoffman farm. Stories have circulated about strange lights in the sky on nights of the disappearances, but you know it's probably just a Deathclaw or other predator... right?",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Defend the brahmin pens at night.<br><br><strong>[Quest] Hofmann Farm &bull; Draw and fight [Human]; it gains the [Radiation] icon</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card] &bull; [Loot]",
+        "trash": true,
+        "add": [102,103]
       },{
-        "optionText": "",
+        "optionText": "Activate an old radio to monitor signals at night.<br><br><strong>[Quest] HWY 74 &bull; [E] [I] 3</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card]<br>Stage 104 and place your figure on that card",
+        "trash": true,
+        "add": [104,105]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 102,
+    "location": "Quest",
+    "title": "...But It Was Aliens",
+    "text": "Creatures come for the brahmin in the night, but you take them down. These are no Deathclaws. They are small, grey humanoids wearing high-tech suits. Some new kind of mutant? There's no way they could be...",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "The local Brotherhood of Steel chapter would pay handsomely for this information.<br><br><strong>Encounter any [Settlement] until you find the Brotherhood of Steel</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [107]
       },{
-        "optionText": "",
+        "optionText": "This will bring unwanted attention. Pay to cover it up.<br><br><strong>[Quest] Any level-3 or higher [Wasteland]<br>Spend 5 Caps</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [125]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 103,
+    "location": "Settlement",
     "title": "",
-    "text": "",
+    "text": "Many people around the settlement are whispering about a small group of Brotherhood of Steel representatives who arrived recently.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Avoid the Brotherhood and go shopping",
+        "result": "You're here for supplies, not conversation.",
+        "aftermath": "Shop [Settlement]",
+        "trash": true,
+        "add": [103]
+      },{
+        "optionText": "Tell the Brotherhood members about the aliens &bull; [C] 3",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> After some convincing, the scribe in the group becomes interested in your information. The Brotherhood is grateful for the information.",
+            "aftermath": "Complete the 'Alien Autopsy' quest<br>2 Caps",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> The scribe in the group laughs off your claims of aliens as 'wastelander foolishness.'",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [103]
           }
         ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
+    "id": 104,
     "location": "",
     "title": "",
     "text": "",
