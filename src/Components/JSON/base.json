@@ -438,7 +438,6 @@
     ]
   },{
     "id": 17,
-    "if/then": ["[!16]","trash=true"],
     "location": "Wasteland",
     "title": "",
     "text": "<strong>If 'All Aboard!' is no longer staged, trash this card and encounter the next card.</strong><br><br>You see a figure moving through the ruins wearing a black trench coat and sunglasses.",
@@ -470,6 +469,12 @@
             "add": [17]
           }
         ]
+      },{
+        "optionText": "'All Aboard!' is no longer staged.",
+        "result": "",
+        "aftermath": "",
+        "trash": true,
+        "add": false
       }
     ]
   },{
@@ -554,7 +559,6 @@
     ]
   },{
     "id": 22,
-    "if/then": ["[Wasteland] <= level-2","trash=true","add=[22]"],
     "location": "Wasteland",
     "title": "",
     "text": "<strong>If at a level-2 or lower [Wasteland], encounter the next card. Then, add this card.</strong><br><br>You are caught in the middle of a firefight! Synth soldiers are systematically advancing on a small band of Railroad members defending a group of huddling people.",
@@ -592,6 +596,12 @@
       },{
         "optionText": "You can't afford to be caught in a battle right now. Run the other direction.",
         "result": "The sound of combat fade behind you.",
+        "aftermath": "",
+        "trash": true,
+        "add": [22]
+      },{
+        "optionText": "You are at a level-2 or lower [Wasteland].",
+        "result": "",
         "aftermath": "",
         "trash": true,
         "add": [22]
@@ -771,7 +781,6 @@
     ]
   },{
     "id": 31,
-    "if/then": ["[Star]","trash=true","add=[31]"],
     "location": "Settlement",
     "title": "",
     "text": "<strong>If there is [Star] on this space, encounter the next card. Then, add this card</strong><br><br>Without the protection of the fog condensers, the people in this settlement have fled the concoming fog. You walk through a ghost town.",
@@ -801,6 +810,12 @@
         "optionText": "Steal some stuff. No one is here to stop you",
         "result": "The traders took their wares with them, but you find some odds and ends.",
         "aftermath": "[Loot] x [Settlement]",
+        "trash": true,
+        "add": [31]
+      },{
+        "optionText": "There is a [Star] on this space.",
+        "result": "",
+        "aftermath": "",
         "trash": true,
         "add": [31]
       }
@@ -1272,7 +1287,6 @@
     ]
   },{
     "id": 53,
-    "if/then": ["!RobcoFactory","trash=true","add=[53]"],
     "location": "Wasteland",
     "title": "",
     "text": "<strong>If not at Robco Factory, encounter the next card. Then add this card.</strong><br><br>'Threat analysis: green,' three mechanical voices boom in unison. You duck out of the doorway.",
@@ -1313,6 +1327,12 @@
             "add": [53]
           }
         ]
+      },{
+        "optionText": "Not at Robco Facility",
+        "result": "",
+        "aftermath": "",
+        "trash": true,
+        "add": [53]
       }
     ]
   },{
@@ -2451,859 +2471,407 @@
     ]
   },{
     "id": 104,
-    "location": "",
-    "title": "",
-    "text": "",
+    "location": "Quest",
+    "title": "The Mothership",
+    "text": "The radio gets a response. You accidentally contacted an alien ship!<br><br><strong>Survivors that are on 'The Mothership' can perform only the actions on this card:</strong>",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Fight your way to the bridge and bring the ship down to escape.<br><br><strong>Draw and fight [Human]; it gains the [Radiation] icon<br>Then, test [I] 4</strong>",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Succeed:</strong> ",
+            "aftermath": "3 XP<br>place your figure on an empty space",
+            "trash": true,
+            "add": [106,107]
           },{
             "result": "<strong>Fail:</strong>",
-            "aftermath": "",
+            "aftermath": "Remove a Cap from this card",
             "trash": false,
             "add": false
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Attempt to communicate with the aliens and make a deal.<br><br><strong>[Quest] [C] 3 &bull; place a Cap on this card.<br><br>Place the third Cap on this card</strong>",
         "result": "",
-        "aftermath": "",
+        "aftermath": "[Agenda Card]<br>Place your figure on any empty space",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 105,
+    "if/then": ["!104", "trash=true"],
+    "location": "Wasteland",
+    "title": "",
+    "text": "<strong>If 'The Mothership' is no longer staged, trash this card and encounter the next card.</strong><br><br>You approach the structure just as the last light of the sun is waning. Suddenly, a bright light flashes from the sky, illuminating your surroundings. You feel yourself lifting off the ground. Are you floating?!",
+    "options": [
+      {
+        "optionText": "Resist the forces pulling you up &bull; [E] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You resist the pull of the invisible force and flee to shelter to continue searching.",
+            "aftermath": "[Loot] x [Wasteland]",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> You struggle to no avail. You are lifted high into the air by an invisible force, and you soon find yourself in a sterile, metal environment.",
+            "aftermath": "Place your figure on 'The Mothership'",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "Let it take you; this should be interesting",
+        "result": "You are lifted high into the air by an invisible force, and you soon find yourself in a sterile, metal environment.",
+        "aftermath": "Place your figure on 'The Mothership'",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
+        "optionText": "'The Mothership' is no longer staged",
         "result": "",
         "aftermath": "",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 106,
+    "location": "Wasteland",
+    "title": "",
+    "text": "A pillar of smoke rises near the site you were planning to explore. You approach the source of the smoke and see a large, sleek, metal craft smoldering in a crater. A green liquid leaks from the craft. It could be dangerous.",
+    "options": [
+      {
+        "optionText": "Brave the radiation to explore &bull; [E] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You make your way past the leaking radiation and into the massive craft. Bodies of strange, gray creatures litter the inside. You take a strange-looking weapon from one of them.",
+            "aftermath": "Gain the 'Alien Blaster' unique asset",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>The heat and radiation emanating from the craft prove too much for you.",
+            "aftermath": "Suffer 2 [Radiation]",
+            "trash": true,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "Leave the crash site alone",
+        "result": "Yeah... that radiation looks pretty nasty. You leave the crash site to someone else and go about your normal looting.",
+        "aftermath": "[Loot] x [Wasteland]",
+        "trash": true,
+        "add": [106]
+      }
+    ]
+  },{
+    "id": 107,
+    "location": "Quest",
+    "title": "Brotherhood Airship Arrives",
+    "text": "Having received information about strange occurrences, the Brotherhood has sent one of their airships to the wasteland.<br><br><strong>Place a quest marker on any space of the starting tile. This is the Brotherhood ship.<br><br>At the end of each round, the airship moves 1 space toward the highest-level [Robot] on the map.</strong>",
+    "options": [
+      {
+        "optionText": "Help gather local technology for analysis.",
+        "result": "Kill any [Robot]",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "That airship looks like it has some pretty fancy gear on board. Maybe you could 'borrow' some.",
+        "result": "[Quest] Airship &bull; [C] [A] [L] 5",
+        "aftermath": "Gain the 'T-60e Power Armor' unique asset",
+        "trash": true,
+        "add": [109,110]
+      }
+    ]
+  },{
+    "id": 108,
+    "location": "Quest",
+    "title": "Research And Development",
+    "text": "Intrigued by the samples presented to them, the Brotherhood is now offering membership and a set of their power armor for more.<br><br><strong>Do not discard the airship.<br><br>At the end of each round, the airship moves 1 space toward the highest-level [Wasteland] on the map.</strong>",
+    "options": [
+      {
+        "optionText": "Take out one of the more advanced Robco prototypes still running.<br><br><strong>Kill a Sentry Bot</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]<br>Gaine the 'T-60e Pwer Armor' unique asset",
+        "trash": true,
+        "add": [111]
+      },{
+        "optionText": "That sounds like a lot of work. You bet someone on board would be willing to bend the rules for some Caps.<br><br><strong>[Quest] Airship &bull; Spend 7 Caps</strong>",
+        "result": "",
+        "aftermath": "Gain the 'T-60e Power Armor' unique asset",
+        "trash": true,
+        "add": [111]
+      }
+    ]
+  },{
+    "id": 109,
+    "location": "Quest",
+    "title": "Brotherhood Control",
+    "text": "Enraged by the theft of their power armor, the Brotherhood has put the wasteland on total lockdown!<br><br><strong>Do not discard the airship.<br><br>At the end of each round, the airship moves 1 space toward the highest-level [Settlement] on the map.<br><br>To encounter any [Wasteland], you must first draw and fight [Human]; apply +1 to its level.</strong>",
+    "options": [
+      {
+        "optionText": "Get the airship to leave once and for all<br><br><strong>Encounter any [Wasteland] until you locate the Brotherhood vertibird.</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Lay down your arms in front of the Brotherhood.<br><br><strong>[Quest] Airship &bull; Discard a weapon</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [111]
+      }
+    ]
+  },{
+    "id": 110,
+    "location": "Wasteland",
+    "title": "",
+    "text": "You hear the loud whine of an engine as a Brotherhood vertibird appears over the horizon. Dust swirls and bites your face as it lands nearby.",
+    "options": [
+      {
+        "optionText": "Take them out &bull; Draw and fight [Human]; apply +1 to its level",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You step over their corpses into the vertibird. That should keep them away",
+            "aftermath": "Complete objective 1 of 'Brotherhood Control'<br>Place your figure in any empty space",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> You are forced to flee into the wasteland",
+            "aftermath": "Move 1 space",
+            "trash": true,
+            "add": [110]
+          }
+        ]
+      },{
+        "optionText": "Talk them into leaving the wasteland &bull; [S] [C] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> They respect your strength and promise to bring word back to the airship",
+            "aftermath": "Complete objective 1 of 'Brotherhood Control'<br>Place your figure in any empty space",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> They tell you to run along.",
+            "aftermath": "Move 1 space",
+            "trash": true,
+            "add": [110]
+          }
+        ]
+      },{
+        "optionText": "Head the other direction",
+        "result": "You get out of there before an altercation starts.",
+        "aftermath": "Move 1 space",
+        "trash": true,
+        "add": [110]
+      }
+    ]
+  },{
+    "id": 111,
+    "location": "Quest",
+    "title": "Sticking Around",
+    "text": "With their main mission completed, it looks like the airship will continue hanging around the wasteland until it is given another mission.<br><br><strong>Do not discard the airship.<br><br>At the end of each round, the airship moves 1 space toward the survivor with the highest number of SPECIAL tokens.</strong>",
+    "options": [
+      {
+        "optionText": "The Brotherhood is always grateful for more pre-war technology.<br><br><strong>Kill any [Robot]</strong>",
+        "result": "",
+        "aftermath": "4 Caps &bull; 2 XP",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Bring a still-functioning sample.<br><br><strong>[Quest] Airship &bull; Discard a <em>Robot</em> companion</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
         "trash": false,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 112,
+    "location": "Quest",
+    "title": "Growing Pains",
+    "text": "A recent group of raiders have started to hunt the local game for sport, leaving little food for a fledgling settlement in some nearby hills. They ask for whatever assistance you can spare.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Dispose of the raider's leader.<br><br><strong>Kill a level-2 or higher [Human]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "[Agenda Card] &bull; [Loot] x 2",
+        "trash": true,
+        "add": [114]
+      },{
+        "optionText": "Provide some food for the settlement.<br><br><strong>Kill a level-2 or higher [Critter]</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card] &bull; 3 Caps",
+        "trash": true,
+        "add": [113]
+      }
+    ]
+  },{
+    "id": 113,
+    "location": "Quest",
+    "title": "Teach A Man To Fish...",
+    "text": "The fledgling settlement in the hills has enough food to hold them over, but they are eager to learn to hunt themselves. They are looking for hunters to prove themselves ready for the task.",
+    "options": [
+      {
+        "optionText": "Gear up and meet the hunting party.<br><br><strong>[Quest] any [Wastelend] &bull; Have [Apparel] and [Weapon] equipped</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card] &bull; 2 Caps",
+        "trash": true,
+        "add": [115]
+      },{
+        "optionText": "Show them that you have no fear.<br><br><strong>Camp in a space adjacent to a level-3 enemy</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card] &bull; 2 XP",
+        "trash": true,
+        "add": [115]
+      }
+    ]
+  },{
+    "id": 114,
+    "location": "Quest",
+    "title": "Blood For Blood",
+    "text": "Although the inhabitants at the fledgling settlement are grateful that the raiders have been driven off, a new problem has arisen. The raiders will respect the borders set by the settlement, but only if the raider that was killed is replaced by another.",
+    "options": [
+      {
+        "optionText": "Offer another to take his place.<br><br><strong>[Quest] Raider Camp &bull; Discard a companion</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": 113
+      },{
+        "optionText": "Offer your services.<br><br><strong>[Quest] Raider Camp &bull; [S] [E] [A] 4</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card] &bull; Become <em>Vilified</em>",
+        "trash": true,
+        "add": [116]
+      }
+    ]
+  },{
+    "id": 115,
+    "location": "Quest",
+    "title": "The Hunt",
+    "text": "Many young men and women have volunteered to become hunters for the fledgling village in the hills, but few are adequately equipped. Nonetheless, they have named their quarry: the Yao Guai.",
+    "options": [
+      {
+        "optionText": "Track and defeat the Yao Guai.<br><br><strong>Kill a Yao Guai</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]<br>Become <em>Idolized</em>",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
+        "optionText": "Call off the hunt and set up a trade agreement for these people -- no one needs to get killed.<br><br><strong>[Quest] Pendleton Estate &bull; [P] [C] [I] 5</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "[Agenda Card]<br>Become <em>Idolized</em>",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 116,
+    "location": "Quest",
+    "title": "Collection Day",
+    "text": "An aggressive mutant has driven the raiders from their lair, so they need someone to convince the nearby settlements that collection day has come early this month.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Collect the necessary funds.<br><br><strong>[Quest] any [Settlement] &bull; <em>Vilified</em> &bull; [S] [E] [C] 5</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "[Agenda Card]<br>[Loot] x 3",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
+        "optionText": "Clear out the raider's lair.<br><br><strong>[Quest] Raider Camp &bull; Draw and fight [Super Mutant]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "[Agenda Card]<br>4 Caps",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 117,
+    "location": "Quest",
+    "title": "I've Got A 'FEV'er",
+    "text": "A 'Doctor Diehl' has surfaced in one of the local settlements. No one knows exactly where she came from, but she is paying good Caps for a sample of a chemical she calls 'FEV'.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "You have a lead on a looter who stole something matching that description.<br><br><strong>Kill any enemy with a [Loot] icon</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [118]
       },{
-        "optionText": "",
+        "optionText": "You don't trust this doctor. Pay for some information on her.<br><br><strong>[Quest] Raider Camp &bull; Spend 3 Caps</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card] &bull; [Loot] x 2",
+        "trash": true,
+        "add": [119]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 118,
+    "location": "Quest",
+    "title": "This Won't Hurt... Much",
+    "text": "Doctor Diehl's eyes twinkle with glee as she receives the chemical. Now she needs test subjects. WHoever can provide them the fastest. She'd rather not know the details.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "How bad could it be? Test the serum on yourself.<br><br><strong>[Quest] 2 or more spaces away from a named location &bull; Suffer 8 damage</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card] &bull; Become a <em>Super Mutant</em>",
+        "trash": true,
+        "add": [120]
       },{
-        "optionText": "",
+        "optionText": "You could sneak it into the drinking water of the local populace. It'll probably turn out to be harmless, right?<br><br><strong>[Quest] any level-3 or higher [Settlement]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [121,122,123,124]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 119,
+    "location": "Quest",
+    "title": "Mad Science",
+    "text": "Shocking no one, the information on Doctor Diehl reveals that she is practicing dangerous science. She had to flee east after she was run out of town for her experiments, some of which she brought with her.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Elimintate this dangerous megalomaniac, though it means you'll risk exposure to her experiments.<br><br><strong>[Quest] any level-3 or higher [Settlement]<br>Draw and fight [Human]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card] &bull; If you suffer damage, become a <em>Super Mutant</em>",
+        "trash": true,
+        "add": [120]
       },{
-        "optionText": "",
+        "optionText": "Her work could be quite profitable. Kill one of her past experiments to sell on the black market.<br><br><strong>Kill any [Monster]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card] &bull; 5 Caps",
+        "trash": true,
+        "add": [125]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 120,
+    "location": "Quest",
+    "title": "I'm A Monster",
+    "text": "A blinding pain courses through you as the serum wracks and mutates your body. You've become a monster!<br><br>Doctor Diehl does not seem surprised by this. After taking her readings and doing some work, she outlines her plan for some kind of cure to this condition. It requires a sample from a 'prime specimen.'",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Acquire the sample to cure yourself.<br><br><strong><em>Super Mutant</em> &bull; Kill a Super Mutant Overlord</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "[Agenda Card]<br>Lose the <em>Super Mutant</em> trait",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
+        "optionText": "Screw curing mutants! That serum could sell well.<br><br><strong>Kill a Super Mutant Overlord</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card] &bull; 5 Caps",
+        "trash": true,
+        "add": [125]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 121,
+    "location": "Quest",
+    "title": "Well, What Did You Think Would Happen?",
+    "text": "The populace is hideously transformed by the FEV, and the roving mob of grotesque super mutants quickly destroys a section of the settlement and makes its way into the wasteland.",
     "options": [
       {
         "optionText": "",
