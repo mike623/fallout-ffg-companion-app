@@ -2208,7 +2208,7 @@
     ]
   },{
     "id": 91,
-    "location": "Vaul109",
+    "location": "Vault109",
     "title": "",
     "text": "Jackpot! Up ahead you see a sign leading you to the overseer's office. There's got to be some good loot or information in there. To your surprise, the computer boots up on reserve power. This computer hooks into all sorts of communication and surveillance systems. This could be of massive use. The contents of this computer are invaluable!",
     "options": [
@@ -2874,351 +2874,213 @@
     "text": "The populace is hideously transformed by the FEV, and the roving mob of grotesque super mutants quickly destroys a section of the settlement and makes its way into the wasteland.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Eliminate the super mutants before they hurt people, or help them find a place to live peacefully.<br><br><strong>Encounter [Wasteland] until you find the super mutants</strong>",
         "result": "",
-        "aftermath": "",
+        "aftermath": "[Agenda Card] &bull; Place a Cap on this card",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
+        "optionText": "Place third Cap on this card",
         "result": "",
         "aftermath": "",
-        "trash": false,
-        "add": false
+        "trash": true,
+        "add": [107]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 122,
+    "location": "Wasteland",
     "title": "",
-    "text": "",
+    "text": "You hear loud noises echoing through the ruined areas. There are several super mutants in freshly ripped clothes running around and yelling with rage.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Risk the raging mutants and try to calm them &bull; [S] [C] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> You calm them down and use hand signs to convince them to let you help them.",
+            "aftermath": "Complete 'Well, What Did You THink Would Happen?'",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
+            "result": "<strong>Fail:</strong> They aren't calming down! Uh oh...",
+            "aftermath": "Resolve option 2 on this card",
             "trash": false,
             "add": false
           }
         ]
       },{
-        "optionText": "",
+        "optionText": "Take them out! &bull; Draw and fight [Super Mutant]",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> They won't be threatening anyone.",
+            "aftermath": "Complete 'Well, What Did You THink Would Happen?'",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> They leave you for dead",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [122]
           }
         ]
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Leave them, you're here for loot",
+        "result": "You don't find as much as you try to avoid them.",
+        "aftermath": "[Loot] x [Wasteland] - 1",
+        "trash": true,
+        "add": [122]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 123,
+    "location": "Wasteland",
     "title": "",
-    "text": "",
+    "text": "From afar you spot several hulking figures leaning over a pile of scrap. They are super mutants, trying to build a fire. Odd.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Approach slowly and attempt to help them with their fire &bull; [I] [A] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> You help with the fire, and they seem to trust you. You help guide them.",
+            "aftermath": "Complete 'Well, What Did You THink Would Happen?'",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
+            "result": "<strong>Fail:</strong> Turns out they aren't big fans of sneaking.",
+            "aftermath": "Resolve option 2 on this card",
             "trash": false,
             "add": false
           }
         ]
       },{
-        "optionText": "",
+        "optionText": "Take them out! &bull; Draw and fight [Super Mutant]",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> They won't be threatening anyone.",
+            "aftermath": "Complete 'Well, What Did You THink Would Happen?'",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> They leave you for dead",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [123]
           }
         ]
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Leave them; you're here for loot",
+        "result": "You don't find as much as you try to avoid them.",
+        "aftermath": "[Loot] x [Wasteland] - 1",
+        "trash": true,
+        "add": [123]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 124,
+    "location": "Wasteland",
     "title": "",
-    "text": "",
+    "text": "Something large is moving around out of sight. You sneak up to see a super mutant rummaging through the ruins. Is it looking for something?",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Help it search &bull; [P] [L] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> You find an old Grognak comic, and the mutant's face lights up. A remnant of its past life?",
+            "aftermath": "Complete 'Well, What Did You THink Would Happen?'",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
+            "result": "<strong>Fail:</strong> It attacks you on sight!",
+            "aftermath": "Resolve option 2 on this card",
             "trash": false,
             "add": false
           }
         ]
       },{
-        "optionText": "",
+        "optionText": "Take it out! &bull; Draw and fight [Super Mutant]",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> They won't be threatening anyone.",
+            "aftermath": "Complete 'Well, What Did You THink Would Happen?'",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> They leave you for dead.",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [124]
           }
         ]
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Leave it; you're here for loot",
+        "result": "You don't find as much as you try to avoid them.",
+        "aftermath": "[Loot] x [Wasteland] - 1",
+        "trash": true,
+        "add": [124]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 125,
+    "location": "Quest",
+    "title": "Disorganized Crime",
+    "text": "Emboldened by recent events, crime has begun to grow rapidly. Fueled by a drug trade along secret routes, this shadowy organization is becoming powerful quickly.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "One of the old, patrolling Protectrons along their routes may have records to expose them.<br><br><strong>Kill a Protectron</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card] &bull; Become <em>Idolized</em>",
+        "trash": true,
+        "add": [126,127]
       },{
-        "optionText": "",
+        "optionText": "With the right investment, you can show them you're serious about joining their organization.<br><br><strong>[Quest] Raider Camp &bull; Spend 6 Caps</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Agenda Card] &bull; Become <em>Vilified</em>",
+        "trash": true,
+        "add": [128,129]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 126,
+    "location": "Quest",
+    "title": "In The Shadows",
+    "text": "Driven back into the shadows by information uncovered on their drug trade, the criminals are on the run but more dangerous than ever. In the dark corners of the wastes, they lurk just out of sight.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Hunt down these remaining criminals and bring them to justice.",
+        "result": "Ecounter [Wasteland] until you locate the criminals",
+        "aftermath": "[Agenda Card]",
         "trash": false,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 127,
+    "location": "Wasteland",
     "title": "",
-    "text": "",
+    "text": "You hear voices as you approach the site. It looks like some criminal remnants are still at work here, selling jet to some kids from the nearby settlement.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
+        "optionText": "Bring the criminals to justice &bull; <em>Idolized</em>",
+        "result": "You rush in and interrupt the sale of the drugs. They are not to happy and aren't going to come with you peacefully.",
+        "aftermath": "Complete 'In The Shadows'<br>Draw and fight [Human]",
+        "trash": true,
+        "add": [127]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Help them &bull; <em>Vilified</em> &bull; [C] [L] 5",
+        "result": "You make a deal with the criminals and agree to find customers and keep them hidden. As you walk away, you see a figure following you in the shadows. Someone has taken interest in your strange actions.",
+        "aftermath": "Gain the 'Mysterious Stranger' unique asset",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Leave them be and search",
+        "result": "You head to a different area and, as you scavenge, see the kids run by, jet in hand.",
+        "aftermath": "[Loot] x [Wasteland]",
+        "trash": true,
+        "add": [127]
       }
     ]
   },{
-    "id": 0,
+    "id": 128,
     "location": "",
     "title": "",
     "text": "",
