@@ -387,7 +387,7 @@
         "result": "",
         "aftermath": "[Shield] +<br>[Loot] x 2",
         "trash": true,
-        "add": [15,134]
+        "add": [15,134,135]
       },{
         "optionText": "This all sounds a bit overblown. Head to Diamon City to discreetly dig up some information.<br><br><strong>[Quest] Diamond City</strong>",
         "result": "",
@@ -433,7 +433,7 @@
         "result": "",
         "aftermath": "[Star] +<br>3 Caps",
         "trash": true,
-        "add": [20,134]
+        "add": [20,134,135]
       }
     ]
   },{
@@ -877,7 +877,7 @@
         "result": "",
         "aftermath": "[Star] +<br>3 XP",
         "trash": true,
-        "add": [38,36,37,134]
+        "add": [38,36,37,134,135]
       }
     ]
   },{
@@ -3081,37 +3081,271 @@
     ]
   },{
     "id": 128,
-    "location": "",
-    "title": "",
-    "text": "",
+    "location": "Quest",
+    "title": "Join The Family",
+    "text": "With their new support, the crime organization has stretched its influence to every corner of the wasteland. They are the real authority now. No settlement is outside their influence.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Complete favors for agents to get in their good graces.<br><br><strong>Encounter [Settlement] until you locate the agents</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 129,
+    "location": "Settlement",
+    "title": "",
+    "text": "Multiple mob enforcers can be seen around the settlement, making sure everyone pays their dues and stays in line. You pass a group of people talking in hushed voices. Sounds like they're planning something.",
+    "options": [
+      {
+        "optionText": "Turn them into the mob &bull; <em>Vilified</em>",
+        "result": "The enforcers are grateful for the information and ask you to come along and help apprehend the rebels.",
+        "aftermath": "Complete 'Join The Family'<br>Draw and fight [Human]",
+        "trash": true,
+        "add": [129]
+      },{
+        "optionText": "Get in on their plan &bull; <em>Idolized</em> &bull; [C] [L] 5",
+        "result": "You convince them to let you in on their plot. As you walk away, you see a figure following you in the shadows. Someone has taken interest in your strange actions.",
+        "aftermath": "Gain the 'Mysterious Stranger' unique asset",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Leave them be and shop",
+        "result": "You head to a different area and, as you scavenge, see the kids run by, jet in hand.",
+        "aftermath": "Shop [Settlement]",
+        "trash": true,
+        "add": [129]
+      }
+    ]
+  },{
+    "id": 130,
+    "location": "Quest",
+    "title": "Good News, Everyone!",
+    "text": "Everyone is talking about an eccentric inventor working on something outside of town. He has a few different projects and is looking for whatever help he can get.",
+    "options": [
+      {
+        "optionText": "He claims his research into mutation could help heal injuries.<br><br><strong>Kill a Super Mutant Overlord</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [131]
+      },{
+        "optionText": "He has ambitions to control a robot workforce using wireless signals.<br><br><strong>Kill a Sentry Bot</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [132]
+      },{
+        "optionText": "Most ridiculously of all, he supposedly is nearing completion of a device that could teleport people great distances.<br><br><strong>Kill a Glowing One</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [133]
+      }
+    ]
+  },{
+    "id": 131,
+    "location": "Quest",
+    "title": "Poer Overwhelming",
+    "text": "Bubbles slowly drift up through the viscous green liquid in the machine the inventor expects you to hook yourself into. 'It will fully cure you! The side effects are... minimial.'<br><br><strong>Place a quest marker in your space. This is the machine.</strong>",
+    "options": [
+      {
+        "optionText": "Use the machine<br><br><strong>[Quest] The machine</strong>",
+        "result": "",
+        "aftermath": "Rcover all of your HP.<br>Then, suffer 2 [Radiation]",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 132,
+    "location": "Quest",
+    "title": "Cloudnet",
+    "text": "The inventor stands before a massive tangle of cables, circuitry, and antennas. On a small, blinking terminal, you can see a map of the wasteland, with little dots moving around. 'It's not perfect control, but you can give them commands!'<br><br><strong>Place a quest marker on your space.<br>This is the machine.</strong>",
+    "options": [
+      {
+        "optionText": "Use the machine<br><br><strong>[Quest] The machine</strong>",
+        "result": "",
+        "aftermath": "Move each [Robot] 1 space in a direction of your choice.",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 133,
+    "location": "Quest",
+    "title": "Ship of Theseus",
+    "text": "The inventor steps into the device he's created, and with a manic grin, a sharp 'crack,' and the smell of sulfur, he is gone! Do you follow him in?<br><br><strong>Place a quest marker in your space.<br>This is your machine.</strong>",
+    "options": [
+      {
+        "optionText": "Use the machine<br><br><strong>[Quest] The machine</strong>",
+        "result": "",
+        "aftermath": "Place your figure in any empty space.<br>Then, suffer 3 damage.",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 134,
+    "location": "Quest",
+    "title": "Flesh And Bone",
+    "text": "The locals are in an uproar. A young girl named Olivia has been run out of her home for being a synth. She says that if someone could just find her sister, she could prove false these ridiculous claims that she is some kind of robot.",
+    "options": [
+      {
+        "optionText": "There is something fishy here.<br> Interrogate Olivia.<br><br><strong>[Quest] Any [Settlement] &bull; [S] [C] 3</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [137]
+      },{
+        "optionText": "Go looking for her missing sister.<br><br><strong>Encounter any [Wasteland] until you find Olivia's sister.</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [136]
+      }
+    ]
+  },{
+    "id": 135,
+    "location": "Wasteland",
+    "title": "",
+    "text": "<strong>If 'Flesh and Bone' is no longer staged, trash this card and encounter the next card.</strong><br>A couple of landmarks catch your eye as you approach the area. This is the place where that girl Olivia said her sister was last seen. Looks dangerous, but you could go poking around to see if there's any truth to it.",
+    "options": [
+      {
+        "optionText": "Look for Olivia's sister",
+        "result": "You see the body of a girl lying under an overhang. When you turn it over, you see the body doesn't just have a familial resemblance to Olivia, it is Olivia! The girl you spoke to was a synth who replaced her. Suddenly, you see movement... she sent you here as a trap!",
+        "aftermath": "Complete the 'Flesh and Bone' quest<br>Draw and fight [Critter]",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Ignore it and search for loot &bull; [P] 3",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Succeed:</strong> You see some critters crawling over near the landmarks. You made the right choice in avoiding that area.",
+            "aftermath": "[Loot] x [Wasteland]",
+            "trash": true,
+            "add": [135]
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Fail:</strong> This area doesn't have much.",
+            "aftermath": "[Loot]",
+            "trash": true,
+            "add": [135]
           }
         ]
       },{
-        "optionText": "",
+        "optionText": "'Flesh and Bone' is no longer staged.",
+        "result": "Encounter the next card.",
+        "aftermath": "",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 136,
+    "location": "Quest",
+    "title": "Duped!",
+    "text": "It turns out the people were right. Olivia has been replaced by a murderous synth. They say she was last seen passing through the Ashbury neighborhood on her way out into the wasteland. Time to track her down.",
+    "options": [
+      {
+        "optionText": "Ask around Ashbury and try to talk to her.<br><br><strong>[Quest] Ashbury Rd &bull; [E] [C] 4</strong>",
+        "result": "",
+        "aftermath": "3 XP",
+        "trash": true,
+        "add": [137]
+      },{
+        "optionText": "Track her through the wasteland... and take her out!<br><br><strong>[Raider Camp] &bull; Draw and fight [Human]</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 137,
+    "location": "Quest",
+    "title": "Edge Of A Knife",
+    "text": "Olivia confides that yes, she is in fact a synth, but she regrets what she did under the Institute that made her, and she wants to escape to a new life. She has heard of an organization known as the Railroad that can help her do just that.",
+    "options": [
+      {
+        "optionText": "Pay to get in contact with agents of the Railroad.<br><br><strong>[Quest] Pendleton Estate &bull; 6 Caps</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [138]
+      },{
+        "optionText": "With a tranceiver from a robot you can contact the Institute.<br><br><strong>Kill any [Robot]</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [139]
+      }
+    ]
+  },{
+    "id": 138,
+    "location": "Quest",
+    "title": "Conducted To Safety",
+    "text": "The Railroad want to get Olivia as far from here as possible. If you can lead her to the outskirts of the wasteland, they can pick her up and get her out.<br><br><strong>Place a quest marker in your space.<br>This is Olivia.<br><br>Survivors in the same space as Olivia gain:<br>Action:</strong> Test [C] 1 &bull; Move Olivia a number of spaces equal to the amount of [Hits] by which you exceeded the test.",
+    "options": [
+      {
+        "optionText": "Lead Olivia to a place safe enough for extraction.<br><br><strong>Olivia in any [Wasteland]</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [140]
+      },{
+        "optionText": "Why are people helping this robot?! Looks like you'll have to lure her to her death.<br><br><strong>Olivia in a space with [Monster]</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [140]
+      }
+    ]
+  },{
+    "id": 139,
+    "location": "Quest",
+    "title": "On The Hunt",
+    "text": "The Institute has sent one of its elite Coursers to the wasteland to recover its property. They would be eternally grateful (and pay well) if you would help secure it.<br><br><strong>Place a quest marker in your space.<br>This is Olivia.<br><br>Survivors in the same space as Olivia gain:<br>Action:</strong> Test [C] 1 &bull; Move Olivia a number of spaces equal to the amount of [Hits] by which you exceeded the test.",
+    "options": [
+      {
+        "optionText": "Lead Olivia to the Courser.<br><br><strong>Olivia in the Super Mutant Camp</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [140]
+      },{
+        "optionText": "Kill the Courser.<br><br><strong>[Quest] Super Mutant Camp &bull; Draw and fight [Human]</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [140]
+      }
+    ]
+  },{
+    "id": 140,
+    "location": "Wasteland",
+    "title": "",
+    "text": "You see a figure in a long, black trench coat and sunglasses. This must be the agent the Institute sent to find Olivia. As you approach, he looks at you. 'Ah. Hello there, 41b.' Then, he just walks away... what was that about?",
+    "options": [
+      {
+        "optionText": "Are you... a synth?",
+        "result": "What's he talking about? You're not a synth! You had a childhood! You remember growi... wait, do you? What's the last thing you remember? Why can't you remember anything before a year ago?!",
+        "aftermath": "Gain the <em>Synth</em> trait",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "It's probably nothing, just search for loot &bull; [P] [I] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
+            "result": "<strong>Succeed:</strong> You push it out of your mind and loot.",
+            "aftermath": "[Loot] x [Wasteland]",
             "trash": false,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Fail:</strong> You can't push what he said out of your mind. But you're not a synth! You had a childhood! You remember growi... wait, do you? What's the last thing you remember? Why can't you remember anything before a year ago?!",
+            "aftermath": "Gain the <em>Synth</em> trait",
+            "trash": true,
             "add": false
           }
         ]
@@ -3130,7 +3364,81 @@
       }
     ]
   },{
-    "id": 0,
+    "id": 141,
+    "location": "Quest",
+    "title": "Wasteland Survival Guide",
+    "text": "'Hi!' says a chipper-looking woman. 'My name is Moira, and I'm trying to write a guide to surviving the wasteland. But I don't have a lot of experience out there. Will you help me? I need some food from the Super Duper Mart.'",
+    "options": [
+      {
+        "optionText": "Pick up some food at the Super Duper Mart<br><br><strong>[Quest] Super Duper Mart &bull; [P] [I] 4</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]<br>Keep this card; it is a WSG contribution",
+        "trash": true,
+        "add": [142]
+      },{
+        "optionText": "She just wants food, right? Who cares where it comes from?<br><br><strong>[Quest] any [Wasteland] &bull; [L] 3</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [142]
+      }
+    ]
+  },{
+    "id": 142,
+    "location": "Quest",
+    "title": "Totally Rad",
+    "text": "'Interesting...' Moira muses as she takes the sample of food. 'This will do. Next, I need to test a specimen that has survived, and even thrived, in radiation: the radroach.'",
+    "options": [
+      {
+        "optionText": "Shouldn't take too long to find one of the nasty bugs...<br><br><strong>Kill a Radroach</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]<br>Keep this card; it is a WSG contribution",
+        "trash": true,
+        "add": [143]
+      },{
+        "optionText": "A specimen filled with rads? Surely there's an easier way.<br><br><strong>Suffer 2 [Radiation] during one turn</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [143]
+      }
+    ]
+  },{
+    "id": 143,
+    "location": "Quest",
+    "title": "Ouch!",
+    "text": "Moira finishes her examination. 'Your dedication to this cause is... inspiring,' she says while washing her hands thoroughly. 'For the next section, I think we should continue with the theme of physical endurance. Rapid recovery following excessive trauma seems like an effective experiment.'",
+    "options": [
+      {
+        "optionText": "Sheesh. The things you do for the greater good.<br><br><strong>Suffer 6 damage during one fight</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]<br>Keep this card; it is a WSG contribution",
+        "trash": true,
+        "add": [144,146]
+      },{
+        "optionText": "You're too smart to be someone else's lab rat -- you'll take your own notes, thanks.<br><br><strong>[Quest] Any [Wasteland] &bull; Discard a companion</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [145,146]
+      }
+    ]
+  },{
+    "id": 144,
+    "location": "Wasteland",
+    "title": "",
+    "text": "You see another figure working his way through the ruins. He is clutching a small book in his hands and has a slight skip in his step. 'Hello friend! Have you read this book? It has helped me so much!'",
+    "options": [
+      {
+        "optionText": "'Yes, I helped write it.' &bull; WSG contribution",
+        "result": "'No way!' he gushes over the book for several excruciating minutes, then gives you gifts.",
+        "aftermath": "[Loot] x [Wasteland] &bull; [Wasteland] Caps",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 145,
     "location": "",
     "title": "",
     "text": "",
