@@ -3439,36 +3439,27 @@
     ]
   },{
     "id": 145,
-    "location": "",
+    "location": "Wasteland",
     "title": "",
-    "text": "",
+    "text": "You come across an emaciated corpse. Its hands are clutched tight around a small book. You prise it out of the corpse's grip and see that it is a 'Wasteland Survival Guide.' Oops.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
+        "optionText": "Well, this guy doesn't need his stuff. Loot his corpse.",
+        "result": "It's a little grim, but hey, he's got a decent amount of stuff.",
+        "aftermath": "[Loot] x [Wasteland]",
+        "trash": false,
+        "add": false
       },{
-        "optionText": "",
+        "optionText": "You feel bad about his death.<br>Go search elsewhere. &bull; [P] [L] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
+            "result": "<strong>Succeed:</strong> It looks like the guide gave bad tips about finding salvage too, because he left all sorts of good stuff here.",
+            "aftermath": "[Loot] x [Wasteland]",
             "trash": false,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
+            "result": "<strong>Fail:</strong> You don't find much. He must have picked this place clean before getting himself killed.",
+            "aftermath": "[Loot]",
             "trash": false,
             "add": false
           }
@@ -3488,47 +3479,195 @@
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 146,
+    "location": "Quest",
+    "title": "Beep Boop",
+    "text": "'I can't help but believe that our unconventional methods are producing... unconventional results.' She disposes of the last bloody rag. 'Nevertheless, excelsior, as they say. I've filled in most of the other sections, but the 'Post-Future Tech in a Dying World' finale is still lacking. I need a robot, preferably functional.'",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "It just so happens you know the perfect robot for the job. This guide will be so totally great!<br><br><strong>[Quest] Robco Factory &bull; <em>Robot</em> companion</strong>",
         "result": "",
-        "aftermath": "",
+        "aftermath": "[Agenda Card]<br>Keep this card; it is a WSG contribution",
+        "trash": true,
+        "add": [147]
+      },{
+        "optionText": "Wait, what'd she say? Something about a dying robot or whatever, right? Hopefully the guide will be more interesting than this endless chain of quests...<br><br><strong>Kill any [Robot]</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [147]
+      }
+    ]
+  },{
+    "id": 147,
+    "location": "Quest",
+    "title": "Hot Off The Presses",
+    "text": "'That's a wrap!' Moira's excitement is palpable. 'Now, do you actually know how to publish something like this? There has to be someone out in the wasteland with the resources to print it for us.'",
+    "options": [
+      {
+        "optionText": "One of the affluent individuals living in the Pendleton Estate must have a printing press of some sort.<br><br><strong>[Quest] Pendleton Estate &bull; Spend 2 Caps</strong>",
+        "result": "",
+        "aftermath": "Gain the 'Wasteland Survival Guide' unique asset.",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 148,
+    "location": "Quest",
+    "title": "Rogue Vertibird",
+    "text": "It's an old rust-bucket, but it still flies! An old engineer named Tully fixed up a Brotherhood of Steel wreck and now flies people around for Caps. You won't ride long with Tully without hearing about how he got his large facial scar fighting off the deathclaw that killed his brother.<br><br><strong>Place a quest marker on the highest-level [Settlement]. This is the Vertibird.</strong>",
+    "options": [
+      {
+        "optionText": "Pay for a ride.<br><br><strong>[Quest] Vertibird &bull; Spend 4 Caps</strong>",
+        "result": "",
+        "aftermath": "Place your figure and the vertibird in any empty space.",
         "trash": false,
         "add": false
+      },{
+        "optionText": "Avenge Tully's brother.<br><br><strong>Kill a Deathclaw</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [149]
+      }
+    ]
+  },{
+    "id": 149,
+    "location": "Quest",
+    "title": "In Your Debt",
+    "text": "A broad smile can now always be seen across the cracked and scarred face of old Tully. His vertibird flights have become cheaper than ever after his brother was avenged.<br><br><strong>Do not discard the vertibird</strong>",
+    "options": [
+      {
+        "optionText": "Buy a discounted ride.<br><br><strong>[Quest] Vertibird &bull; Spend 2 Caps</strong>",
+        "result": "",
+        "aftermath": "Place your figure and the vertibird in any empty space.",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 150,
+    "location": "Quest",
+    "title": "Nowhere To Go",
+    "text": "The recent war and destruction in the wasteland has left many homeless, but no one has been as affected as the local ghoul populace. Already viewed as pariahs, a bounty has been put out on certain ghouls, which has lead to all of them being shunned.",
+    "options": [
+      {
+        "optionText": "Kill the bounty hunter.<br><br><strong>Kill a Bounty Hunter</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [151]
+      },{
+        "optionText": "Find a new, uninhabited place for them to settle.<br><br><strong>Explore a [Dangerous] tile</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [152]
+      }
+    ]
+  },{
+    "id": 151,
+    "location": "Quest",
+    "title": "Can't We All Just Get Along?",
+    "text": "With the bounty on ghouls eliminated, it's just the normal stigmas that stand in the way of their being relocated. Try to find a settlement that would be willing to let them in.",
+    "options": [
+      {
+        "optionText": "The Tower would be willing to take in the ghouls if you can also supply someone to act as the ambassador to the new district.<br><br><strong>[Quest] The Tower &bull; Discard a companion</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [153,154]
+      },{
+        "optionText": "For enough money, the Pendletons will agree to anything.<br><br><strong>[Quest] Pendleton Estate &bull; Spend 5 Caps</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [153,154]
+      }
+    ]
+  },{
+    "id": 152,
+    "location": "Quest",
+    "title": "Drain The Swamp",
+    "text": "Many areas in the more dangerous sections of the wasteland have uninhabited places where the ghouls could make their home. But first, said place needs to be made safe for the ghouls to live there.",
+    "options": [
+      {
+        "optionText": "It's not the prettiest place, but the super mutants have created a large home for themselves in an old substation.<br><br><strong>[Quest] Super Mutant Camp &bull; No enemies within 2 spaces</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [155,156]
+      },{
+        "optionText": "The old Robco Factory could be a suitable home if the last active robots were gone.<br><br><strong>[Quest] Robco Factory&bull; No enemies within 2 spaces</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [155,156]
+      }
+    ]
+  },{
+    "id": 153,
+    "location": "Quest",
+    "title": "Cohabitation",
+    "text": "The ghouls have moved in, and so far there have been very little problems. However, the ghouls have very little and live in squalor. Any donations could help them.<br><br><strong>Place a quest marker in your space. This is the ghoul district. Apply +1 to the level of the [Settlement] in the district's space.</strong>",
+    "options": [
+      {
+        "optionText": "Make a donation to improve the ghouls's quality of life.<br><br><strong>[Quest] District &bull; Spend 8 Caps</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": false,
+        "add": false
+      }
+    ]
+  },{
+    "id": 154,
+    "location": "Settlement",
+    "title": "",
+    "text": "You can hear raised voices over the crowd, one of them a scratchy, guttural growl. You see a ghoul in a heated argument with a 'smoothskin' trader. They are yelling foul names at each other; clearly the cohabitation isn't going as well as you'd hope.",
+    "options": [
+      {
+        "optionText": "Put the ghould in her place",
+        "result": "You yell at the ghoul and tell her to go back to her district. The trader offers you a deal.",
+        "aftermath": "Shop [Settlement] +1",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Tell the 'smoothskin' to back off.",
+        "result": "The ghouls are here to stay, and everyone is going to have to get used to that. The man turns on his heels and heads off in a huff.",
+        "aftermath": "Become <em>Idolized</em>",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Try to mediate carefully &bull; [C] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You get the two to calm down. By the end you are having a drink toegther in a nearby bar.",
+            "aftermath": "[Settlement] Caps &bull; [Settlement] XP",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> You only make things worse! A scuffle starts",
+            "aftermath": "Suffer 3 damage",
+            "trash": true,
+            "add": 154
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
       },{
         "optionText": "",
         "result": "",
@@ -3538,652 +3677,135 @@
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 155,
+    "location": "Quest",
+    "title": "Sepulcher",
+    "text": "It's still not the safest place, but the ghouls have a settlement of their own that they've named Sepulcher. The name is a little morbid, but it fits.<br><br><strong>Place a quest marker in your space.<br>This is Sepulcher. Sepulcher counts as a level-2 [Settlement] in addition to other icons in that space.</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Living this deep in the wasteland is dangerous, and illness is rampant. Provide supplies to help.<br><br><strong>[Quest] Sepulcher &bull; Discard 2 <em>Aid</em> items</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "aftermath": "[Agenda Card]",
         "trash": false,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 156,
+    "location": "Wasteland",
     "title": "",
-    "text": "",
+    "text": "A path runs alonside the ruins, and you see a small caravan ridden by a hunched ghoul from Sepulcher trundling by.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Offer to trade with the ghoul",
+        "result": "He has a decent amount of supplies in his cart, but Sepulcher is of limited means.",
+        "aftermath": "Shop [Wilderness] - 1",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Buy a ride to Sepulcher &bull; Spend 2 Caps",
+        "result": "The ghoul is incredibly friendly as you roll along. However, there is something glowing in his cart!...",
+        "aftermath": "Place your figure in Sepulcher<br>Suffer 1 [Radiation]",
         "trash": false,
+        "add": false
+      },{
+        "optionText": "Let him pass and keep searching &bull; [P] 3",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> The ghoul waves kindly as he goes by. You get a decent haul.",
+            "aftermath": "[Loot] x [Wilderness]",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> You're distracted by the caravan, so you don't find much.",
+            "aftermath": "[Loot]",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>",
+            "aftermath": "",
+            "trash": false,
+            "add": false
+          }
+        ]
+      }
+    ]
+  },{
+    "id": 157,
+    "location": "Quest",
+    "title": "Can't Touch This",
+    "text": "Meitner and Somerville have been rivals for years. What started as a small dispute has escalated to a violent feud. This time, Meitner has crafted an indestructible bunker, and Somerville is fixing up something she found in the wasteland to bust inside that bunker.",
+    "options": [
+      {
+        "optionText": "Steal the prototype for Meitner<br><br><strong>[Quest] Pendleton Estate &bull; [P] [A] [L] 4</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card] &bull; 4 Caps",
+        "trash": true,
+        "add": [158]
+      },{
+        "optionText": "Help Somerville fix up her device.<br><br><strong>[Quest] Robco Factroy &bull; [S] [E] [I] 4</strong>",
+        "result": "",
+        "aftermath": "Gain the 'Super Sledge' unique asset.",
+        "trash": true,
+        "add": [159]
+      }
+    ]
+  },{
+    "id": 158,
+    "location": "Quest",
+    "title": "Break It Down",
+    "text": "Meitner is impressed by Somerville's prototype. 'Is this super-mutant tech? Interesting. We can easily rig this to blow up in her face!'",
+    "options": [
+      {
+        "optionText": "Help her rig the super sledge to explode and bring it back to Somerville.<br><br><strong>[Quest] The Tower &bull; [S] [I] 4</strong>",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong>This thing is going to do major damage when it goes off.",
+            "aftermath": "[Agenda Card]",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong>It explodes way too early.",
+            "aftermath": "Suffer 4 damage",
+            "trash": false,
+            "add": false
+          }
+        ]
+      },{
+        "optionText": "Leverage Meitner's respect for Somerville to spark a friendship between the two. They give you the hammer.<br><br><strong>[Quest] The Tower &bull [C] 5</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card] &bull; Become <em>Idolized</em><br> Gain the 'Super Sledge' unique asset",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 159,
+    "location": "Quest",
+    "title": "Hammer Time",
+    "text": "With Somerville's scavenged super mutant device reconstructed, you can smash into Meitner's bunker!",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Use the super sledge to smash the bunker<br><br><strong>[Quest] Pendleton Estate &bull; Equipped Super Sledge unique asset</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "[Agenda Card]<br>Become <em>Vilified</em>",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
+        "optionText": "Convince Somerville that this is all ridiculous.<br><br><strong>[Quest] Pendleton Estate &bull; [C] 4</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "[Agenda Card]",
+        "trash": true,
         "add": false
       }
     ]
