@@ -602,7 +602,7 @@
       },{
         "optionText": "You are at a level-2 or lower [Wasteland].",
         "result": "",
-        "aftermath": "",
+        "aftermath": "Encounter the next card.",
         "trash": true,
         "add": [22]
       }
@@ -815,7 +815,7 @@
       },{
         "optionText": "There is a [Star] on this space.",
         "result": "",
-        "aftermath": "",
+        "aftermath": "Encounter the next card.",
         "trash": true,
         "add": [31]
       }
@@ -1328,9 +1328,9 @@
           }
         ]
       },{
-        "optionText": "Not at Robco Facility",
+        "optionText": "You are not at Robco Facility",
         "result": "",
-        "aftermath": "",
+        "aftermath": "Encounter the next card.",
         "trash": true,
         "add": [53]
       }
@@ -2529,7 +2529,7 @@
       },{
         "optionText": "'The Mothership' is no longer staged",
         "result": "",
-        "aftermath": "",
+        "aftermath": "Encounter the next card.",
         "trash": true,
         "add": false
       }
@@ -3236,8 +3236,8 @@
         ]
       },{
         "optionText": "'Flesh and Bone' is no longer staged.",
-        "result": "Encounter the next card.",
-        "aftermath": "",
+        "result": "",
+        "aftermath": "Encounter the next card.",
         "trash": true,
         "add": false
       }

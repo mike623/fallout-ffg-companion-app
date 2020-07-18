@@ -1,606 +1,324 @@
 [
   {
-    "id": 0,
-    "location": "",
+    "id": 160,
+    "location": "settlement",
     "title": "",
-    "text": "",
+    "text": "You tail a group of raiders as they approach a settlement, and you suspect that they don't mean to go shopping",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Attack their leader",
+        "result": "You ambush the raider leader.",
+        "aftermath": "Draw and fight [Human]; if you defeat it, gain the 'Big Frigger' unique asset",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "A little opportunistic thieving never hurt anyone... much",
+        "result": "As the raiders begin their attack on the town you slip into the marketplace and help yourself to the goods. You notice a sad pair of eyes watching you from a nearby doorway and feel a pang of guilt. You monster.",
+        "aftermath": "Become <em>Vilified</em><br>Choose 1 item from the shop",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 161,
+    "location": "Settlement",
     "title": "",
-    "text": "",
+    "text": "News of a heroic battle has spread to nearby settlements. The eager wastelanders want nothing more than to hear tales of battle from the mouth of a hero.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "FORCED if you are <em>Idolized</em> &bull; [C] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> You tell your story, embellishing in all the right places. The crowd is enamored, showering you with gifts.",
+            "aftermath": "[Loot] x [Settlement] &bull; 2 XP",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Fail:</strong> You can feel you audience's attention waning, so youend the tale and go on with your day.",
+            "aftermath": "2 XP",
+            "trash": true,
             "add": false
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Go aout your business",
+        "result": "The settlement is alive with the bustle of daily life.",
+        "aftermath": "Shop [Settlement]",
+        "trash": true,
+        "add": [161]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 162,
+    "location": "Wasteland",
     "title": "",
-    "text": "",
+    "text": "<strong>If at a level-2 or lower [Wasteland], encounter the next card. Then, add this card.</strong><br><br>Another tremor shakes the earth. This time, it is accompanied by a twisted limb bursting up from beneath the soil. It must have come from an underground tunnel, whatever it is.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Stand fast &bull; Draw and fight [Monster]",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> The best falls, and you slump to your knees, relieved.",
+            "aftermath": "[Agenda Card] &bull; [Loot]",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Fail:</strong>Sensing the beast has the upper hand, you run for your life.",
+            "aftermath": "Move 1 space",
+            "trash": true,
+            "add": [162]
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
+        "optionText": "Flee!",
+        "result": "You head toward safety as quickly as you can.",
         "aftermath": "",
-        "trash": false,
-        "add": false
+        "trash": true,
+        "add": [162]
       },{
-        "optionText": "",
+        "optionText": "You are at a level-2 or lower [Wasteland]",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "Encounter next card.",
+        "trash": true,
+        "add": [162]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 163,
+    "location": "Settlement",
     "title": "",
-    "text": "",
+    "text": "A man wrapped in bandages is arguing with a doctor about the cost of his treatment.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "FORCED if you are <em>Idolized</em>",
+        "result": "The man smiles warmly at you as you approach. 'Greetings, friend! I've seen better days, to be sure, but today I'm glad to be alive. Here, have a drink with me.'",
+        "aftermath": "Gain the 'Nuka-Cola Quantum' unique asset",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Offer to pay the fee &bull; Spend 5 Caps",
+        "result": "'I can't possibly thank you enough,' the man says. 'Take this. It's a rare, pre-war formula. I think you'll like it.'",
+        "aftermath": "Gain the 'Nuka-Cola Quantum' unique asset",
+        "trash": true,
         "add": false
+      },{
+        "optionText": "Ignore them and go shopping",
+        "result": "",
+        "aftermath": "Shop [Settlement]",
+        "trash": true,
+        "add": [163]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 164,
+    "location": "Settlement",
     "title": "",
-    "text": "",
+    "text": "A neon sign that says 'Grand Opening' hangs above an apparel shop in the marketplace.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "See what they have for sale",
+        "result": "The proprietors greet you warmly.",
+        "aftermath": "Reveal items from the asset deck until you reveal an <em>Apparel</em> asset, add it to the shop, and discard the rest; then shop once",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Steal from their stuff when they aren't looking &bull; [P] [A] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You handily steal something from a pile labeled 'To be repaired.'",
+            "aftermath": "Choose 1 <em>Apparel</em> item from the discard pile &bull; 2 XP",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> The owners catch your brazen attempt to steal from them and ban you from their shop.",
+            "aftermath": "",
+            "trash": true,
+            "add": false
+          }
+        ]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 165,
+    "location": "Settlement",
     "title": "",
-    "text": "",
+    "text": "A neon sign that says 'Grand Opening' hangs above a weapon shop in the marketplace",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "See what they have for sale",
+        "result": "The proprietors greet you warmly.",
+        "aftermath": "Reveal items from the asset deck until you reveal a <em>Weapon</em> asset, add it to the shop, and discard the rest; then shop once",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Steal from their stuff when they aren't looking &bull; [P] [A] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You handily steal something from a pile labeled 'To be repaired.'",
+            "aftermath": "Choose 1 <em>Weapon</em> item from the discard pile &bull; 2 XP",
+            "trash": false,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> The owners catch your brazen attempt to steal from them and ban you from their shop.",
+            "aftermath": "",
+            "trash": true,
+            "add": false
+          }
+        ]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 166,
+    "location": "Quest",
+    "title": "Welcome To The Wasteland",
+    "text": "The Brotherhood of Steel paladins own the wasteland here, but a secret power grows in the background, claiming charity and generosity amidst rumors of mutants and experiments gone mad.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Learn about the mysterious Unity<br><br><strong>[Quest] any [Settlement] &bull; [C] 3</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] +<br>Place [Shield] a The Cathedral<br>1 XP",
+        "trash": true,
+        "add": [167,190]
       },{
-        "optionText": "",
+        "optionText": "Find information on the Brotherhood<br><br><strong>[Quest] The Hub</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] +<br>Place [Star] at Lost Hills Bunker<br>1 XP",
+        "trash": true,
+        "add": [168,169,203]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 167,
+    "location": "Quest",
+    "title": "Think Of The Children",
+    "text": "The Unity welcomes all with open arms. Sure, they're a little weird, but they have you recruiting for them in no time. As it turns out, for a hot meal and a few Caps, even the meanest wasteland raider will join up. Still, the rumors of strange experiments persist.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Recurit for the Unity<br><br><strong>[Quest] Replace a [Human] in your space or an adjacent space with [Shield]<br><br>When a [Shield] is placed on the map and there are now at least [Shield] on the map equal to the number of survivors</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] +",
+        "trash": true,
+        "add": [170,226]
       },{
-        "optionText": "",
+        "optionText": "Kill one of the experiments<br><br><strong>Kill any [Super Mutant]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] +",
+        "trash": true,
+        "add": [171,172,226]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 168,
+    "location": "Wilderness",
     "title": "",
-    "text": "",
+    "text": "Radiation is overwhelming here. No wonder the Brotherhood hasn't come to reclaim their lost records. Still, you have a job to do, and you intend to see it through.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Risk the radiation &bull; [P] [E] [A] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> You find the safest path you can through the radiation and grab the holodisk.",
+            "aftermath": "Suffer 1 [Radiation] &bull; Keep this card; it is the Holodisk",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
+            "result": "<strong>Fail:</strong> The radiation sickens you, causing you to vomit, but you emerge with the holodisk, alive.",
+            "aftermath": "Suffer 4 [Radiation] &bull; Keep this card; it is the Holodisk",
             "trash": false,
             "add": false
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
+        "optionText": "Leave. It is too dangerous",
+        "result": "There is too much radiation here. You'll come back later.",
         "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "trash": true,
+        "add": [168]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 169,
+    "location": "Quest",
+    "title": "We Happy Few",
+    "text": "You meet a Brotherhood paladin and express some interest in their organization. He scoffs at you. 'Sure,' he says. 'Head out into the wastelands and bring back one of our lost holodisks. Then you can join.' He waks away laughing. It is clear that he doesn't think you can do it.<br><br><strong>Have [Wilderness] encounters to find the Holodisk.</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Screw this guy! Down with the Broterhood!<br><br><strong>Kill any [Star]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] +<br>1 XP",
+        "trash": true,
+        "add": [170,226]
       },{
-        "optionText": "",
+        "optionText": "Bring back the holodisk<br><br><strong>[Quest] Lost Hills Bunker &bull; Holodisk</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] +<br>1 XP",
+        "trash": true,
+        "add": [171,172,226]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 170,
+    "location": "Quest",
+    "title": "The Wheel Goes 'Round",
+    "text": "The Unity appears to be making a strike against the citizens of the Hub while the Brotherhood is occupied with internal affairs. Those who have refused to join them, it seems, must be purged.<br><br><strong>[Shield] move toward The Hub instead of survivors.</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Help coordinate the Unity's movement.<br><br><strong>[Quest] Replace a [Human] in your space or an adjacent space with [Shield]<br><br>Any [Shield] is at The Hub</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Shield] +",
+        "trash": true,
+        "add": [107,173,174,175,176]
       },{
-        "optionText": "",
+        "optionText": "Attack the Unity and protect the people.<br><br><strong>Kill the last [Shield] on the map</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "aftermath": "[Star] +",
+        "trash": true,
+        "add": [148,177,178,179,180]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 171,
+    "location": "Wasteland",
     "title": "",
-    "text": "",
+    "text": "<strong>If 'Mariposa Military Base' is no longer staged, trash this card and encounter the next card.<br><br>If not at Mariposa Military Compound, encounter the next card. Then, add this card.</strong><br><br>You descend into the ruins of Mariposa Military Base, finding vats of roiling green liquid deep withing. There is no doubt in your mind that this is the FEV.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Destroy the vats of FEV &bull; [S] [I] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> You destroy the noxious vats. The Brotherhood will be pleased.",
+            "aftermath": "Suffer 1 [Radiation]<br>Complete 'Mariposa Military Base'",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Fail:</strong> You fail to find a good way to dispose of it.",
+            "aftermath": "Suffer 2 [Radiation]",
+            "trash": true,
+            "add": [171]
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Collect some of the FEV<br>Have loyalty with [Shield]",
+        "result": "You take several samples of the virus. Whatever happens to the vats, you take solace in knowing that your samples will be safe.",
+        "aftermath": "Keep this card; it is the FEV.",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
+        "optionText": "'Mariposa Military Base' is no longer staged.",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "Encounter the next card.",
+        "trash": true,
         "add": false
+      },{
+        "optionText": "Not at 'Mariposa Military Base.'",
+        "result": "",
+        "aftermath": "Encounter the next card.",
+        "trash": true,
+        "add": [171]
       }
     ]
   },{
-    "id": 0,
+    "id": 172,
     "location": "",
     "title": "",
     "text": "",
