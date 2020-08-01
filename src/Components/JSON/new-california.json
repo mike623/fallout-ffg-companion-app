@@ -184,7 +184,7 @@
         "result": "",
         "aftermath": "[Star] +<br>Place [Star] at Lost Hills Bunker<br>1 XP",
         "trash": true,
-        "add": [168,169,203]
+        "add": [168,169,203,204]
       }
     ]
   },{
@@ -694,7 +694,7 @@
         "result": "",
         "aftermath": "[Star] +<br>1 Group XP",
         "trash": true,
-        "add": [186,190,203]
+        "add": [186,190,203,204]
       },{
         "optionText": "Buy a round of drinks at the Rawhide Salloon.<br><br><strong>[Quest] New California Republic &bull; Spend 3 Caps</strong>",
         "result": "",
@@ -766,1356 +766,634 @@
     ]
   },{
     "id": 190,
-    "location": "",
-    "title": "",
-    "text": "",
+    "location": "Quest",
+    "title": "The Vault Of The Future",
+    "text": "Whispers of a still-sealed vault hidden beneath the surface of a lake reach your ears. Most of the known vaults have either been looted or transformed into thriving settlements, so you jump at the chance to learn more about it.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
+        "optionText": "Sweet talk those in the know for info.<br><br><strong>[Quest] any [Settlement] &bull; Test [C] &bull; Spend 5 Caps; spend 1 fewer Cap for each [Hit]</strong>",
         "result": "",
-        "aftermath": "",
-        "trash": false,
+        "aftermath": "2 XP",
+        "trash": true,
+        "add": [191,192]
+      },{
+        "optionText": "Wait near Vault 7 for someone who looks like they know what they are doing.<br><br><strong>[Quest] Vault 7 &bull [L] 4</strong>",
+        "result": "",
+        "aftermath": "2 XP",
+        "trash": true,
+        "add": [191,192]
+      }
+    ]
+  },{
+    "id": 191,
+    "location": "Wasteland",
+    "title": "",
+    "text": "You find a heap of metal and glass scrap. You think you could use it to fashion a number of devices.",
+    "options": [
+      {
+        "optionText": "Build a Rebreather &bull; [I] 3",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You manage to cobble together a device that will allow you to breathe underwater.",
+            "aftermath": "Keep this card; it is a Rebreather",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> You have absolutely no idea what you are doing, and you cut yourself on some sharp glass. Ouch!",
+            "aftermath": "Suffer 1 damage",
+            "trash": true,
+            "add": [191]
+          }
+        ]
+      },{
+        "optionText": "Build something useful... or expolosive!",
+        "result": "You assemble something from the scraps of metal and glass. It is not what you set out to build, but you think it may be useful nonetheless.",
+        "aftermath": "Choose 1 <em>Tool, Trap,</em> or <em>Grenade</em> item from the shop or the discard pile.",
+        "trash": true,
+        "add": [191]
+      }
+    ]
+  },{
+    "id": 192,
+    "location": "Quest",
+    "title": "Deep Breaths",
+    "text": "You learn that in order to get into Vault 7, you'll need to build some sort of breathing apparatus or be able to hold your breath underwater. Additionally, you are warned that for whatever reason, none who have set out to explore the vault have returned to tell of it.<br><br><strong>Encounter any [Wasteland] until you find the parts you need to build a Rebreather</strong>",
+    "options": [
+      {
+        "optionText": "Build a rebreather<br><br><strong>[Quest] Vault 7 &bull; Rebreather</strong>",
+        "result": "",
+        "aftermath": "2 XP",
+        "trash": true,
+        "add": [193,194,195,196,197,198,199]
+      },{
+        "optionText": "Who needs a rebreather? Hold your breath and make the dive.<br><br><strong>[Quest] Vault 7 &bull; Have [E]</strong>",
+        "result": "",
+        "aftermath": "2 XP",
+        "trash": true,
+        "add": [193,194,195,196,197,198,199]
+      }
+    ]
+  },{
+    "id": 193,
+    "location": "Quest",
+    "title": "The Leviathan",
+    "text": "The Vault doors slide open as your approach. Uh oh. With a loud rumble the lake water goes rushing into the vault, taking you with it. You fight against the current, but are unable to resist. As you are sucked through the massive steel door, it slides shut again, and you find that you are trapped in pitch black darkness, underwater.<br><br><strong>While this quest is staged, survivors on the Vault 7 space cannot perform the move action and must perform the encounter action on each of their turns, if able. Additionally, while this quest is staged, enemies ignore survivors on the Vault 7 space.</strong>",
+    "options": [
+      {
+        "optionText": "You gotta get out of here.<br><br><strong>Encounter [Vault 7] until you find a way to escape</strong>",
+        "result": "",
+        "aftermath": "Trash this card and each card in the [Vault 7] deck",
+        "trash": true,
         "add": false
+      }
+    ]
+  },{
+    "id": 194,
+    "location": "Vault 7",
+    "title": "",
+    "text": "You feel frigid current tugging at you as you swim into the lightless depths. Could it be a way out? Or is it just pulling you deeper into the Vault?<br><br><strong>If you are not Mister Handy and do not have a Rebreather, suffer 2 damage.</strong>",
+    "options": [
+      {
+        "optionText": "Go with the flow &bull; [A] [L] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> The current picks up and you are sucked suddenly through a vent into a room that is somehow not filled with water. Atop a pedestal in the center of the room is a strange device, the likes of which you have never seen.",
+            "aftermath": "Gain the 'Cryolater' unique asset.",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> You are deposited into a room with some kind of horrible creature. Oh well, everyone has to die sometime.",
+            "aftermath": "Draw and fight [Monster] &bull; [Loot] x 2",
+            "trash": false,
+            "add": false
+          }
+        ]
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Swim against the current",
+        "result": "As you swim through the tunnels, scavenging for anything that might help you escape, the water turns hazy and you begin to feel ill.",
+        "aftermath": "Suffer 1 [Radiation] &bull; [Loot]",
         "trash": false,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 195,
+    "location": "Vault 7",
     "title": "",
-    "text": "",
+    "text": "You feel frigid current tugging at you as you swim into the lightless depths. Could it be a way out? Or is it just pulling you deeper into the Vault?<br><br><strong>If you are not Mister Handy and do not have a Rebreather, suffer 2 damage.</strong>",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Go with the flow &bull; [A] [L] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> You emerge in the lakebed outside the vault. You're glad to be alive, but you wonder what secrets are yet to be uncovered.",
+            "aftermath": "[Agenda Card]<br>Place your character in a space adjacent to Vault 7",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
+            "result": "<strong>Fail:</strong> You are deposited into a room with some kind of skittering creature. What is this place, some kind of menagerie?",
+            "aftermath": "Draw and fight [Critter] &bull; [Loot] x 2",
             "trash": false,
             "add": false
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Swim against the current",
+        "result": "You find the skeleton of a long-dead explorer -- complete with breathing apparatus -- near the vault door. He must have been looking for a way out.",
+        "aftermath": "Keep this card; it is a Rebreather",
+        "trash": true,
         "add": false
+      }
+    ]
+  },{
+    "id": 196,
+    "location": "Vault 7",
+    "title": "",
+    "text": "You feel frigid current tugging at you as you swim into the lightless depths. Could it be a way out? Or is it just pulling you deeper into the Vault?<br><br><strong>If you are not Mister Handy and do not have a Rebreather, suffer 2 damage.</strong>",
+    "options": [
+      {
+        "optionText": "Go with the flow &bull; [A] [L] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You close your eyes and drift with the current, letting it draw you through the dark tunnels of the vault. When you open your eyes, you are in a well-lit chamber, surrounded by bottles of Nuka-Cola, Caps intact. Neat!",
+            "aftermath": "10 Caps",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> You are deposited into a room with some kind of mutated creatuere. What is this place, some kind of menagerie?",
+            "aftermath": "Draw and fight [Super Mutant] &bull; [Loot] x 2",
+            "trash": false,
+            "add": false
+          }
+        ]
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Swim against the current",
+        "result": "As you flounder in the water, you see movement. Looks like someone else go sucked in by the vault.",
+        "aftermath": "Draw and fight [Human]",
         "trash": false,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 197,
+    "location": "Vault 7",
     "title": "",
-    "text": "",
+    "text": "You find a working computer encapsulated in a bubble of air. You are able to interface with it by putting your arms through two long tubes. Spotlights illuminate the console, as if beckoning to you.<br><br><strong>If you are not a Mister Handy and do not have a Rebreather, suffer 2 damage.</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Search for information about the vault's residents",
+        "result": "The computer reports that the vault has no living residents -- nor has it ever been assigned any. The vault appears to be recording information on those who find their way inside. You find an entry for yourself, even.",
+        "aftermath": "1 XP",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
+        "optionText": "Search for a map of the vault &bull; [P] [I] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> 'ACCESS DENIED: Maps violate Leviathan Protocol, Releasing Guardian.'",
+            "aftermath": "",
+            "trash": true,
+            "add": [200]
+          },{
+            "result": "<strong>Fail:</strong> The computer issues a drawn-out, ear-shattering beep, then discharges an electric charge into the water.",
+            "aftermath": "Suffer 1 damage",
+            "trash": false,
+            "add": false
+          }
+        ]
+      }
+    ]
+  },{
+    "id": 198,
+    "location": "Vault 7",
+    "title": "",
+    "text": "You find a working computer encapsulated in a bubble of air. You are able to interface with it by putting your arms through two long tubes. Spotlights illuminate the console, as if beckoning to you.<br><br><strong>If you are not a Mister Handy and do not have a Rebreather, suffer 2 damage.</strong>",
+    "options": [
+      {
+        "optionText": "Search for information about the vault's residents",
+        "result": "You learn that the vault has no overseer and is instead run by an entity known as the 'Guardian,' whatever that means.",
+        "aftermath": "1 XP",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Search for a map of the vault &bull; [P] [I] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> 'ACCESS DENIED: Maps violate Leviathan Protocol. Difficulty increased. Lower levels unlocked.'",
+            "aftermath": "",
+            "trash": true,
+            "add": [201,202]
+          },{
+            "result": "<strong>Fail:</strong> The computer issues a drawn-out, ear shattering beep, then discharges a burst of sound that shatters all nearby glass.",
+            "aftermath": "If you have a Rebreather, discard it",
+            "trash": false,
+            "add": false
+          }
+        ]
+      }
+    ]
+  },{
+    "id": 199,
+    "location": "Vault 7",
+    "title": "",
+    "text": "You find a working computer encapsulated in a bubble of air. You are able to interface with it by putting your arms through two long tubes. Spotlights illuminate the console, as if beckoning to you.<br><br><strong>If you are not a Mister Handy and do not have a Rebreather, suffer 2 damage.</strong>",
+    "options": [
+      {
+        "optionText": "Search for information about the vault's residents",
+        "result": "Records indicate that the vault has 154,440 different configurations and that the High Score is currently 42. You wonder what that means...",
+        "aftermath": "1 XP",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Search for a map of the vault &bull; [P] [I] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> 'ACCESS DENIED: Insufficent data. Damaged sectors detected. Four. Four four. Fourfourfourfour.' A nearby locker clicks open, and the computer explodes.",
+            "aftermath": "Keep this card; it is a Rebreather",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> You feel a sudden sting on your hand. You've been infected with something, and you start to feel... different.",
+            "aftermath": "Become a <em>Super Mutant</em>",
+            "trash": false,
+            "add": false
+          }
+        ]
+      }
+    ]
+  },{
+    "id": 200,
+    "location": "Vault 7",
+    "title": "",
+    "text": "The Guardian has you in its sights, a blinking red searchlight illuminating you in the dark water. 'ALERT, ALERT: CONTRABAND DETECTED.'<br>br><strong>If you are not a Mister Handy and do not have a Rebreather, suffer 2 damage.<br><br>Draw and fight [Robot]; this is the Guardian</strong>",
+    "options": [
+      {
+        "optionText": "FORCED If you killed the Guardian",
+        "result": "The Guardian buzzes and explodes, sending red-hot shards of its plating sizzling through the water. Amidst the wreckage you find a plethora of sonfiscated 'contraband.'",
+        "aftermath": "Gain the 'You're SPECIAL' unique asset &bull; 4 Caps",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "FORCED If you did not kill the Guardian",
+        "result": "You swim away as fast as you can, the Guardian following close behind you. 'ERROR: Please return to the staging area to be sorted.'",
         "aftermath": "",
+        "trash": true,
+        "add": [200]
+      }
+    ]
+  },{
+    "id": 201,
+    "location": "Vault 7",
+    "title": "",
+    "text": "As you descend deeper into the vault, you emerge suddenly into a room with breathable air. Before you, a swirling vortex of water leads back inot the main tunnels. Beyond the vortex, just out of reach is a pedestal, illuminated by a spotlight, some sort of device shining from atop it.",
+    "options": [
+      {
+        "optionText": "Freeze the water &bull; Either have the 'Cryolator' or discard a 'Cryo Grenade'",
+        "result": "The vortex freezes just long enough for you to run across. You grab the device from atop the pedestal. Hope it's water resistant!",
+        "aftermath": "[Asset Card]<br>Gain the 'Tesla Rifle' unique asset",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Dive back in; you can't reach it from here",
+        "result": "Shrugging, you leap into the vortex. The other side is just too far to jump to, and you certainly won't be able to swim to it.",
+        "aftermath": "",
+        "trash": true,
+        "add": [201]
+      }
+    ]
+  },{
+    "id": 202,
+    "location": "Vault 7",
+    "title": "",
+    "text": "As you swim into the chamber, it drains of water. A recorded voice comes over a loudspeaker and music begins to play. 'Congratulations, vault dweller! You have completed the Leviathan!' A nerby cute attempts to blast confetti into the air, but it falls to the floor in a single, soggy clump. Searchlights illuminate a lever in the center of the room.",
+    "options": [
+      {
+        "optionText": "Pull the lever",
+        "result": "Blaring sirens echo throughout the vault and spinning red lights illuminate what was once black. The floor rumbles as water begins to drain from the vault. A small metal locker pops up from the floor, containing your prize. Hooray?",
+        "aftermath": "[Asset Card] &bull; Gain the 'Vault Security Armor' unique asset<br>Complete 'The Leviathan'",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Turn around; you're not ready to leave yet",
+        "result": "The music stops as you turn around and dive back into the water",
+        "aftermath": "",
+        "trash": true,
+        "add": [202]
+      }
+    ]
+  },{
+    "id": 203,
+    "location": "Quest",
+    "title": "The Desert Vault",
+    "text": "A vault has been discovered in a barren area of the wasteland. Preliminary investigations have yielded no information as to whether or not there are any survivors. You are able to learn the location of the vault with relative ease.<br><br><strong>Effects will instruct you to place [Vault 44] cards into the play area. [Vault 44] encounter cards adjacent to eachother are considered to be connected spaces, and survivors can move between  them. Resolve a Vault 44 encounter that is in play by performing a [Quest] action while on that card.</strong>",
+    "options": [
+      {
+        "optionText": "Enter the desert vault.",
+        "result": "[Quest] Vault 44",
+        "aftermath": "Resolve encounter 204",
+        "trash": false,
+        "add": false
+      },{
+        "optionText": "Discover what happened to the vault's inhabitants.",
+        "result": "Encounter [Vault 44] until you learn the secrets of the desert vault",
+        "aftermath": "[Agenda Card] &bull; Trash all [Vault 44] encounters in play and in the [Vault 44] deck",
         "trash": false,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 204,
+    "location": "Vault 44",
     "title": "",
-    "text": "",
+    "text": "You drop down into the vault, your heavy footsteps echoing along the metal catwalks. You hear skittering in the darkness, but see nothing.<br><br><strong>Place this card faceup near the game board and place your figure on it. This card is a space that is adjacent to the Vault 44 space.<br><br>Options with an &lt;indicated&gt; direction cannot be selected if there is already a card in the &lt;indicated&gt; direction or if no cards remain in the [Vault 44] deck.</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
+        "optionText": "Explore the eastern corridor &lt;right&gt;",
+        "result": "A creature emerges from the shadows.",
+        "aftermath": "Draw and fight [Critter] &bull; Place 1 [Vault 44] encounter facedown to the right of this card",
+        "trash": true,
+        "add": [205,206,207,208,209]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Explore the western corridor &lt;left&gt;",
+        "result": "Some toxic substance coats the corridor heading west.",
+        "aftermath": "Suffer 2 [Radiation] &bull; Place 1 [Vault 44] encounter facedown to the left of this card",
+        "trash": true,
+        "add": [205,206,207,208,209]
+      }
+    ]
+  },{
+    "id": 205,
+    "location": "Vault 44",
+    "title": "",
+    "text": "It is clear as you walk the halls of Vault 44 that there are no living residents. Water in the vault appears to have been non-functional for some time. A door with a blinking light blocks the exit, though you do notice an air duct that you think you could squeeze into.<br><br><strong>Options with an &lt;indicated&gt; direction cannot be selected if there is already a card in the &lt;indicated&gt; direction or if no cards remain in the [Vault 44] deck.</strong>",
+    "options": [
+      {
+        "optionText": "Hack the door &bull; [I] 4 &lt;right&gt;",
+        "result": "You manage to lift the lockdown protocol on the door blocking the eastern exit.",
+        "aftermath": "Place 1 [Vault 44] encounter facedown to the right of this card",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Crawl through the ceiling vent &lt;up&gt;",
+        "result": "As you lift yourself into the vent, you disturb the nest of a disgusting creature and it attacks you in defense.",
+        "aftermath": "Draw and fight [Critter] &bull; Place 1 [Vault 44] encounter facedown above this card",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 206,
+    "location": "Vault 44",
     "title": "",
-    "text": "",
+    "text": "You emerge into what is left of a food storage closet. The room is covered in a sheen of sticky fluids, and you can hear the clicking and crawling of creatures in the walls. You can't help but wonder if this infestation is part of what led to the vault's downfall. Several access hallways lead away from the room.<br><br><strong>Options with an &lt;indicated&gt; direction cannot be selected if there is already a card in the &lt;indicated&gt; direction or if no cards remain in the [Vault 44] deck.</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Pick the door on your left &lt;left&gt;",
+        "result": "As you leave, you stumble over something that must have belonged to one of the vault dwellers.",
+        "aftermath": "Draw 1 [Item] &bull; Place 1 [Vault 44] encounter facedown to the left of this card",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Check out the door behind you &lt;down&gt;",
+        "result": "You manage to lift the lockdown protocol on the door blocking the exit.",
+        "aftermath": "[Loot] x 4 &bull; Place 1 [Vault 44] encounter facedown below this card",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 207,
+    "location": "Vault 44",
     "title": "",
-    "text": "",
+    "text": "As you begin walking through what were once the living quarters of the vault, your suspicions are confirmed. Those who dwelt here are dead. Malnourished bodies, long deteriorated, lay curled on beds and sprawled against walls in the hallway.<br><br><strong>Options with an &lt;indicated&gt; direction cannot be selected if there is already a card in the &lt;indicated&gt; direction or if no cards remain in the [Vault 44] deck.</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Pass through the kitchen &lt;left&gt;",
+        "result": "The kitchen is utterly empty, the shelves picked completely clean. If you weren't sure before, you are now; the vault ran out of food.",
+        "aftermath": "2 XP &bull; Place 1 [Vault 44] encounter facedown to the left of this card",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Go through the residential wing &lt;up&gt;",
+        "result": "You find the body of wastelander here as well, much more recently deceased. He must have become trapped here within the last few months.",
+        "aftermath": "5 Caps &bull; Place 1 [Vault 44] encounter facedown above this card.",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 208,
+    "location": "Vault 44",
     "title": "",
-    "text": "",
+    "text": "You find supplies that once would habe belonged to the vault's security team, though they are mostly unusable. Several records indicate that vault security was practically nonexistent in Vault 44. All around the room, the klacking of tiny legs and wings can be heard echoing from within the walls.<br><br><strong>Options with an &lt;indicated&gt; direction cannot be selected if there is already a card in the &lt;indicated&gt; direction or if no cards remain in the [Vault 44] deck.</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Head north &lt;right&gt;",
+        "result": "As you leave, a wall panel bursts open, and one of the creatures attack you.",
+        "aftermath": "Draw and fight [Critter] &bull; Place 1 [Vault 44] encounter facedown to the right of this card",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Head south &lt;down&gt;",
+        "result": "You feel a heaby thump on your head as something falls from the cieling, tangling itself in your clothes and hair as it struggles to get free.",
+        "aftermath": "Draw and fight [Critter] &bull; Place 1 [Vault 44] encounter facedown below this card",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 209,
+    "location": "Vault 44",
     "title": "",
-    "text": "",
+    "text": "The hallways open to a much larger room. The Vault Overseer's room. A metal hatch prevents further access to the lower levels.<br><br><strong>Options with an &lt;indicated&gt; direction cannot be selected if there is already a card in the &lt;indicated&gt; direction or if no cards remain in the [Vault 44] deck.</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Explore to the north &lt;up&gt;",
+        "result": "You keep moving, noting the room for later.",
+        "aftermath": "1 XP &bull; Place 1 [Vault 44] encounter facedown above this card",
+        "trash": true,
         "add": false
+        ]
       },{
-        "optionText": "",
-        "result": "",
+        "optionText": "Unlock the lower levels",
+        "result": "After some fiddling with the Overseer's console, you manage to open the hatch.",
         "aftermath": "",
-        "trash": false,
+        "trash": true,
+        "add": [210,211,212,213]
+      },{
+        "optionText": "Explore to the south &lt;down&gt;",
+        "result": "You keep moving, noting the room for later.",
+        "aftermath": "1 XP &bull; Place 1 [Vault 44] encounter facedown below this card",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 210,
+    "location": "Vault 44",
     "title": "",
-    "text": "",
+    "text": "Beneath the upper levels, the vault is something entirely different. Blue electric currents run up and down circuits as long as hallways. Horrible creatures are chained to the floor and walls by tethers of electricity howling as you pass. A machine is automating a feeding process, shoving food into the creatures' pens.<br><br><strong>Options with an &lt;indicated&gt; direction cannot be selected if there is already a card in the &lt;indicated&gt; direction or if no cards remain in the [Vault 44] deck.</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Follow the stairs &lt;right&gt;",
+        "result": "Your steps short-circuit the tethers in one of the pens and the creature leaps toward you.",
+        "aftermath": "Draw and fight [Monster] &bull; Place 1 [Vault 44] encounter facedown to the right of this card",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "See how far the hallways go &lt;left&gt;",
+        "result": "A sentry bot rounds the corner and mistakes you for an escaped creature. Great.",
+        "aftermath": "Draw and fight [Robot] &bull; Place 1 [Vault 44] encounter facedown to the left of this card",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 211,
+    "location": "Vault 44",
     "title": "",
-    "text": "",
+    "text": "This room is filled with converyor belts. A robot here is systematically unloading a box of food and placing it along one of the belts. Several other robots have fallen into disrepair nearby and are unmoving. One even appears to have been riddled with bullets.<br><br><strong>Options with an &lt;indicated&gt; direction cannot be selected if there is already a card in the &lt;indicated&gt; direction or if no cards remain in the [Vault 44] deck.</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Follow the converyor belts &lt;right&gt;",
+        "result": "You wonder why, with so much food available, the vault dwellers appear to have starved to death. You opt to follow the conveyor belts.",
+        "aftermath": "3 XP &bull; Place 1 [Vault 44] encounter facedown to the right of this card",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Explore deeper into the vault &lt;left&gt;",
+        "result": "The mystery of the vault deepens. You head further into the tunnels, hoping for some indication as to what happened here.",
+        "aftermath": "3 XP &bull; Place 1 [Vault 44] encounter facedown to the left of this card",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 212,
+    "location": "Vault 44",
     "title": "",
-    "text": "",
+    "text": "A huge computer occupies most of the room, and it appears to be operational. Several screens indicate that his room was used to monitor the vault, but you get the feeling that the residents themselves were unaware. The electrical currents all converge here and appear to be powering -- or powered by -- some sort of experimental suit of armor.",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Rest a moment",
+        "result": "You rest, not ready to learn the vault's secrets.",
+        "aftermath": "Recover 2 HP",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Access the vault's logs",
+        "result": "You access copies of the Vault Overseer's logs from this terminal: 'Something is drawing too much power. The refrigeration unit is failing. At this rate, we will starve by the end of the year. I have tried to open the vault door to no avail. Additionally, I keep hearing strange noises from the hatch beneath my office, but I can't open it.'",
+        "aftermath": "Gain the 'Tesla Armor' unique asset<br>Place each survivor on a [Vault 44] card in a space adjacent to Vault 44<br>Complete 'The Desert Vault'",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 213,
+    "location": "Vault 44",
     "title": "",
-    "text": "",
+    "text": "In this room, the desiccated corpse of a scientist lies hunched beside a glowing computer monitor. Left on the screen is the scientist's final report. 'No uncontaminated food left, we locked up the infected in the lower levels and are waiting for response from Vault-Tec. Whatever the result may be, I shall carry to my grave the consciousness that at least we meant well.'<br><br><strong>Options with an &lt;indicated&gt; direction cannot be selected if there is already a card in the &lt;indicated&gt; direction or if no cards remain in the [Vault 44] deck.</strong>",
     "options": [
       {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Take the east exit &lt;right&gt;",
+        "result": "Well, that's depressing.",
+        "aftermath": "3 XP &bull; Place 1 [Vault 44] encounter facedown to the right of this card",
+        "trash": true,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Take the west exit &lt;left&gt;",
+        "result": "You take your leave and attempt to put the fate of these men and women out of your mind.",
+        "aftermath": "3 XP &bull; Place 1 [Vault 44] encounter facedown to the left of this card",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
+    "id": 214,
+    "location": "Quest",
+    "title": "Wacky Wasteland",
+    "text": "After the day's events, you are, quite frankly, a little confused. The wasteland is a place of adventure, danger, and, apparently, absurdity.",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Go this-a-way.<br><br><strong>[Quest] Any [Wasteland]</strong>",
+        "result": "",
+        "aftermath": "1 XP",
+        "trash": true,
+        "add": [101]
+      },{
+        "optionText": "Go that-a-way.<br><br><strong>[Quest] Any [Wasteland]</strong>",
+        "result": "",
+        "aftermath": "1 XP",
+        "trash": true,
+        "add": [215]
+      },{
+        "optionText": "It's more about the journey than the destination. Head in a random direction.<br><br><strong>[Quest] Any [Wasteland] &bull; Have [L]</strong>",
+        "result": "",
+        "aftermath": "2 XP",
+        "trash": true,
+        "add": [101,215,216]
+      }
+    ]
+  },{
+    "id": 215,
+    "location": "Wasteland",
+    "title": "",
+    "text": "A group of men in power armor are gathered around one another in a heated discussion. They introduce themselves as King Arthur and his knights, and they claim to be searching for the Holy Hand Grenade. Clearly, these men are mad.",
+    "options": [
+      {
+        "optionText": "Point them to the desert. Better they die in the wastes and trouble you no longer &bull; [C] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong>The knights thank you for your help and give you a handsome reward.",
+            "aftermath": "6 Caps",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> Indignant, the knights return to their discussion.",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [215]
           }
         ]
       },{
-        "optionText": "",
+        "optionText": "Gently suggest that they seek further information from an inn or a bar in town, and secretly vow to stay far, far away &bull; [I] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> Acquiescing to your unreliable logic, they set off toward the nearest settlement. You hope that someone there will be able to help them.",
+            "aftermath": "3 XP",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
+            "result": "<strong>Fail:</strong> Indignant, the knights turn away.",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [215]
           }
         ]
+      }
+    ]
+  },{
+    "id": 216,
+    "location": "Wasteland",
+    "title": "",
+    "text": "You approach a strange stone arch in the desert. You don't know what it is, but you feel a heavy weight pulling down on you as you approach.",
+    "options": [
+      {
+        "optionText": "Step through the arch",
+        "result": "You find yourself transported to a dark room surrounded by computers, the stone arch still providing an exit behind you. A majectic blaster rifle sits in a nearby case, glowing slightly. You take it, but in doing so you accidentally short some of the computers. A warning pops up on one of the screens. '100 days left of water.' The date on the log reads a few months prior. You see norhing else around you and step back from the stone arch.",
+        "aftermath": "Gain the 'Gamma Gun' unique asset",
+        "trash": true,
+        "add": [233]
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
+        "optionText": "Destroy it, whatever it is",
+        "result": "You tip the stone onto its side and the unnatural heaviness in the area dissipates. You can't help but feel like you've done something good.",
+        "aftermath": "3 XP",
+        "trash": true,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
+    "id": 217,
     "location": "",
     "title": "",
     "text": "",
