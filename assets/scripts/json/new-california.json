@@ -198,13 +198,13 @@
         "result": "",
         "aftermath": "[Shield] +",
         "trash": true,
-        "add": [170,226]
+        "add": [170,226,230]
       },{
         "optionText": "Kill one of the experiments<br><br><strong>Kill any [Super Mutant]</strong>",
         "result": "",
         "aftermath": "[Star] +",
         "trash": true,
-        "add": [171,172,226]
+        "add": [171,172,226,230]
       }
     ]
   },{
@@ -247,13 +247,13 @@
         "result": "",
         "aftermath": "[Shield] +<br>1 XP",
         "trash": true,
-        "add": [170,226]
+        "add": [170,226,230]
       },{
         "optionText": "Bring back the holodisk<br><br><strong>[Quest] Lost Hills Bunker &bull; Holodisk</strong>",
         "result": "",
         "aftermath": "[Star] +<br>1 XP",
         "trash": true,
-        "add": [171,172,226]
+        "add": [171,172,226,230]
       }
     ]
   },{
@@ -1213,7 +1213,6 @@
         "aftermath": "1 XP &bull; Place 1 [Vault 44] encounter facedown above this card",
         "trash": true,
         "add": false
-        ]
       },{
         "optionText": "Unlock the lower levels",
         "result": "After some fiddling with the Overseer's console, you manage to open the hatch.",
@@ -1598,1452 +1597,605 @@
     ]
   },{
     "id": 226,
-    "location": "",
-    "title": "",
-    "text": "",
+    "location": "Quest",
+    "title": "The Boxcar Children",
+    "text": "A group of orphans in need of charity.<br><br><strong>Each objective may be completed only once. Place a quest marker on each objective that has been completed. When all objectives have been completed, trash this card.</strong>",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Give them weapons. They need to learn to defend themselves if they are going to survive.<br><br><strong>[Quest] Boxcar &bull; Discard 1 <em>Weapon</em> item</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": false,
+        "add": [227]
+      },{
+        "optionText": "Give them Caps. They'll need 'em.<br><br><strong>[Quest] Boxcar &bull; Spend 5 Caps</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": false,
+        "add": [228]
+      },{
+        "optionText": "Give them chems. You don't have a good reason for this, you just want to see what will happen.<br><br><strong>[Quest] Boxcar &bull; Discard 1 <em>Drug</em> item</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": false,
+        "add": [229]
+      }
+    ]
+  },{
+    "id": 227,
+    "location": "Wasteland",
+    "title": "",
+    "text": "The orphans are having a blast with their newfound weapons, and you begin to think that things might be getting out of hand.<br><br><strong>If this encounter places a third token on 'Tabula Rasa,' the orphans are educated; complete 'Tabula Rasa.'</strong>",
+    "options": [
+      {
+        "optionText": "Teach the orphans to use their weapons responsibly &bull; [S] [A] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> The orphans learn to hunt and to defend themselves from hostile wildlife.",
+            "aftermath": "Keep this card; you helped mold the orphans<br>Place 1 [Shield] on 'Tabula Rasa'",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Fail:</strong> You shoot yourself in the foot while attempting to teach the orphans, negating the effect of your gun safety lesson.",
+            "aftermath": "Suffer 3 damage",
+            "trash": true,
+            "add": [227]
           }
         ]
       },{
-        "optionText": "",
+        "optionText": "Teach the orphans to rob people",
+        "result": "In this world, it's everyone for themselves. Better to help these kids get the upper hand early.",
+        "aftermath": "Keep this card; you helped mold the orphans<br>3 Caps &bull; Become <em>Vilified</em><br>Place 1 [Star] on 'Tabula Rasa'",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 228,
+    "location": "Settlement",
+    "title": "",
+    "text": "The orphans are in awe of the marketplace. It is clear they have never had this many Caps to spend.<br><br><strong>If this encounter places a third token on 'Tabula Rasa,' the orphans are educated; complete 'Tabula Rasa.'</strong>",
+    "options": [
+      {
+        "optionText": "Show the orphans how to shop around for good deals &bull; [P] [I] 4",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
+            "result": "<strong>Succeed:</strong> You shop around for sales.",
+            "aftermath": "Keep this card; you helped mold the orphans<br>Shop once<br>Place 1 [Shield] on 'Tabula Rasa'",
+            "trash": true,
             "add": false
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Fail:</strong> The merchants ar the market talk circles around you. You're still trying to figure out what happened.",
+            "aftermath": "Lose all your Caps &bull; [Loot]",
+            "trash": true,
+            "add": [228]
           }
         ]
       },{
-        "optionText": "",
+        "optionText": "Show the orphans how to have a good time &bull; Spend 2 Caps",
+        "result": "You wake up the next morning with a headache, surrounded by empty bottles.",
+        "aftermath": "Keep this card; you helped mold the orphans<br>4 XP &bull; Place 1 [Star] on 'Tabula Rasa'",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 229,
+    "location": "Settlement",
+    "title": "",
+    "text": "The orphans are fiddling with a dose of Jet. It is clear they don't really undertand what it is for.<br><br><strong> If this encounter places a third token on 'Tabula Rasa,' the orphans are educated; complete 'Tabula Rasa.'</strong>",
+    "options": [
+      {
+        "optionText": "Teach the orphans to use chems sparingly &bull; [E] [C] [L] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> The orphans learn to use chems in moderation to cupplement their weaknesses.",
+            "aftermath": "Keep this card; you helped mold the orphans<br>Place 1 [Shield] on 'Tabula Rasa'",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> You hands begin to shake and you stutter and sweat while lecturing the orphans on the dangers of addiction, drawing more than one raised eyebrow.",
+            "aftermath": "Become <em>Addicted</em>",
+            "trash": true,
+            "add": [229]
+          }
+        ]
+      },{
+        "optionText": "But them more chems &bull; Spend 3 Caps",
+        "result": "If they get addicted now, you'll be able to sell to them when they're older. The perfect investment.",
+        "aftermath": "Keep this card; you helped mold the orphans<br>Become <em>Vilified</em><br>Place 1 [Star] on 'Tabula Rasa'",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 230,
+    "location": "Quest",
+    "title": "Tabula Rasa",
+    "text": "Bereft of moral guidance, the orphans from Boxcar are learning about the complexities that come with living life as a citizen of the wasteland. You and impressionable, it is up to the wasteland's inhabitants to raise them properly.<br><br>You happen to know just the person best qualified to shape these malleable minds: you!<br><br><strong>Encounter [Wasteland] and [Settlement] after completing objective on 'The Boxcar Children' until you have educated the orphans</strong>",
+    "options": [
+      {
+        "optionText": "There are more [Star] than [Shield] on this quest when it is completed",
+        "result": "",
+        "aftermath": "Each survivor gains [Agenda Card] for each time they helped mold the orphans",
+        "trash": true,
+        "add": [231,232]
+      },{
+        "optionText": "There are more [Shield] than [Star] on this quest when it is completed",
+        "result": "",
+        "aftermath": "Each survivor gains [Agenda Card] for each time they helped mold the orphans",
+        "trash": true,
+        "add": [233]
+      }
+    ]
+  },{
+    "id": 231,
+    "location": "Wasteland",
+    "title": "",
+    "text": "The orphans spit at you as you approact, guns at the ready. You hardly recognize them as the children who once played around Boxcar",
+    "options": [
+      {
+        "optionText": "Talk them out of this path &bull; [C] [L] 5",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> The orphans eventually relent. As it turns out, even they were unhappy with their newfound habits.",
+            "aftermath": "Complete 'School's Out For Good'",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> The orphans laugh at you and shoot at your feet, forcing you to make a hasty retreat",
+            "aftermath": "Suffer 1 damage",
+            "trash": true,
+            "add": [231]
+          }
+        ]
+      },{
+        "optionText": "Scare them &bull; <em>Weapon</em> with [Ranged] &bull; [P] [C] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You fire a barrage at the gang, narrowly missing them. Startled, they drop their weapons and cower. 'We'll behave, I promise!' they tell you.",
+            "aftermath": "Complete 'School's Out For Good'",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> The orphans laugh at you and shoot at your feet, forcing you to make a hasty retreat.",
+            "aftermath": "Suffer 1 damage",
+            "trash": true,
+            "add": [231]
+          }
+        ]
+      }
+    ]
+  },{
+    "id": 232,
+    "location": "Quest",
+    "title": "School's Out For Good",
+    "text": "A group of orphans has formed a gang and is terrorizing the settlement of Boxcar with their raucous behavior and blatant disregard for the law. The Boxcar elders have asked for help in dealing with the situation.",
+    "options": [
+      {
+        "optionText": "Speak with the orphans.<br><br><strong>Encounter [Wasteland] until you have dealt with the orphan gang</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Pay the gang a hefty sum to leave the settlement in peace.<br><br><strong>[Quest] Boxcar &bull; Spend 10 Caps</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Join with the gang and raid Boxcar<br><br><strong>[Quest] Boxcar &bull; [S] [C] 5</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card] &bull; [Loot] x 3 &bull; 5 Caps &bull; Become <em>Vilified</em>",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 233,
+    "location": "Quest",
+    "title": "Model Citizens",
+    "text": "A group of orphans from Boxcar has formed a gan and is aggressively bringing justice to the wasteland. While not an immediate threat, the elders of the settlement have become increasinly concerned with the number of raider heads mounted on pikes that have been planted in the soil outside of town.",
+    "options": [
+      {
+        "optionText": "Convince the gang to break up. It's okay for kids to be kids, and they have done enough as is.<br><br><strong>[Quest] Boxcar &bull; [C] 6 ([C] 4 if you are <em>Idolized</em>)</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Bring back proof that there are bigger fish to fry than raiders.<br><br><strong>Kill any [Monster] or [Super Mutant]</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 234,
+    "location": "Quest",
+    "title": "Your Patriotic Duty",
+    "text": "The Brotherhood of Steel is moving something across the wasteland. Something big. Rumors are that it has come from the Citadel in the Capital wasteland. Whatever it is, they've deemed it valuable enough to have decoy caravans.",
+    "options": [
+      {
+        "optionText": "Help the Brotherhood escort the precious cargo.<br><br><strong>[Quest] any level-4 [Wasteland] or [Settlement] &bull; Draw and fight [Super Mutant], then [Human]; kill both to succeed</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [235,236]
+      },{
+        "optionText": "You're sure that Brotherhood technology will sell well to the right buyer. You think that an ambush is in order.<br><br><strong>[Quest] any level-4 [Wasteland] or [Settlement]<br>Spend 1 additional action &bull; [S] [P] [A] [L] 5</strong>",
+        "result": "",
+        "aftermath": "[Agenda Card]",
+        "trash": true,
+        "add": [237]
+      }
+    ]
+  },{
+    "id": 235,
+    "location": "Wasteland",
+    "title": "",
+    "text": "<strong>If not at the Hideout, encounter the next card. Then, if 'The Iron Giant' is no longer staged, discard this card. Otherwise, add this card.</strong><br><br>Security in the Brotherhood encampment is surprisingly lax, and you make your way inside.",
+    "options": [
+      {
+        "optionText": "Rig the dpt to self destruct &bull; [I] 4",
+        "result": [
+          {
+            "result": "<strong>Succeed:</strong> You slink away from the depot before the whole thing erupts in a pillar of fire.",
+            "aftermath": "Complete 'The Iron Giant'",
+            "trash": true,
+            "add": false
+          },{
+            "result": "<strong>Fail:</strong> Alarm bells sound. Not good!",
+            "aftermath": "Draw and fight [Human]",
+            "trash": true,
+            "add": [235]
+          }
+        ]
+      },{
+        "optionText": "Discard a <em>Grenade</em> item",
+        "result": "A crate of ammo ignites, and fire begins to spread throughout the depot.",
+        "aftermath": "Complete 'The Iron Giant'",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Help the Brotherhood out with security &bull; Test [S] [E]",
+        "result": "You stand guard at the depot entrance.",
+        "aftermath": "1 Cap for each [Hit]",
+        "trash": true,
+        "add": [235]
+      },{
+        "optionText": "Not at the Hideout.",
         "result": "",
         "aftermath": "",
+        "trash": true,
+        "add": [235]
+      },{
+        "optionText": "'The Iron Giant' is no longer staged.",
+        "result": "",
+        "aftermath": "",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 236,
+    "location": "Quest",
+    "title": "The Iron Giant",
+    "text": "The trucks transporting the Brotherhood's weapon have made it safely to their destination. All that remains now is to power up the weapon.<br><br><strong>Place a quest marker on the highest-level [Settlement].<br>This is The Hideout.</strong>",
+    "options": [
+      {
+        "optionText": "Help the Brotherhood acquire several missing parts and assemble Liberty Prime.<br><br><strong>[Quest] The Hideout &bull; [P] [C] [I] [L] 6; you may spend up to 2 Caps before rolling to gain 1 [Hit] per Cap</strong>",
+        "result": "",
+        "aftermath": "[Star] +<br>[Agenda Card]<br>Draw and keep encounter 238",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "The Brotherhood shouldn't be allowed to harness this much power. You had better sabotage it before it gets out of hand.<br><br><strong>Encounter The Hideout until you've destroyed Liberty Prime</strong>",
+        "result": "",
+        "aftermath": "[Shield] +<br>[Agenda Card]",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 237,
+    "location": "Quest",
+    "title": "Dark Deeds",
+    "text": "With the Brotherhood escorts downed, their precious cargo is free for the picking.",
+    "options": [
+      {
+        "optionText": "Search for the Brotherhood soldiers that are hiding out in the wasteland after the attack and return the technology to them.<br><br><strong>[Quest] Any level-3 or level-4 [Wasteland]<br>Be loyal to [Star] &bull; [A] 4</strong>",
+        "result": "",
+        "aftermath": "[Star] +<br>[Agenda Card] &bull; Become <em>Idolized</em>",
+        "trash": true,
+        "add": false
+      },{
+        "optionText": "Offer to sell the technology to the Enclave.<br><br><strong>[Quest] Any level-3 or level-4 [Settlement]<br>Be loyal to [Shield] &bull; [C] 4</strong>",
+        "result": "",
+        "aftermath": "[Shield] +<br>[Agenda Card] &bull; 5 Caps",
+        "trash": true,
+        "add": false
+      }
+    ]
+  },{
+    "id": 238,
+    "location": "Quest",
+    "title": "Libery Prime<br>Companion - Robot",
+    "text": "During a fight, exhaust to kill the enemy. Igonore [Loot] and [Caps] icons and gain no XP.<br><br>Then, if you are not loyal to [Star], you are immediately killed.<br><br><strong>If you are loyal to [Star], keep this companion when it unexhausts.</strong>",
+    "options": ""
+  },{
+    "id": 239,
+    "location": "Wasteland",
+    "title": "",
+    "text": "Some sort of green liquid oozes from the... oh come on, you again? Are you really spoiling the expansion cards too? What is even the point? *sigh*",
+    "options": [
+      {
+        "optionText": "I'm going to keep doing this, so let's at least have some fun with it",
+        "result": "Fine. I've hidden a message across the game's cards. Want to find it? Follow my instructions carefully:<br>1) Place card 189 in front of you.<br>2) There is no card 189.<br>3) Search the unique asset deck for the 'Dogmeat' unique asset and place it sideways along the black border at the top of any quest card.<br>3) From the next visible line, count eleven words in.<br>?) Add up the numerical values of each letter in that word ('A' is 1, 'B' is 2, etc).<br>6) Count the quest cards that begin with 'Red' and divide the number from step 4 by that number.<br>7) I hope you wasted a decent amount of time doing this. What a rube.",
+        "aftermath": "Continue reading spoilers",
         "trash": false,
         "add": false
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
+        "optionText": "Stop reading the card library",
+        "result": "I knew you weren't completely daft.",
+        "aftermath": "Put down the card library",
         "trash": false,
         "add": false
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 240,
+    "location": "Wasteland",
     "title": "",
-    "text": "",
-    "options": [
+    "variant": [
       {
-        "optionText": "",
-        "result": [
+        "text": "You hear a familiar sound that you can't quite place, and a familiar feeling calls to you. Wanderlust kicks in, and your journey takes a fresh turn.",
+        "options": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Start heading toward town",
+            "result": "Rumors lead you to someone seeking your help",
+            "aftermath": "Place your figure in any [Settlement] space",
+            "trash": true,
+            "add": [112]
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Seek answers in the wasteland",
+            "result": "The caravan merchants tell you of work that can be found in the wasteland, and you set off to earn some pay.",
+            "aftermath": "Place your figure in any [Wasteland] space",
+            "trash": true,
+            "add": [112]
           }
         ]
       },{
-        "optionText": "",
-        "result": [
+        "text": "You hear a familiar sound that you can't quite place, and a familiar feeling calls to you. Wanderlust kicks in, and your journey takes a fresh turn.",
+        "options": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Start heading toward town",
+            "result": "Rumors lead you to someone seeking your help",
+            "aftermath": "Place your figure in any [Settlement] space",
+            "trash": true,
+            "add": [130]
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Seek answers in the wasteland",
+            "result": "The caravan merchants tell you of work that can be found in the wasteland, and you set off to earn some pay.",
+            "aftermath": "Place your figure in any [Wasteland] space",
+            "trash": true,
+            "add": [130]
           }
         ]
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "text": "You hear a familiar sound that you can't quite place, and a familiar feeling calls to you. Wanderlust kicks in, and your journey takes a fresh turn.",
+        "options": [
+          {
+            "optionText": "Start heading toward town",
+            "result": "Rumors lead you to someone seeking your help",
+            "aftermath": "Place your figure in any [Settlement] space",
+            "trash": true,
+            "add": [150]
+          },{
+            "optionText": "Seek answers in the wasteland",
+            "result": "The caravan merchants tell you of work that can be found in the wasteland, and you set off to earn some pay.",
+            "aftermath": "Place your figure in any [Wasteland] space",
+            "trash": true,
+            "add": [150]
+          }
+        ]
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "text": "You hear a familiar sound that you can't quite place, and a familiar feeling calls to you. Wanderlust kicks in, and your journey takes a fresh turn.",
+        "options": [
+          {
+            "optionText": "Start heading toward town",
+            "result": "Rumors lead you to someone seeking your help",
+            "aftermath": "Place your figure in any [Settlement] space",
+            "trash": true,
+            "add": [125]
+          },{
+            "optionText": "Seek answers in the wasteland",
+            "result": "The caravan merchants tell you of work that can be found in the wasteland, and you set off to earn some pay.",
+            "aftermath": "Place your figure in any [Wasteland] space",
+            "trash": true,
+            "add": [125]
+          }
+        ]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 241,
+    "location": "Settlement",
     "title": "",
-    "text": "",
-    "options": [
+    "variant": [
       {
-        "optionText": "",
-        "result": [
+        "text": "A woman claiming to have come from an underground pre-war vault is asking for handouts around town.",
+        "options": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Ask about the location of the vault &bull; [C] 4",
+            "result": [
+              {
+                "result": "<strong>Succeed:</strong> She tells you of her previous home -- Vault 84 -- and how she was exiled from it.",
+                "aftermath": "2 XP",
+                "trash": true,
+                "add": [69]
+              },{
+                "result": "<strong>Fail:</strong> She refuses your request and heads into the wasteland in search of food.",
+                "aftermath": "",
+                "trash": true,
+                "add": [242]
+              }
+            ]
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Give her money for food &bull; Spend 3 Caps",
+            "result": "She takes the money and buys some food from a nearby vendor, ravenously devouring it as if she hasn't eaten in days. While she eats, you ask her about the vault she came from.",
+            "aftermath": "2 XP",
+            "trash": true,
+            "add": [69]
           }
         ]
       },{
-        "optionText": "",
-        "result": [
+        "text": "You find a briefcase filled with documents about a pre-war vault. Clearly someone has left it here by mistake.",
+        "options": [
           {
-            "result": "<strong>Succeed:</strong>",
+            "optionText": "Look through the papers",
+            "result": "You learn the location of one of the hidden vaults.",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [86,87,88,89,90,91,92,93]
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+            "optionText": "Search for the briefcase's owner",
+            "result": "The flightly owner giggles when they see you approaching with the case. 'Silly me, I must have left that case three different places just today! It's a wonder I haven't lost it.' They hand you a reward and go about their way.",
+            "aftermath": "1 Cap",
+            "trash": true,
+            "add": [241]
+          }  
+        ]  
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 242,
+    "location": "Wasteland",
     "title": "",
-    "text": "",
+    "text": "A group of raiders is standing over the body of a dead vault dweller. They sneer at you. 'What're you lookin' at? You wanna be next?'",
     "options": [
       {
-        "optionText": "",
+        "optionText": "Fight Them &bull; Draw and fight [Human]",
         "result": [
           {
-            "result": "<strong>Succeed:</strong>",
+            "result": "<strong>Succeed:</strong> You handily dispatch the raiders",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [68]
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "result": "<strong>Fail:</strong> The raiders laugh as you flee, tail between your legs.",
+            "aftermath": "Move 1 space",
+            "trash": true,
+            "add": [242]
           }
         ]
       },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        "optionText": "Offer to buy the vault dweller's possessions off of the raiders &bull; Spend 3 Caps",
+        "result": "The raiders sell you what they found.",
+        "aftermath": "[Loot]",
+        "trash": true,
+        "add": [68]
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 243,
+    "location": "Settlement",
     "title": "",
-    "text": "",
-    "options": [
+    "variant": [
       {
-        "optionText": "",
-        "result": [
+        "text": "You find a briefcase filled with documents about a prewar vault. Clearly someone has left it here by mistake.",
+        "options": [
           {
-            "result": "<strong>Succeed:</strong>",
+            "optionText": "Look through the papers",
+            "result": "You learn the location of one of the hidden vaults.",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [190]
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Search for the briefcase's owner",
+            "result": "The flightly owner giggles when they see you approaching with the case. 'Silly me, I must have left that case three different places just today! It's a wonder I haven't lost it.' THey hand you a reward and go about their way.",
+            "aftermath": "1 Cap",
+            "trash": true,
+            "add": [243]
           }
-        ]
+        ]    
       },{
-        "optionText": "",
-        "result": [
+        "text": "You find a briefcase filled with documents about a prewar vault. Clearly someone has left it here by mistake.",
+        "options": [
           {
-            "result": "<strong>Succeed:</strong>",
+            "optionText": "Look through the papers",
+            "result": "You learn the location of one of the hidden vaults.",
             "aftermath": "",
-            "trash": false,
-            "add": false
+            "trash": true,
+            "add": [203]
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Search for the briefcase's owner",
+            "result": "The flightly owner giggles when they see you approaching with the case. 'Silly me, I must have left that case three different places just today! It's a wonder I haven't lost it.' THey hand you a reward and go about their way.",
+            "aftermath": "1 Cap",
+            "trash": true,
+            "add": [243]
           }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        ]    
       }
     ]
   },{
-    "id": 0,
-    "location": "",
+    "id": 244,
+    "location": "Settlement",
     "title": "",
-    "text": "",
-    "options": [
+    "variant": [
       {
-        "optionText": "",
-        "result": [
+        "text": "You feel as though you need a new perspective on life and look to the people of the wasteland to provide it for you. Perhaps by involving yourself in their problems, yours will feel less insurmountable.",
+        "options": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Work for others to better yourself",
+            "result": "You prepare yourself for the challenges that have risen before you.",
+            "aftermath": "1 XP",
+            "trash": true,
+            "add": [226]
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Offer your services to those who can pay",
+            "result": "A few Caps come your way just for hearing out a potential client.",
+            "aftermath": "1 Cap",
+            "trash": true,
+            "add": [220]
           }
-        ]
+        ]    
       },{
-        "optionText": "",
-        "result": [
+        "text": "You feel as though you need a new perspective on life and look to the people of the wasteland to provide it for you. Perhaps by involving yourself in their problems, yours will feel less insurmountable.",
+        "options": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Work for others to better yourself",
+            "result": "You prepare yourself for the challenges that have risen before you.",
+            "aftermath": "1 XP",
+            "trash": true,
+            "add": [234]
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Offer your services to those who can pay",
+            "result": "A few Caps come your way just for hearing out a potential client.",
+            "aftermath": "1 Cap",
+            "trash": true,
+            "add": [226]
           }
-        ]
+        ]    
       },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
+        "text": "You feel as though you need a new perspective on life and look to the people of the wasteland to provide it for you. Perhaps by involving yourself in their problems, yours will feel less insurmountable.",
+        "options": [
           {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Work for others to better yourself",
+            "result": "You prepare yourself for the challenges that have risen before you.",
+            "aftermath": "1 XP",
+            "trash": true,
+            "add": [220]
           },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
+            "optionText": "Offer your services to those who can pay",
+            "result": "A few Caps come your way just for hearing out a potential client.",
+            "aftermath": "1 Cap",
+            "trash": true,
+            "add": [234]
           }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      }
-    ]
-  },{
-    "id": 0,
-    "location": "",
-    "title": "",
-    "text": "",
-    "options": [
-      {
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": [
-          {
-            "result": "<strong>Succeed:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          },{
-            "result": "<strong>Fail:</strong>",
-            "aftermath": "",
-            "trash": false,
-            "add": false
-          }
-        ]
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
-      },{
-        "optionText": "",
-        "result": "",
-        "aftermath": "",
-        "trash": false,
-        "add": false
+        ]    
       }
     ]
   }
