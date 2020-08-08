@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/assets/images/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Fallout by Fantasy Flight Games Companion App" />
-    <title>Fallout FFG Companion</title>
-  </head>
-  <body>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Fallout by Fantasy Flight Games Companion App" />
+  <link type="image/x-icon" rel="icon" href="/assets/images/favicon.ico"/>
+  <link rel="stylesheet" href="/assets/css/reset.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity = "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin = "anonymous">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>Fallout FFG Companion</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-3">
+        <div id="settlementDeck"></div>
+      </div>
+      <div class="col-3">
+        <div id="wastelandDeck"></div>
+      </div>
+      <div class="col-3">
+        <div id="vault7Deck"></div>
+      </div>
+      <div class="col-3">
+        <div id="vault77Deck"></div>
+      </div>
+      <div class="col-3">
+        <div id="vault84Deck"></div>
+      </div>
+      <div class="col-3">
+        <div id="vault109Deck"></div>
+      </div>
+    </div>
+    <div class="row justify-content-center" id="activeQuests"></div>
+  </div>
+  <script type="text/javascript" src="/assets/scripts/game.js"></script>
+  <script type="text/javascript" src="/assets/scripts/json/base.json"></script>
+  <script type="text/javascript" src="/assets/scripts/json/base-settlement.json"></script>
+  <script type="text/javascript" src="/assets/scripts/json/base-wasteland.json"></script>
+</body>
 </html>
