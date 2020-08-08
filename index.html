@@ -14,30 +14,36 @@
 <body>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-3">
-        <div id="settlementDeck"></div>
+      <div class="col">
+        <div class="cardDeck loaded" id="settlementDeck"></div>
       </div>
-      <div class="col-3">
-        <div id="wastelandDeck"></div>
+      <div class="col">
+        <div class="cardDeck display" id="settlementDeckDisplay"></div>
       </div>
-      <div class="col-3">
-        <div id="vault7Deck"></div>
+      <div class="col">
+        <div class="cardDeck loaded" id="wastelandDeck"></div>
       </div>
-      <div class="col-3">
-        <div id="vault77Deck"></div>
+      <div class="col">
+        <div class="cardDeck display" id="wastelandDeckDisplay"></div>
       </div>
-      <div class="col-3">
-        <div id="vault84Deck"></div>
+      <div class="col">
+        <div class="cardDeck empty" id="vault084Deck"></div>
       </div>
-      <div class="col-3">
-        <div id="vault109Deck"></div>
+      <div class="col">
+        <div class="cardDeck display" id="vault084DeckDisplay"></div>
+      </div>
+      <div class="col">
+        <div class="cardDeck empty" id="vault109Deck"></div>
+      </div>
+      <div class="col">
+        <div class="cardDeck display" id="vault109DeckDisplay"></div>
       </div>
     </div>
     <div class="row justify-content-center" id="activeQuests"></div>
   </div>
+  <script type="text/javascript" src="/assets/scripts/json/base.js"></script>
+  <script type="text/javascript" src="/assets/scripts/json/base-settlement.js"></script>
+  <script type="text/javascript" src="/assets/scripts/json/base-wasteland.js"></script>
   <script type="text/javascript" src="/assets/scripts/game.js"></script>
-  <script type="text/javascript" src="/assets/scripts/json/base.json"></script>
-  <script type="text/javascript" src="/assets/scripts/json/base-settlement.json"></script>
-  <script type="text/javascript" src="/assets/scripts/json/base-wasteland.json"></script>
 </body>
 </html>

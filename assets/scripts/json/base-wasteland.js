@@ -1,0 +1,268 @@
+const baseWasteland = [ 
+  {
+    id: "w1",
+    location: "wasteland",
+    title: "",
+    text: "A valuable asset hangs from the ceiling of a large room. Debris and green light surround it. Huh. You're pretty sure this is some sort of trap...<br><strong>Flip the top [Item] card faceup.",
+    options: [
+      {
+        optionText: "You could get it and out quickly enough... you think? &bull; [A] [L] 4",
+        result: [
+          {
+            result: "<strong>Success:</strong> You deftly sneak through the room, dodging the land mine, stepping over the tripwire, and grabbing the bait!",
+            aftermath: "Gain the [Item] card",
+            trash: false,
+            add: false
+          },{
+            result: "<strong>Fail:</strong> Yup! Definitely a trap.",
+            aftermath: "Suffer to [Radiation] &bull; Discard the [Item] card",
+            trash: false,
+            add: false
+          }
+        ]
+      },{
+        optionText: "Send someone else in for it &bull; Companion",
+        result: "Yup! Definitely a trap. You step over the corpse of your ex-companion and pocket the bait.",
+        aftermath: "Discard 1 companion &bull; Gain the [Item] card",
+        trash: false,
+        add: false
+      },{
+        optionText: "Search a different room",
+        result: "A trap is a trap is a trap: not worth it.",
+        aftermath: "[Loot] x [Wasteland] &bull; Discard the [Item] card",
+        trash: false,
+        add: false
+      }
+    ]
+  },{
+    id: "w2",
+    location: "wasteland",
+    title: "",
+    text: "You encounter a rusted and damaged Mister Handy robot. 'Whoah, man. Far out,' it says. It seems to be wandering around aimlessly. There aren't any people around.",
+    options: [
+      {
+        optionText: "Leave the robot and loot the building",
+        result: "You tell the Mister Handy you're going to enter the building. 'Groovy,' it replies.",
+        aftermath: "[Loot] x [Wasteland] + 1",
+        trash: false,
+        add: false
+      },{
+        optionText: "Reprogram the robot &bull; [I] [L] 4",
+        result: [
+          {
+            result: "<strong>Success:</strong> Success! Hmm... 'Defense Protocol' sounds useful. The robot loses its calm demeanor and says, 'Identify target.'",
+            aftermath: "Choose and kill 1 enemy within 2 spaces",
+            trash: false,
+            add: false
+          },{
+            result: "<strong>Fail:</strong> You are partway into his systems when you hit some kind of firewall. Suddenly, this Mister Handy is a lot less chill.",
+            aftermath: "Draw and fight [Robot]",
+            trash: true,
+            add: false
+          }
+        ]
+      }
+    ]
+  },{
+    id: "w3",
+    location: "wasteland",
+    title: "",
+    text: "A few scavengers have gathered their findings and placed them as bets. The first to make it to the far side of the complex and back wins.",
+    options: [
+      {
+        optionText: "Join the race! &bull; [S] [P] [E] [C] [I] [A] [L] 6",
+        result: [
+          {
+            result: "<strong>Success:</strong> Looking back over the course, you cannot even see your competition. You get your pick of the bets.",
+            aftermath: "5 Caps &bull; Choose 1 item from the shop",
+            trash: false,
+            add: false
+          },{
+            result: "<strong>Fail:</strong> It's probably best to not rehash how that went. With a disparaging smirk, the winner flips you a Cap.",
+            aftermath: "1 Cap",
+            trash: false,
+            add: false
+          }
+        ]
+      },{
+        optionText: "Train the course after they're done",
+        result: "You don't want to risk anything, but the practice after they're done teaches you a few things.",
+        aftermath: "2 XP &bull; [Loot]",
+        trash: false,
+        add: false
+      },{
+        optionText: "Hold back and take their stuff",
+        result: "As soon as they're out of sight, you grab whatever you can and get out of there.",
+        aftermath: "Become <em>Vilified</em> &bull; [Loot] x [Wasteland]",
+        trash: false,
+        add: false
+      }
+    ]
+  },{
+    id: "w4",
+    location: "wasteland",
+    title: "",
+    text: "You approach a section of the structure that doesn't show much looter activity. You wonder why it's been avoided... until you hear the scuttling.",
+    options: [
+      {
+        optionText: "Rush in and kill the critters",
+        result: "You step into the den and get ready to clear out the creatures for the good of everyone.",
+        aftermath: "Draw and fight [Critter] &bull; [Loot] x [Wilderness]<br>Become <em>Idolized</em>",
+        trash: true,
+        add: [4]
+      },{
+        optionText: "Send them after somone else &bull; Adjacent survivor",
+        result: "You make sounds to draw the creatures away and toward someone else.",
+        aftermath: "That survivor draws and fights [Critter]<br>Become <em>Vilified</em>",
+        trash: true,
+        add: [4]
+      },{
+        optionText: "Grab something and run",
+        result: "Leaping quickly around a corner, you grope blindly in the dark, taking the first thing you touch. Then you turn and sprint out of there.",
+        aftermath: "[Loot] &bull; Move 1 space",
+        trash: false,
+        add: false
+      }
+    ]
+  },{
+    id: "w5",
+    location: "wasteland",
+    title: "",
+    text: "You hear nothing but your own footsteps as you walk through the ruins. It's calm and quiet.",
+    options: [
+      {
+        optionText: "Hack into an old register &bull; [I] 3",
+        result: [
+          {
+            result: "<strong>Success:</strong> The register pops open.",
+            aftermath: "[Wilderness] Caps",
+            trash: false,
+            add: false
+          },{
+            result: "<strong>Fail:</strong> The computer emits a loud alarm. The sound attracts something outside the building. Guess you're not alone. You grab a Cap lying under the register.",
+            aftermath: "1 Cap &bull; Draw and fight [Critter]",
+            trash: false,
+            add: false
+          }
+        ]
+      },{
+        optionText: "Search for useful equipment &bull; [P] [L] 4",
+        result: [
+          {
+            result: "<strong>Success:</strong> You find some strange markings near the back of the building. They appear to be pointing to some kind of cache.",
+            aftermath: "2 XP",
+            trash: true,
+            add: [1]
+          },{
+            result: "<strong>Fail:</strong> You're reading markings on the wall when something springs from the shadows!",
+            aftermath: "Draw and fight [Critter]",
+            trash: false,
+            add: false
+          }
+        ]
+      }
+    ]
+  },{
+    id: "w6",
+    location: "wasteland",
+    title: "",
+    text: "There is movement inside the structure. You ready for a fight but relax as a figure appears and hails you with a friendly wave.",
+    options: [
+      {
+        optionText: "Work with her to search for loot &bull; [P] [C] 4",
+        result: [
+          {
+            result: "<strong>Success:</strong> Working together, you find a good amount of supplies",
+            aftermath: "[Loot] x [Wilderness]",
+            trash: false,
+            add: false
+          },{
+            result: "<strong>Fail:</strong> 'Found something!' she yells. Walking over you see the fool holding a glowing canister.",
+            aftermath: "Suffer 1 [Radiation]",
+            trash: false,
+            add: false
+          }
+        ]
+      },{
+        optionText: "She likely has the best loot; kill her",
+        result: "You greet the stranger with a friendly smile. Then, the moment she turns her back, you attack!",
+        aftermath: "[Loot] x [Wilderness] &bull; Become <em>Vilified</em><br>Draw and fight [Human]",
+        trash: true,
+        add: [2]
+      },{
+        optionText: "Ask the stranger to join you",
+        result: "",
+        aftermath: "Reveal [Item] cards until you find a companion; if you meet its requirement, take that card; discard the rest.<br>Become <em>Idolized</em>",
+        trash: true,
+        add: [3]
+      }
+    ]
+  },{
+    id: "w7",
+    location: "wasteland",
+    title: "",
+    text: "As you pick through the ruins, you spot a figure on the ground. As you approach, you see that it's a dead man. He has no weapons or gear. What was he doing out here?",
+    options: [
+      {
+        optionText: "Investigate the corpse",
+        result: "On the corpse you find a filthy, folded photograph of a man geared for war standing next to a small boy and girl. You can make out bits of a note next to a drawing of a bird: 'I am going east... my greatest regret... ou and Margaret.' Maybe Margaret is still aive?",
+        aftermath: "[Loot] &bull; 3 XP",
+        trash: true,
+        add: [5]
+      },{
+        optionText: "Ignore the corpse and search &bull; [P] [E] 4",
+        result: [
+          {
+            result: "<strong>Success:</strong> The wasteland is full of dead men. You'd rather have enough supplies to avoid joining them.",
+            aftermath: "[Loot] x [Wilderness]",
+            trash: false,
+            add: false
+          },{
+            result: "<strong>Fail:</strong> You hear scuttling as you search. The corpse must have drawn scavengers.",
+            aftermath: "Draw and fight [Critter]",
+            trash: false,
+            add: false
+          }
+        ]
+      }
+    ]
+  },{
+    id: "w8",
+    location: "wasteland",
+    title: "",
+    text: "You hear nothing but your own footsteps as you walk through the ruins. It's calm and quiet.",
+    options: [
+      {
+        optionText: "Hack into an old register &bull; [I] 3",
+        result: [
+          {
+            result: "<strong>Success:</strong> Someone has been here before, but you find some Caps near the back of the drawer",
+            aftermath: "[Wilderness] - 1 Caps",
+            trash: false,
+            add: false
+          },{
+            result: "<strong>Fail:</strong> Before you're done, you hear voices drifitng through the ruins. There's something still here.!",
+            aftermath: "Draw and fight [Human]",
+            trash: false,
+            add: false
+          }
+        ]
+      },{
+        optionText: "Search for useful equipment &bull; [P] [L] 4",
+        result: [
+          {
+            result: "<strong>Success:</strong> You turn over some rubble to find a corpse! It stinks, but it has some useful items still on it.",
+            aftermath: "[Loot] x [Wilderness] + 1",
+            trash: false,
+            add: false
+          },{
+            result: "<strong>Fail:</strong> You hear voices drifting through the ruins as you search. There's someone here!",
+            aftermath: "[Loot] &bull; 'Draw and fight [Human]",
+            trash: false,
+            add: false
+          }
+        ]
+      }
+    ]
+  }
+]

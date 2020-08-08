@@ -1,0 +1,52 @@
+#settlementDeck {
+    background-image:url('/assets/images/card-backs/settlement.jpeg');
+}
+
+#wastelandDeck {
+    background-image:url('/assets/images/card-backs/wasteland.jpeg');
+}
+
+#vault007Deck {
+    background-image:url('/assets/images/card-backs/vault007.jpeg');
+}
+
+#vault044Deck {
+    background-image:url('/assets/images/card-backs/vault044.jpeg');
+}
+
+#vault084Deck {
+    background-image:url('/assets/images/card-backs/vault084.jpeg');
+}
+
+#vault109Deck {
+    background-image:url('/assets/images/card-backs/vault109.jpeg');
+}
+
+#shieldDeck {
+    background-image:url('/assets/images/card-backs/shield.jpeg');
+}
+
+#starDeck {
+    background-image:url('/assets/images/card-backs/star.jpeg');
+}
+
+.cardDeck {
+    width: 200px;
+    height: 300px;
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    margin: 15px auto;
+    border-radius: 12px;
+}
+@media screen and (max-width: 600px) {
+    .cardDeck {width: 140px; height: 210px;}
+}
+
+.cardDeck.empty {
+    filter: grayscale(1)
+}
+
+.cardDeck.display {
+    background-color: #cbcbcb;
+}
