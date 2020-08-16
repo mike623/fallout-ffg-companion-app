@@ -9,6 +9,8 @@ const Provider = ({ children }) => {
     const [baseDeck, setBaseDeck] = useState([...baseJSON]);
     const [settlementDeck, setSettlementDeck] = useState([...baseSettlementJSON]);
     const [wastelandDeck, setWastelandDeck] = useState([...baseWastelandJSON]);
+    let [vault084Deck, setVault084Deck] = useState([]);
+    let [vault109Deck, setVault109Deck] = useState([]);
     const [modalShow, setModalShow] = useState(false);
 
     const shuffle = array => {
@@ -24,8 +26,26 @@ const Provider = ({ children }) => {
         return array;
     };
 
+    const setVaultDeck = vault => {
+        if (vault === "84") {
+            for (let i=0;i<baseJSON.length;i++) {
+                if (baseJSON[i].location === "Vault"+vault) {
+                    vault084Deck = vault084Deck.concat(baseJSON[i]);
+                }
+            }
+        } else if (vault === "109") {
+            for (let i=0;i<baseJSON.length;i++) {
+                if (baseJSON[i].location === "Vault"+vault) {
+                    vault109Deck = vault109Deck.concat(baseJSON[i]);
+                }
+            }
+        }
+    }
+
     const initialShuffle = () => {
         setBaseDeck(baseDeck);
+        setVault084Deck(setVaultDeck("84"));
+        setVault109Deck(setVaultDeck("109"));
         setSettlementDeck(shuffle(settlementDeck));
         setWastelandDeck(shuffle(wastelandDeck));
     }
@@ -39,6 +59,8 @@ const Provider = ({ children }) => {
             value={{
                 baseDeck,
                 settlementDeck,
+                vault084Deck,
+                vault109Deck,
                 wastelandDeck,
                 modalShow,
                 handleClose,
