@@ -6,12 +6,43 @@ import baseWastelandJSON from "./Components/JSON/base-wasteland.json";
 const Context = React.createContext({});
 
 const Provider = ({ children }) => {
+    let [numPlayers, setNumPlayers] = useState(2);
     const [baseDeck, setBaseDeck] = useState([...baseJSON]);
     const [settlementDeck, setSettlementDeck] = useState([...baseSettlementJSON]);
     const [wastelandDeck, setWastelandDeck] = useState([...baseWastelandJSON]);
     let [vault084Deck, setVault084Deck] = useState([]);
     let [vault109Deck, setVault109Deck] = useState([]);
     const [modalShow, setModalShow] = useState(false);
+
+    const handleClose = () => setModalShow(false);
+
+    const handleInputChange = event => setNumPlayers(event.target.value);
+
+    const handleShow = () => setModalShow(true);
+
+    const initialShuffle = () => {
+        setBaseDeck(baseDeck);
+        setVault084Deck(setVaultDeck("84"));
+        setVault109Deck(setVaultDeck("109"));
+        setSettlementDeck(shuffle(settlementDeck));
+        setWastelandDeck(shuffle(wastelandDeck));
+    }
+
+    const setVaultDeck = vault => {
+        if (vault === "84") {
+            for (let i=0; i < baseJSON.length; i++) {
+                if ((baseJSON[i].id >= 72) && (baseJSON[i].id <= 79)) {
+                    vault084Deck = vault084Deck.concat(baseJSON[i]);
+                }
+            }
+            shuffle(vault084Deck);
+            const newLength = vault084Deck.length - numPlayers;
+            for (let i=0; i < newLength; i++) {
+                vault084Deck.pop();
+            }
+        }
+        console.log(vault084Deck);
+    }
 
     const shuffle = array => {
         let i = 0;
@@ -26,37 +57,11 @@ const Provider = ({ children }) => {
         return array;
     };
 
-    const setVaultDeck = vault => {
-        if (vault === "84") {
-            for (let i=0;i<baseJSON.length;i++) {
-                if (baseJSON[i].location === "Vault"+vault) {
-                    vault084Deck = vault084Deck.concat(baseJSON[i]);
-                }
-            }
-        } else if (vault === "109") {
-            for (let i=0;i<baseJSON.length;i++) {
-                if (baseJSON[i].location === "Vault"+vault) {
-                    vault109Deck = vault109Deck.concat(baseJSON[i]);
-                }
-            }
-        }
-    }
-
-    const initialShuffle = () => {
-        setBaseDeck(baseDeck);
-        setVault084Deck(setVaultDeck("84"));
-        setVault109Deck(setVaultDeck("109"));
-        setSettlementDeck(shuffle(settlementDeck));
-        setWastelandDeck(shuffle(wastelandDeck));
-    }
-
-    const handleClose = () => setModalShow(false);
-
-    const handleShow = () => setModalShow(true);
-
     return (
         <Context.Provider
             value={{
+                numPlayers,
+                setNumPlayers,
                 baseDeck,
                 settlementDeck,
                 vault084Deck,
@@ -64,6 +69,7 @@ const Provider = ({ children }) => {
                 wastelandDeck,
                 modalShow,
                 handleClose,
+                handleInputChange,
                 handleShow,
                 initialShuffle
             }}

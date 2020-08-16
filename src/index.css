@@ -1,0 +1,4 @@
+@font-face {
+    font-family: 'Fallout';
+    src: local('Fallout'), url(./Fonts/fallout.ttf) format('truetype');
+}
