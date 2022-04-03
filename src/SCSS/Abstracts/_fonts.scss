@@ -1,0 +1,300 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?e67iph');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?e67iph#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?e67iph') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?e67iph') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?e67iph##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-agenda-card {
+  &:before {
+    content: $icon-agenda-card; 
+  }
+}
+.icon-aggressive {
+  &:before {
+    content: $icon-aggressive; 
+  }
+}
+.icon-agility {
+  &:before {
+    content: $icon-agility; 
+  }
+}
+.icon-apparell {
+  &:before {
+    content: $icon-apparell; 
+  }
+}
+.icon-armor {
+  &:before {
+    content: $icon-armor; 
+  }
+}
+.icon-charisma {
+  &:before {
+    content: $icon-charisma; 
+  }
+}
+.icon-companion {
+  &:before {
+    content: $icon-companion; 
+  }
+}
+.icon-critter {
+  &:before {
+    content: $icon-critter; 
+  }
+}
+.icon-endurance {
+  &:before {
+    content: $icon-endurance; 
+  }
+}
+.icon-green-terrain {
+  &:before {
+    content: $icon-green-terrain; 
+  }
+}
+.icon-hit {
+  &:before {
+    content: $icon-hit; 
+  }
+}
+.icon-human {
+  &:before {
+    content: $icon-human; 
+  }
+}
+.icon-intelligence {
+  &:before {
+    content: $icon-intelligence; 
+  }
+}
+.icon-item {
+  &:before {
+    content: $icon-item; 
+  }
+}
+.icon-loot {
+  &:before {
+    content: $icon-loot; 
+  }
+}
+.icon-luck {
+  &:before {
+    content: $icon-luck; 
+  }
+}
+.icon-monster {
+  &:before {
+    content: $icon-monster; 
+  }
+}
+.icon-perception {
+  &:before {
+    content: $icon-perception; 
+  }
+}
+.icon-player-brotherhood {
+  &:before {
+    content: $icon-player-brotherhood; 
+  }
+}
+.icon-player-ghoul {
+  &:before {
+    content: $icon-player-ghoul; 
+  }
+}
+.icon-player-super-mutant {
+  &:before {
+    content: $icon-player-super-mutant; 
+  }
+}
+.icon-player-vault-dweller {
+  &:before {
+    content: $icon-player-vault-dweller; 
+  }
+}
+.icon-player-wastelander {
+  &:before {
+    content: $icon-player-wastelander; 
+  }
+}
+.icon-quest {
+  &:before {
+    content: $icon-quest; 
+  }
+}
+.icon-radiation {
+  &:before {
+    content: $icon-radiation; 
+  }
+}
+.icon-ranged {
+  &:before {
+    content: $icon-ranged; 
+  }
+}
+.icon-red-terrain {
+  &:before {
+    content: $icon-red-terrain; 
+  }
+}
+.icon-retreat {
+  &:before {
+    content: $icon-retreat; 
+  }
+}
+.icon-robot {
+  &:before {
+    content: $icon-robot; 
+  }
+}
+.icon-settlement {
+  &:before {
+    content: $icon-settlement; 
+  }
+}
+.icon-shield {
+  &:before {
+    content: $icon-shield; 
+  }
+}
+.icon-star {
+  &:before {
+    content: $icon-star; 
+  }
+}
+.icon-strength {
+  &:before {
+    content: $icon-strength; 
+  }
+}
+.icon-super-mutant {
+  &:before {
+    content: $icon-super-mutant; 
+  }
+}
+.icon-vats {
+  &:before {
+    content: $icon-vats; 
+  }
+}
+.icon-vats-a {
+  &:before {
+    content: $icon-vats-a; 
+  }
+}
+.icon-vats-ah {
+  &:before {
+    content: $icon-vats-ah; 
+  }
+}
+.icon-vats-ahl {
+  &:before {
+    content: $icon-vats-ahl; 
+  }
+}
+.icon-vats-ahlt {
+  &:before {
+    content: $icon-vats-ahlt; 
+  }
+}
+.icon-vats-aht {
+  &:before {
+    content: $icon-vats-aht; 
+  }
+}
+.icon-vats-al {
+  &:before {
+    content: $icon-vats-al; 
+  }
+}
+.icon-vats-alt {
+  &:before {
+    content: $icon-vats-alt; 
+  }
+}
+.icon-vats-at {
+  &:before {
+    content: $icon-vats-at; 
+  }
+}
+.icon-vats-h {
+  &:before {
+    content: $icon-vats-h; 
+  }
+}
+.icon-vats-hl {
+  &:before {
+    content: $icon-vats-hl; 
+  }
+}
+.icon-vats-hlt {
+  &:before {
+    content: $icon-vats-hlt; 
+  }
+}
+.icon-vats-ht {
+  &:before {
+    content: $icon-vats-ht; 
+  }
+}
+.icon-vats-l {
+  &:before {
+    content: $icon-vats-l; 
+  }
+}
+.icon-vats-lt {
+  &:before {
+    content: $icon-vats-lt; 
+  }
+}
+.icon-vats-t {
+  &:before {
+    content: $icon-vats-t; 
+  }
+}
+.icon-vault-109 {
+  &:before {
+    content: $icon-vault-109; 
+  }
+}
+.icon-vault-84 {
+  &:before {
+    content: $icon-vault-84; 
+  }
+}
+.icon-wasteland {
+  &:before {
+    content: $icon-wasteland; 
+  }
+}
+.icon-weapon {
+  &:before {
+    content: $icon-weapon; 
+  }
+}
+
